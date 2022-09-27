@@ -1,9 +1,12 @@
 import tkinter as tk
 from tkinter import ttk
+from  tkinter import messagebox as mb
 import json
 import requests
 ver = "0.0.1"
-with requests.get("")
+with requests.get("https://raw.githubusercontent.com/badgeminer/autoAtendance/main/Ver") as v:
+  if ver != v.text:
+    mb.showinfo("new version!",f"there is a new version available,\n you are on V{ver},\n V{v.text} is available")
 stud = json.load(open("usrs.json"))["usrs"]
 
 studLs = list(stud.values())
