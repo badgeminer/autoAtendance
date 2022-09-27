@@ -1,8 +1,9 @@
 import tkinter as tk
 from tkinter import ttk
 import json
-
-
+import requests
+ver = "0.0.1"
+with requests.get("")
 stud = json.load(open("usrs.json"))["usrs"]
 
 studLs = list(stud.values())
