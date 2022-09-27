@@ -1,12 +1,18 @@
 import tkinter as tk
 from tkinter import ttk
-from  tkinter import messagebox as mb
+from tkinter import messagebox as mb
 import json
 import requests
+
 ver = "0.0.1"
-with requests.get("https://raw.githubusercontent.com/badgeminer/autoAtendance/main/Ver") as v:
-  if ver != v.text:
-    mb.showinfo("new version!",f"there is a new version available,\n you are on V{ver},\n V{v.text} is available")
+with requests.get(
+        "https://raw.githubusercontent.com/badgeminer/autoAtendance/main/Ver"
+) as v:
+    if ver != v.text:
+        mb.showinfo(
+            "new version!",
+            f"there is a new version available!\n you are on V{ver}\n V{v.text} is available"
+        )
 stud = json.load(open("usrs.json"))["usrs"]
 
 studLs = list(stud.values())
@@ -34,7 +40,7 @@ class log(tk.Frame):
         self.entrythingy.bind('<Key-Return>', self.print_contents)
         self.notHere = tk.Listbox()
         self.lableNH = tk.Label(text="<- Not Here\n\nHere ->")
-        self.resetB = tk.Button(text ="reset", command = self.reset)
+        self.resetB = tk.Button(text="reset", command=self.reset)
         self.resetB.pack(side="top")
         I = 0
         for i in studLs:
@@ -42,33 +48,34 @@ class log(tk.Frame):
             I += 1
         self.notHere.pack(side='left')
         self.scroll = tk.Scrollbar()
-        self.scroll.pack(side = 'left', fill = 'both')
+        self.scroll.pack(side='left', fill='both')
         self.lableNH.pack(side="left")
         self.scrollH = tk.Scrollbar()
-        self.scrollH.pack(side = 'right', fill = 'both')
+        self.scrollH.pack(side='right', fill='both')
         self.Here = tk.Listbox()
         self.Here.pack(side='left')
-        self.notHere.config(yscrollcommand = self.scroll.set)
-        self.scroll.config(command = self.notHere.yview)
-        self.Here.config(yscrollcommand = self.scrollH.set)
-        self.scrollH.config(command = self.Here.yview)
+        self.notHere.config(yscrollcommand=self.scroll.set)
+        self.scroll.config(command=self.notHere.yview)
+        self.Here.config(yscrollcommand=self.scrollH.set)
+        self.scrollH.config(command=self.Here.yview)
         self.Here.bind('<Double-1>', self.move_st_nH)
         self.notHere.bind('<Double-1>', self.move_st_H)
 
     def move_st_nH(self, event):
-      entrys = self.Here.get(0, 50)
-      place = self.Here.get(self.Here.curselection())
-      self.Here.delete(entrys.index(place))
-      self.notHere.insert(studLs.index(place),place)
+        entrys = self.Here.get(0, 50)
+        place = self.Here.get(self.Here.curselection())
+        self.Here.delete(entrys.index(place))
+        self.notHere.insert(studLs.index(place), place)
+
     def move_st_H(self, event):
-      entrys = self.notHere.get(0, 50)
-      place = self.notHere.get(self.notHere.curselection())
-      self.notHere.delete(entrys.index(place))
-      self.Here.insert(studLs.index(place),place)
-      
+        entrys = self.notHere.get(0, 50)
+        place = self.notHere.get(self.notHere.curselection())
+        self.notHere.delete(entrys.index(place))
+        self.Here.insert(studLs.index(place), place)
+
     def print_contents(self, event):
         entrys = self.notHere.get(0, 50)
-      
+
         if self.contents.get() in stud.keys():
             try:
                 print(f"{self.contents.get()}-{stud[self.contents.get()]}")
@@ -79,15 +86,17 @@ class log(tk.Frame):
             except:
                 print(f"{self.contents.get()}")
         else:
-          print(f"{self.contents.get()}")
+            print(f"{self.contents.get()}")
         self.contents.set("")
+
     def reset(self):
-      self.Here.delete(0,50)
-      self.notHere.delete(0,50)
-      I = 0
-      for i in studLs:
+        self.Here.delete(0, 50)
+        self.notHere.delete(0, 50)
+        I = 0
+        for i in studLs:
             self.notHere.insert(I, i)
             I += 1
+
 
 root = tk.Tk()
 myapp = log(root)
