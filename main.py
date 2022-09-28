@@ -1,14 +1,16 @@
 import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox as mb
-import json
+import json,sys
 import requests
 
 ver = "0.0.1"
+upd = False
 with requests.get(
         "https://raw.githubusercontent.com/badgeminer/autoAtendance/main/Ver"
 ) as v:
     if ver != v.text:
+        upd = True
         mb.showinfo(
             "new version!",
             f"there is a new version available!\n you are on V{ver}\n V{v.text} is available"
@@ -24,7 +26,9 @@ class log(tk.Frame):
     def __init__(self, master):
         super().__init__(master)
         self.pack()
-
+        if upd:
+          self.upd = tk.Button(text="Update", command=self.upd)
+          self.upd.pack(side="top")
         self.entrythingy = tk.Entry()
         self.entrythingy.pack()
 
@@ -96,6 +100,12 @@ class log(tk.Frame):
         for i in studLs:
             self.notHere.insert(I, i)
             I += 1
+    def upd(self):
+      f = open("main.py",mode="w")
+      c = requests.get("https://raw.githubusercontent.com/badgeminer/autoAtendance/main/main.py")
+      f.write(c.text)
+      f.close()
+      sys.exit()
 
 
 root = tk.Tk()
