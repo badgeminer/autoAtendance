@@ -27,7 +27,7 @@ class log(tk.Frame):
         super().__init__(master)
         self.pack()
         if upd:
-          self.upd = tk.Button(text="Update", command=self.upd)
+          self.upd = tk.Button(text="Update", command=self.upd,activebackground="red",background="red")
           self.upd.pack(side="top")
         self.entrythingy = tk.Entry()
         self.entrythingy.pack()
@@ -44,7 +44,7 @@ class log(tk.Frame):
         self.entrythingy.bind('<Key-Return>', self.print_contents)
         self.notHere = tk.Listbox()
         self.lableNH = tk.Label(text="<- Not Here\n\nHere ->")
-        self.resetB = tk.Button(text="reset", command=self.reset)
+        self.resetB = tk.Button(text="reset", command=self.reset,activeforeground="red")
         self.resetB.pack(side="top")
         I = 0
         for i in studLs:
