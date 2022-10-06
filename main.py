@@ -120,7 +120,7 @@ class log(tk.Frame):
       print(colored('writing main.py file...',"grey"))
       with open("requirements.txt", 'wb') as f:
         i = 0
-        for chunk in r.iter_content(chunk_size):
+        for chunk in r.iter_content(100,decode_unicode=True):
           print(colored(f'writing chunk {i}...',"grey"))
           f.write(chunk)
           i+=1
