@@ -4,7 +4,7 @@ import json,sys,os
 import requests,colorama
 from termcolor import colored
 
-#todo: export here or not here to google sheet 
+#todo: export to google sheet 
 
 colorama.init(autoreset=True)
 
@@ -26,6 +26,7 @@ class log(tk.Frame):
     def __init__(self, master):
         super().__init__(master)
         self.pack()
+        
         #update button
         if upd:
           self.upd = tk.Button(text="Update", command=self.upd,activebackground="red",background="red")
@@ -146,4 +147,5 @@ class log(tk.Frame):
 
 root = tk.Tk()
 myapp = log(root)
+myapp.master.title(f"Auto Attendance V{ver}")
 myapp.mainloop()
