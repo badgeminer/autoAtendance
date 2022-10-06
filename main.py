@@ -6,7 +6,7 @@ import requests,colorama
 from termcolor import colored
 
 colorama.init(autoreset=True)
-ver = "0.0.4"
+ver = "0.0.5"
 upd = False
 with requests.get(
         "https://raw.githubusercontent.com/badgeminer/autoAtendance/main/Ver"
@@ -127,7 +127,7 @@ class log(tk.Frame):
         print(colored('saving reqirements.py',"grey"))
       print(colored('installing requirements...',"grey"))
       os.system('pip install -r requirements.txt')
-      print(colored('done, ready for restart',"grey"))
+      print(colored('done, ready for restart',"green"))
       mb.showinfo("updater","auto Atendance will now restart")
       sys.exit()
 
