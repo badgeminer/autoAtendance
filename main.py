@@ -1,10 +1,12 @@
 import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox as mb
-import json,sys
-import requests
+import json,sys,os
+import requests,colorama
+from termcolor import colored
 
-ver = "0.0.1"
+colorama.init(autoreset=True)
+ver = "0.0.2"
 upd = False
 with requests.get(
         "https://raw.githubusercontent.com/badgeminer/autoAtendance/main/Ver"
@@ -101,11 +103,22 @@ class log(tk.Frame):
             self.notHere.insert(I, i)
             I += 1
     def upd(self):
+      print(colored('loading updater...',"grey"))
       f = open("main.py",mode="w")
+      print(colored('downloading file...',"grey"))
       c = requests.get("https://raw.githubusercontent.com/badgeminer/autoAtendance/main/main.py")
-      f.write(c.text)
+      print(colored('writing file...',"grey"))
+      i = 1
+      for chunk in c.iter_content(100):
+        print(colored(f'writing chunk {i}...',"grey"))
+        f.write(chunk)
+        i +=1
+      print(colored('saving...',"grey"))
       f.close()
+      print(colored('done, ready for restart',"grey"))
+      mb.showinfo("updater","auto Atendance will now restart")
       sys.exit()
+
 
 
 root = tk.Tk()
