@@ -117,17 +117,18 @@ class log(tk.Frame):
       f.close()
       print(colored('downloading requirements.txt...',"grey"))
       r = requests.get("https://raw.githubusercontent.com/badgeminer/autoAtendance/main/requirements.txt")
-      print(colored('writing main.py file...',"grey"))
+      print(colored('writing requ.py file...',"grey"))
       with open("requirements.txt", 'w') as f:
         i = 0
         for chunk in r.iter_content(100,decode_unicode=True):
-          print(colored(f'writing chunk {i}...',"grey"))
+          print(colored(f'writing rqs chunk {i}...',"grey"))
           f.write(chunk)
           i+=1
         print(colored('saving reqirements.py',"grey"))
+      print(colored('installing requirements...',"grey"))
+      os.system('pip install -r requirements.txt')
       print(colored('done, ready for restart',"grey"))
       mb.showinfo("updater","auto Atendance will now restart")
-      os.system('pip install -r requirements.txt')
       sys.exit()
 
 
