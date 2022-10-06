@@ -118,7 +118,7 @@ class log(tk.Frame):
       print(colored('downloading requirements.txt...',"grey"))
       r = requests.get("https://raw.githubusercontent.com/badgeminer/autoAtendance/main/requirements.txt")
       print(colored('writing main.py file...',"grey"))
-      with open("requirements.txt", 'wb') as f:
+      with open("requirements.txt", 'w') as f:
         i = 0
         for chunk in r.iter_content(100,decode_unicode=True):
           print(colored(f'writing chunk {i}...',"grey"))
