@@ -105,18 +105,29 @@ class log(tk.Frame):
     def upd(self):
       print(colored('loading updater...',"grey"))
       f = open("main.py",mode="w")
-      print(colored('downloading file...',"grey"))
+      print(colored('downloading main.py file...',"grey"))
       c = requests.get("https://raw.githubusercontent.com/badgeminer/autoAtendance/main/main.py")
-      print(colored('writing file...',"grey"))
+      print(colored('writing main.py file...',"grey"))
       i = 1
       for chunk in c.iter_content(100,decode_unicode=True):
         print(colored(f'writing chunk {i}...',"grey"))
         f.write(chunk)
         i +=1
-      print(colored('saving...',"grey"))
+      print(colored('saving main.py...',"grey"))
       f.close()
+      print(colored('downloading requirements.txt...',"grey"))
+      r = requests.get("https://raw.githubusercontent.com/badgeminer/autoAtendance/main/requirements.txt")
+      print(colored('writing main.py file...',"grey"))
+      with open("requirements.txt", 'wb') as f:
+        i = 0
+        for chunk in r.iter_content(chunk_size):
+          print(colored(f'writing chunk {i}...',"grey"))
+          f.write(chunk)
+          i+=1
+        print(colored('saving reqirements.py',"grey"))
       print(colored('done, ready for restart',"grey"))
       mb.showinfo("updater","auto Atendance will now restart")
+      os.system('pip install -r requirements.txt')
       sys.exit()
 
 
