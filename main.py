@@ -74,12 +74,14 @@ class log(tk.Frame):
     def move_st_nH(self, event):
         entrys = self.Here.get(0, 50)
         place = self.Here.get(self.Here.curselection())
+        print(colored(f"{place} Here -> NotHere","red"))
         self.Here.delete(entrys.index(place))
         self.notHere.insert(studLs.index(place), place)
 
     def move_st_H(self, event):
         entrys = self.notHere.get(0, 50)
         place = self.notHere.get(self.notHere.curselection())
+        print(colored(f"{place} NotHere -> Here","green"))
         self.notHere.delete(entrys.index(place))
         self.Here.insert(studLs.index(place), place)
 
@@ -88,8 +90,7 @@ class log(tk.Frame):
 
         if self.contents.get() in stud.keys():
             try:
-                print(f"{self.contents.get()}-{stud[self.contents.get()]}")
-
+                print(colored(f"{self.contents.get()}:{stud[self.contents.get()]} NotHere -> Here","green")) 
                 self.notHere.delete(entrys.index(stud[self.contents.get()]))
                 self.Here.insert(studLs.index(stud[self.contents.get()]),
                                  stud[self.contents.get()])
@@ -102,6 +103,7 @@ class log(tk.Frame):
     def reset(self):
         self.Here.delete(0, 50)
         self.notHere.delete(0, 50)
+        print(colored("[*] Here -> NotHere","red"))
         I = 0
         for i in studLs:
             self.notHere.insert(I, i)
