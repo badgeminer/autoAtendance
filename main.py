@@ -104,7 +104,7 @@ class log(tk.Frame):
             except:
                 print(f"{self.contents.get()}")
         else:
-            print(f"{self.contents.get()}")
+            print(colored(f"Not found:{self.contents.get()}","red"))
         self.contents.set("")
     
     #reset btn
