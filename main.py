@@ -72,18 +72,24 @@ class log(tk.Frame):
       ##bindings##
     
     def move_st_nH(self, event):
+      try:
         entrys = self.Here.get(0, 50)
         place = self.Here.get(self.Here.curselection())
         print(colored(f"{place} Here -> NotHere","red"))
         self.Here.delete(entrys.index(place))
         self.notHere.insert(studLs.index(place), place)
+      except tk.TclError:
+        pass
 
     def move_st_H(self, event):
+      try:
         entrys = self.notHere.get(0, 50)
         place = self.notHere.get(self.notHere.curselection())
         print(colored(f"{place} NotHere -> Here","green"))
         self.notHere.delete(entrys.index(place))
         self.Here.insert(studLs.index(place), place)
+      except tk.TclError:
+        pass
 
     def print_contents(self, event):
         entrys = self.notHere.get(0, 50)
