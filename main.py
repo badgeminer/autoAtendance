@@ -8,7 +8,7 @@ from termcolor import colored
 
 colorama.init(autoreset=True)
 
-ver = "0.0.5"
+ver = "0.0.6"
 upd = False
 with requests.get( "https://raw.githubusercontent.com/badgeminer/autoAtendance/main/Ver") as v:
     if ver != v.text:
@@ -69,8 +69,9 @@ class log(tk.Frame):
         self.Here.bind('<Double-1>', self.move_st_nH)
         self.notHere.bind('<Double-1>', self.move_st_H)
     
-      ##bindings##
-    
+      #######bindings#######
+
+    #move ppl
     def move_st_nH(self, event):
       try:
         entrys = self.Here.get(0, 50)
@@ -90,7 +91,7 @@ class log(tk.Frame):
         self.Here.insert(studLs.index(place), place)
       except tk.TclError:
         pass
-
+    #scan and move 
     def print_contents(self, event):
         entrys = self.notHere.get(0, 50)
 
@@ -105,7 +106,8 @@ class log(tk.Frame):
         else:
             print(f"{self.contents.get()}")
         self.contents.set("")
-
+    
+    #reset btn
     def reset(self):
         self.Here.delete(0, 50)
         self.notHere.delete(0, 50)
@@ -152,7 +154,7 @@ class log(tk.Frame):
       sys.exit()
 
 
-
+#run
 root = tk.Tk()
 myapp = log(root)
 myapp.master.title(f"Auto Attendance V{ver}")
