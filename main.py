@@ -1,22 +1,20 @@
 import tkinter as tk
-from tkinter import ttk
 from tkinter import messagebox as mb
 import json,sys,os
 import requests,colorama
 from termcolor import colored
 
+#todo: export to google sheet 
+
 colorama.init(autoreset=True)
-ver = "0.0.4"
+
+ver = "0.0.5"
 upd = False
-with requests.get(
-        "https://raw.githubusercontent.com/badgeminer/autoAtendance/main/Ver"
-) as v:
+with requests.get( "https://raw.githubusercontent.com/badgeminer/autoAtendance/main/Ver") as v:
     if ver != v.text:
         upd = True
-        mb.showinfo(
-            "new version!",
-            f"there is a new version available!\n you are on V{ver}\n V{v.text} is available"
-        )
+        mb.showinfo("new version!",f"there is a new version available!\n you are on V{ver}\n V{v.text} is available")
+
 stud = json.load(open("usrs.json"))["usrs"]
 
 studLs = list(stud.values())
@@ -28,9 +26,12 @@ class log(tk.Frame):
     def __init__(self, master):
         super().__init__(master)
         self.pack()
+        
+        #update button
         if upd:
           self.upd = tk.Button(text="Update", command=self.upd,activebackground="red",background="red")
           self.upd.pack(side="top")
+          
         self.entrythingy = tk.Entry()
         self.entrythingy.pack()
 
@@ -44,6 +45,7 @@ class log(tk.Frame):
         # Define a callback for when the user hits return.
         # It prints the current value of the variable.
         self.entrythingy.bind('<Key-Return>', self.print_contents)
+      
         self.notHere = tk.Listbox()
         self.lableNH = tk.Label(text="<- Not Here\n\nHere ->")
         self.resetB = tk.Button(text="reset", command=self.reset,activeforeground="red")
@@ -66,16 +68,20 @@ class log(tk.Frame):
         self.scrollH.config(command=self.Here.yview)
         self.Here.bind('<Double-1>', self.move_st_nH)
         self.notHere.bind('<Double-1>', self.move_st_H)
-
+    
+      ##bindings##
+    
     def move_st_nH(self, event):
         entrys = self.Here.get(0, 50)
         place = self.Here.get(self.Here.curselection())
+        print(colored(f"{place} Here -> NotHere","red"))
         self.Here.delete(entrys.index(place))
         self.notHere.insert(studLs.index(place), place)
 
     def move_st_H(self, event):
         entrys = self.notHere.get(0, 50)
         place = self.notHere.get(self.notHere.curselection())
+        print(colored(f"{place} NotHere -> Here","green"))
         self.notHere.delete(entrys.index(place))
         self.Here.insert(studLs.index(place), place)
 
@@ -84,8 +90,7 @@ class log(tk.Frame):
 
         if self.contents.get() in stud.keys():
             try:
-                print(f"{self.contents.get()}-{stud[self.contents.get()]}")
-
+                print(colored(f"{self.contents.get()}:{stud[self.contents.get()]} NotHere -> Here","green")) 
                 self.notHere.delete(entrys.index(stud[self.contents.get()]))
                 self.Here.insert(studLs.index(stud[self.contents.get()]),
                                  stud[self.contents.get()])
@@ -98,26 +103,33 @@ class log(tk.Frame):
     def reset(self):
         self.Here.delete(0, 50)
         self.notHere.delete(0, 50)
+        print(colored("[*] Here -> NotHere","red"))
         I = 0
         for i in studLs:
             self.notHere.insert(I, i)
             I += 1
+    #update service
     def upd(self):
       print(colored('loading updater...',"grey"))
       f = open("main.py",mode="w")
+      
       print(colored('downloading main.py file...',"grey"))
       c = requests.get("https://raw.githubusercontent.com/badgeminer/autoAtendance/main/main.py")
-      print(colored('writing main.py file...',"grey"))
+      
+      print(colored('writing main.py...',"grey"))
       i = 1
       for chunk in c.iter_content(100,decode_unicode=True):
-        print(colored(f'writing chunk {i}...',"grey"))
+        print(colored(f'writing main chunk {i}...',"grey"))
         f.write(chunk)
         i +=1
+        
       print(colored('saving main.py...',"grey"))
       f.close()
+      
       print(colored('downloading requirements.txt...',"grey"))
       r = requests.get("https://raw.githubusercontent.com/badgeminer/autoAtendance/main/requirements.txt")
-      print(colored('writing requ.py file...',"grey"))
+      
+      print(colored('writing requirements.txt...',"grey"))
       with open("requirements.txt", 'w') as f:
         i = 0
         for chunk in r.iter_content(100,decode_unicode=True):
@@ -125,9 +137,11 @@ class log(tk.Frame):
           f.write(chunk)
           i+=1
         print(colored('saving reqirements.py',"grey"))
+        
       print(colored('installing requirements...',"grey"))
       os.system('pip install -r requirements.txt')
-      print(colored('done, ready for restart',"grey"))
+      
+      print(colored('done, ready for restart',"green"))
       mb.showinfo("updater","auto Atendance will now restart")
       sys.exit()
 
@@ -135,4 +149,5 @@ class log(tk.Frame):
 
 root = tk.Tk()
 myapp = log(root)
+myapp.master.title(f"Auto Attendance V{ver}")
 myapp.mainloop()
