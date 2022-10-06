@@ -109,7 +109,7 @@ class log(tk.Frame):
       c = requests.get("https://raw.githubusercontent.com/badgeminer/autoAtendance/main/main.py")
       print(colored('writing file...',"grey"))
       i = 1
-      for chunk in c.iter_content(100):
+      for chunk in c.iter_content(100,decode_unicode=True):
         print(colored(f'writing chunk {i}...',"grey"))
         f.write(chunk)
         i +=1
