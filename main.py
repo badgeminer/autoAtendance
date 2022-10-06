@@ -6,7 +6,7 @@ import requests,colorama
 from termcolor import colored
 
 colorama.init(autoreset=True)
-ver = "0.0.3"
+ver = "0.0.4"
 upd = False
 with requests.get(
         "https://raw.githubusercontent.com/badgeminer/autoAtendance/main/Ver"
