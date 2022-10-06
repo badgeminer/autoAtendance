@@ -3,10 +3,15 @@ from tkinter import messagebox as mb
 import json,sys,os
 import requests,colorama
 from termcolor import colored
+import configparser
 
 #todo: export to google sheet 
 
 colorama.init(autoreset=True)
+
+config = configparser.ConfigParser()
+config.read('cfgs.ini')
+max = config['ATTENDANCE']['maxStud']
 
 ver = "0.0.6"
 upd = False
@@ -74,7 +79,7 @@ class log(tk.Frame):
     #move ppl
     def move_st_nH(self, event):
       try:
-        entrys = self.Here.get(0, 50)
+        entrys = self.Here.get(0, max)
         place = self.Here.get(self.Here.curselection())
         print(colored(f"{place} Here -> NotHere","red"))
         self.Here.delete(entrys.index(place))
@@ -93,7 +98,7 @@ class log(tk.Frame):
         pass
     #scan and move 
     def print_contents(self, event):
-        entrys = self.notHere.get(0, 50)
+        entrys = self.notHere.get(0, max)
 
         if self.contents.get() in stud.keys():
             try:
@@ -109,8 +114,8 @@ class log(tk.Frame):
     
     #reset btn
     def reset(self):
-        self.Here.delete(0, 50)
-        self.notHere.delete(0, 50)
+        self.Here.delete(0, max)
+        self.notHere.delete(0, max)
         print(colored("[*] Here -> NotHere","red"))
         I = 0
         for i in studLs:
