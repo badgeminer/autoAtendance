@@ -31,17 +31,17 @@ class log(tk.Frame):
 
     def __init__(self, master):
         super().__init__(master)
-        self.pack()
-        self.rowconfigure(0, weight=1)
-        self.rowconfigure(1, weight=1)
-        self.rowconfigure(3, weight=5)
+        self.rowconfigure(0, weight=2)
+        self.rowconfigure(1, weight=2)
+        self.rowconfigure(4, weight=5)
+        self.columnconfigure(1, weight=1)
         #update button
         if upd:
           self.upd = tk.Button(text="Update", command=self.upd,activebackground="red",background="red")
-          self.upd.pack(side="top")
+          self.upd.grid(column=0, row=1)
           
         self.entrythingy = tk.Entry()
-        self.entrythingy.pack(fill="both")
+        self.entrythingy.grid(column=0, row=0,columnspan = 4)
 
         # Create the application variable.
         self.contents = tk.StringVar()
@@ -55,21 +55,26 @@ class log(tk.Frame):
         self.entrythingy.bind('<Key-Return>', self.print_contents)
       
         self.notHere = tk.Listbox()
-        self.lableNH = tk.Label(text="<- Not Here\n\nHere ->")
+        self.lableNH = tk.Label(text="Not Here")
+        self.lableH = tk.Label(text="Here")
         self.resetB = tk.Button(text="reset", command=self.reset,activeforeground="red")
-        self.resetB.pack(side="top")
+        if upd:
+          self.resetB.grid(column=2, row=1)
+        else:
+          self.resetB.grid(column=0, row=1,columnspan = 4)
         I = 0
         for i in studLs:
             self.notHere.insert(I, i)
             I += 1
-        self.notHere.pack(side='left',fill="both")
+        self.notHere.grid(column=0, row=3)
         self.scroll = tk.Scrollbar()
-        self.scroll.pack(side='left', fill='both')
-        self.lableNH.pack(side="left",fill="both")
+        self.scroll.grid(column=1, row=3)
+        self.lableNH.grid(column=0, row=2)
+        self.lableH.grid(column=2, row=2)
         self.scrollH = tk.Scrollbar()
-        self.scrollH.pack(side='right', fill='both')
+        self.scrollH.grid(column=3, row=3)
         self.Here = tk.Listbox()
-        self.Here.pack(side='left',fill="both")
+        self.Here.grid(column=2, row=3)
         self.notHere.config(yscrollcommand=self.scroll.set)
         self.scroll.config(command=self.notHere.yview)
         self.Here.config(yscrollcommand=self.scrollH.set)
