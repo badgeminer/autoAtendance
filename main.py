@@ -31,6 +31,7 @@ class log(tk.Frame):
 
     def __init__(self, master):
         super().__init__(master)
+
         self.rowconfigure(0, weight=2)
         self.rowconfigure(1, weight=2)
         self.rowconfigure(4, weight=5)
