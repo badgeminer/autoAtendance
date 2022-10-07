@@ -13,9 +13,9 @@ config = configparser.ConfigParser()
 config.read('cfgs.ini')
 max = config['ATTENDANCE']['maxStud']
 
-ver = "0.0.6"
+ver = config['DEFAULT']['version']
 upd = False
-with requests.get( "https://raw.githubusercontent.com/badgeminer/autoAtendance/main/Ver") as v:
+with requests.get(config['UPDATE']['verCheckURL']) as v:
     if ver != v.text:
         upd = True
         mb.showinfo("new version!",f"there is a new version available!\n you are on V{ver}\n V{v.text} is available")
@@ -89,7 +89,7 @@ class log(tk.Frame):
 
     def move_st_H(self, event):
       try:
-        entrys = self.notHere.get(0, 50)
+        entrys = self.notHere.get(0, max)
         place = self.notHere.get(self.notHere.curselection())
         print(colored(f"{place} NotHere -> Here","green"))
         self.notHere.delete(entrys.index(place))
@@ -131,7 +131,7 @@ class log(tk.Frame):
       
       print(colored('writing main.py...',"grey"))
       i = 1
-      for chunk in c.iter_content(100,decode_unicode=True):
+      for chunk in c.iter_content(config['DEFAULT']['downloadChunkSize'],decode_unicode=True):
         print(colored(f'writing main chunk {i}...',"grey"))
         f.write(chunk)
         i +=1
@@ -145,7 +145,7 @@ class log(tk.Frame):
       print(colored('writing requirements.txt...',"grey"))
       with open("requirements.txt", 'w') as f:
         i = 0
-        for chunk in r.iter_content(100,decode_unicode=True):
+        for chunk in r.iter_content(config['DEFAULT']['downloadChunkSize'],decode_unicode=True):
           print(colored(f'writing rqs chunk {i}...',"grey"))
           f.write(chunk)
           i+=1
