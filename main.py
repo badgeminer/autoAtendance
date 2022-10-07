@@ -32,14 +32,16 @@ class log(tk.Frame):
     def __init__(self, master):
         super().__init__(master)
         self.pack()
-        
+        self.rowconfigure(0, weight=1)
+        self.rowconfigure(1, weight=1)
+        self.rowconfigure(3, weight=5)
         #update button
         if upd:
           self.upd = tk.Button(text="Update", command=self.upd,activebackground="red",background="red")
           self.upd.pack(side="top")
           
         self.entrythingy = tk.Entry()
-        self.entrythingy.pack()
+        self.entrythingy.pack(fill="both")
 
         # Create the application variable.
         self.contents = tk.StringVar()
@@ -60,14 +62,14 @@ class log(tk.Frame):
         for i in studLs:
             self.notHere.insert(I, i)
             I += 1
-        self.notHere.pack(side='left')
+        self.notHere.pack(side='left',fill="both")
         self.scroll = tk.Scrollbar()
         self.scroll.pack(side='left', fill='both')
-        self.lableNH.pack(side="left")
+        self.lableNH.pack(side="left",fill="both")
         self.scrollH = tk.Scrollbar()
         self.scrollH.pack(side='right', fill='both')
         self.Here = tk.Listbox()
-        self.Here.pack(side='left')
+        self.Here.pack(side='left',fill="both")
         self.notHere.config(yscrollcommand=self.scroll.set)
         self.scroll.config(command=self.notHere.yview)
         self.Here.config(yscrollcommand=self.scrollH.set)
