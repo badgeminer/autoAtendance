@@ -68,14 +68,20 @@ class log(tk.Frame):
             self.notHere.insert(I, i)
             I += 1
         self.notHere.grid(column=0, row=3)
+      
         self.scroll = tk.Scrollbar()
         self.scroll.grid(column=1, row=3)
+      
         self.lableNH.grid(column=0, row=2)
         self.lableH.grid(column=2, row=2)
+      
         self.scrollH = tk.Scrollbar()
         self.scrollH.grid(column=3, row=3)
+      
         self.Here = tk.Listbox()
         self.Here.grid(column=2, row=3)
+
+      #event bindings
         self.notHere.config(yscrollcommand=self.scroll.set)
         self.scroll.config(command=self.notHere.yview)
         self.Here.config(yscrollcommand=self.scrollH.set)
