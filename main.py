@@ -11,11 +11,12 @@ colorama.init(autoreset=True)
 
 config = configparser.ConfigParser()
 config.read('cfgs.ini')
-max = config['ATTENDANCE']['maxStud']
+max = int(config['ATTENDANCE']['maxStud'])
 
 ver = config['DEFAULT']['version']
 upd = False
-with requests.get(config['UPDATE']['verCheckURL']) as v:
+if config['UPDATE'].getboolean('checkForUpd'):
+  with requests.get(config['UPDATE']['verCheckURL']) as v:
     if ver != v.text:
         upd = True
         mb.showinfo("new version!",f"there is a new version available!\n you are on V{ver}\n V{v.text} is available")
