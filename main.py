@@ -3,14 +3,20 @@ from tkinter import messagebox as mb
 import json,sys,os
 import requests,colorama
 from termcolor import colored
+import configparser
 
 #todo: export to google sheet 
 
 colorama.init(autoreset=True)
 
-ver = "0.0.5"
+config = configparser.ConfigParser()
+config.read('cfgs.ini')
+max = int(config['ATTENDANCE']['maxStud'])
+
+ver = config['DEFAULT']['version']
 upd = False
-with requests.get( "https://raw.githubusercontent.com/badgeminer/autoAtendance/main/Ver") as v:
+if config['UPDATE'].getboolean('checkForUpd'):
+  with requests.get(config['UPDATE']['verCheckURL']) as v:
     if ver != v.text:
         upd = True
         mb.showinfo("new version!",f"there is a new version available!\n you are on V{ver}\n V{v.text} is available")
@@ -25,15 +31,18 @@ class log(tk.Frame):
 
     def __init__(self, master):
         super().__init__(master)
-        self.pack()
-        
+
+        self.rowconfigure(0, weight=2)
+        self.rowconfigure(1, weight=2)
+        self.rowconfigure(4, weight=5)
+        self.columnconfigure(1, weight=1)
         #update button
         if upd:
           self.upd = tk.Button(text="Update", command=self.upd,activebackground="red",background="red")
-          self.upd.pack(side="top")
+          self.upd.grid(column=0, row=1)
           
         self.entrythingy = tk.Entry()
-        self.entrythingy.pack()
+        self.entrythingy.grid(column=0, row=0,columnspan = 4)
 
         # Create the application variable.
         self.contents = tk.StringVar()
@@ -47,21 +56,32 @@ class log(tk.Frame):
         self.entrythingy.bind('<Key-Return>', self.print_contents)
       
         self.notHere = tk.Listbox()
-        self.lableNH = tk.Label(text="<- Not Here\n\nHere ->")
+        self.lableNH = tk.Label(text="Not Here")
+        self.lableH = tk.Label(text="Here")
         self.resetB = tk.Button(text="reset", command=self.reset,activeforeground="red")
-        self.resetB.pack(side="top")
+        if upd:
+          self.resetB.grid(column=2, row=1)
+        else:
+          self.resetB.grid(column=0, row=1,columnspan = 4)
         I = 0
         for i in studLs:
             self.notHere.insert(I, i)
             I += 1
-        self.notHere.pack(side='left')
+        self.notHere.grid(column=0, row=3)
+      
         self.scroll = tk.Scrollbar()
-        self.scroll.pack(side='left', fill='both')
-        self.lableNH.pack(side="left")
+        self.scroll.grid(column=1, row=3)
+      
+        self.lableNH.grid(column=0, row=2)
+        self.lableH.grid(column=2, row=2)
+      
         self.scrollH = tk.Scrollbar()
-        self.scrollH.pack(side='right', fill='both')
+        self.scrollH.grid(column=3, row=3)
+      
         self.Here = tk.Listbox()
-        self.Here.pack(side='left')
+        self.Here.grid(column=2, row=3)
+
+      #event bindings
         self.notHere.config(yscrollcommand=self.scroll.set)
         self.scroll.config(command=self.notHere.yview)
         self.Here.config(yscrollcommand=self.scrollH.set)
@@ -69,24 +89,31 @@ class log(tk.Frame):
         self.Here.bind('<Double-1>', self.move_st_nH)
         self.notHere.bind('<Double-1>', self.move_st_H)
     
-      ##bindings##
-    
+      #######bindings#######
+
+    #move ppl
     def move_st_nH(self, event):
-        entrys = self.Here.get(0, 50)
+      try:
+        entrys = self.Here.get(0, max)
         place = self.Here.get(self.Here.curselection())
         print(colored(f"{place} Here -> NotHere","red"))
         self.Here.delete(entrys.index(place))
         self.notHere.insert(studLs.index(place), place)
+      except tk.TclError:
+        pass
 
     def move_st_H(self, event):
-        entrys = self.notHere.get(0, 50)
+      try:
+        entrys = self.notHere.get(0, max)
         place = self.notHere.get(self.notHere.curselection())
         print(colored(f"{place} NotHere -> Here","green"))
         self.notHere.delete(entrys.index(place))
         self.Here.insert(studLs.index(place), place)
-
+      except tk.TclError:
+        pass
+    #scan and move 
     def print_contents(self, event):
-        entrys = self.notHere.get(0, 50)
+        entrys = self.notHere.get(0, max)
 
         if self.contents.get() in stud.keys():
             try:
@@ -97,12 +124,13 @@ class log(tk.Frame):
             except:
                 print(f"{self.contents.get()}")
         else:
-            print(f"{self.contents.get()}")
+            print(colored(f"Not found:{self.contents.get()}","red"))
         self.contents.set("")
-
+    
+    #reset btn
     def reset(self):
-        self.Here.delete(0, 50)
-        self.notHere.delete(0, 50)
+        self.Here.delete(0, max)
+        self.notHere.delete(0, max)
         print(colored("[*] Here -> NotHere","red"))
         I = 0
         for i in studLs:
@@ -118,7 +146,7 @@ class log(tk.Frame):
       
       print(colored('writing main.py...',"grey"))
       i = 1
-      for chunk in c.iter_content(100,decode_unicode=True):
+      for chunk in c.iter_content(config['DEFAULT']['downloadChunkSize'],decode_unicode=True):
         print(colored(f'writing main chunk {i}...',"grey"))
         f.write(chunk)
         i +=1
@@ -132,7 +160,7 @@ class log(tk.Frame):
       print(colored('writing requirements.txt...',"grey"))
       with open("requirements.txt", 'w') as f:
         i = 0
-        for chunk in r.iter_content(100,decode_unicode=True):
+        for chunk in r.iter_content(config['DEFAULT']['downloadChunkSize'],decode_unicode=True):
           print(colored(f'writing rqs chunk {i}...',"grey"))
           f.write(chunk)
           i+=1
@@ -146,7 +174,7 @@ class log(tk.Frame):
       sys.exit()
 
 
-
+#run
 root = tk.Tk()
 myapp = log(root)
 myapp.master.title(f"Auto Attendance V{ver}")
