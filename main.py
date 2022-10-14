@@ -70,13 +70,13 @@ class log(tk.Frame):
         self.notHere.grid(column=0, row=3)
       
         self.scroll = tk.Scrollbar()
-        self.scroll.grid(column=1, row=3)
+        self.scroll.grid(column=1, row=3,sticky="ns")
       
         self.lableNH.grid(column=0, row=2)
         self.lableH.grid(column=2, row=2)
       
         self.scrollH = tk.Scrollbar()
-        self.scrollH.grid(column=3, row=3)
+        self.scrollH.grid(column=3, row=3,sticky="ns")
       
         self.Here = tk.Listbox()
         self.Here.grid(column=2, row=3)
