@@ -142,7 +142,7 @@ class log(tk.Frame):
       f = open("main.py",mode="w")
       
       print(colored('downloading main.py file...',"grey"))
-      c = requests.get("https://raw.githubusercontent.com/badgeminer/autoAtendance/main/main.py")
+      c = requests.get("https://raw.githubusercontent.com/badgeminer/autoAtendance/RELEASE/main.py")
       
       print(colored('writing main.py...',"grey"))
       i = 1
@@ -155,7 +155,7 @@ class log(tk.Frame):
       f.close()
       
       print(colored('downloading requirements.txt...',"grey"))
-      r = requests.get("https://raw.githubusercontent.com/badgeminer/autoAtendance/main/requirements.txt")
+      r = requests.get("https://raw.githubusercontent.com/badgeminer/autoAtendance/RELEASE/requirements.txt")
       
       print(colored('writing requirements.txt...',"grey"))
       with open("requirements.txt", 'w') as f:
