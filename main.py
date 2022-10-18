@@ -16,7 +16,7 @@ max = int(config['ATTENDANCE']['maxStud'])
 ver = config['DEFAULT']['version']
 upd = False
 if config['UPDATE'].getboolean('checkForUpd'):
-  with requests.get(config['UPDATE']['verCheckURL']) as v:
+  with requests.get(f"https://raw.githubusercontent.com/badgeminer/autoAtendance/{config['UPDATE']['verBranch']}/Ver") as v:
     if ver != v.text:
         upd = True
         mb.showinfo("new version!",f"there is a new version available!\n you are on V{ver}\n V{v.text} is available")
@@ -142,7 +142,7 @@ class log(tk.Frame):
       f = open("main.py",mode="w")
       
       print(colored('downloading main.py file...',"grey"))
-      c = requests.get("https://raw.githubusercontent.com/badgeminer/autoAtendance/main/main.py")
+      c = requests.get(f"https://raw.githubusercontent.com/badgeminer/autoAtendance/{config['UPDATE']['verBranch']}/main.py")
       
       print(colored('writing main.py...',"grey"))
       i = 1
@@ -155,7 +155,7 @@ class log(tk.Frame):
       f.close()
       
       print(colored('downloading requirements.txt...',"grey"))
-      r = requests.get("https://raw.githubusercontent.com/badgeminer/autoAtendance/main/requirements.txt")
+      r = requests.get(f"https://raw.githubusercontent.com/badgeminer/autoAtendance/{config['UPDATE']['verBranch']}/requirements.txt")
       
       print(colored('writing requirements.txt...',"grey"))
       with open("requirements.txt", 'w') as f:
