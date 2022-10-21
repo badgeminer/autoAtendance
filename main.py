@@ -34,6 +34,7 @@ studs = dict.fromkeys(studLs, False)
 config = configparser.ConfigParser()
 config.read('cfgs.ini')
 
+dcs = int(config['DEFAULT']['downloadChunkSize'])
 max = int(config['ATTENDANCE']['maxStud'])
 
 ver = config['DEFAULT']['version']
@@ -200,7 +201,7 @@ class window(tk.Frame):
         print(colored('writing main.py...', "grey"))
         #loop thru main.py download chunks and write to file
         i = 1
-        for chunk in c.iter_content(config['DEFAULT']['downloadChunkSize'],
+        for chunk in c.iter_content(dcs,
                                     decode_unicode=True):
             print(colored(f'writing main chunk {i}...', "grey"))
             f.write(chunk)
@@ -222,7 +223,7 @@ class window(tk.Frame):
             
             #loop thru requests.txt download chunks and write to file
             i = 0
-            for chunk in r.iter_content(config['DEFAULT']['downloadChunkSize'],
+            for chunk in r.iter_content(dcs,
                                         decode_unicode=True):
 
                 print(colored(f'writing rqs chunk {i}...', "grey"))
