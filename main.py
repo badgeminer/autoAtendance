@@ -19,13 +19,26 @@ import json, sys, os
 import requests, colorama
 from termcolor import colored
 import configparser
+import getopt
 
 #inits
 colorama.init(autoreset=True)
 upd = False
+argv = sys.argv[1:]
 
+#cmdline args
+clas = "usrs"
+try:
+    opts, args = getopt.getopt(argv,"hi:o:",["ifile=","ofile="])
+except getopt.GetoptError:
+    print('test.py --class <class>')
+    sys.exit(2)
+for opt, arg in opts:
+    if opt == "--class":
+      clas = arg
+      
 #init students
-stud = json.load(open("usrs.json"))["usrs"]
+stud = json.load(open("usrs.json"))[clas]
 studLs = list(stud.values())
 studLs.sort()
 studs = dict.fromkeys(studLs, False)
