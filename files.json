@@ -1,3 +1,7 @@
 {
-
+  "reqs":[
+  "main.py",
+  "requirements.txt",
+  "vercheck.py"
+  ]
 }
