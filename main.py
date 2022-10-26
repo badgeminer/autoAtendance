@@ -14,14 +14,14 @@
 
 #imports 
 import tkinter as tk
-from tkinter import messagebox as mb
-import json, sys, os
-import requests, colorama
+import json, sys
+import colorama
 from termcolor import colored
 import configparser
 import getopt
 import logging
 import coloredlogs
+import vercheck as updr
 
 #inits
 colorama.init(autoreset=True)
@@ -66,14 +66,7 @@ max = int(config['ATTENDANCE']['maxStud'])
 
 #update checking
 if config['UPDATE'].getboolean('checkForUpd'):
-    try:
-      with requests.get(f"https://raw.githubusercontent.com/badgeminer/autoAtendance/{config['UPDATE']['verBranch']}/Ver") as v:
-        v.raise_for_status()
-        if ver != v.text.replace("\n",""):
-            upd = True
-            mb.showinfo("new version!",f"there is a new version available!\n you are on V{ver}\n V{v.text} is available")
-    except requests.HTTPError as e:
-      logging.error(f"cant retreive latest version {str(e)}")
+    upd =updr.check(config["UPDATE"]["verBranch"],ver)
 
 #define the main window
 class window(tk.Frame):
@@ -91,7 +84,7 @@ class window(tk.Frame):
         #if there is a update add the update btn
         if upd:
             self.upd = tk.Button(text="Update",
-                                 command=self.upd,
+                                 command=updr.upd(config["DEFAULT"]['downloadChunkSize']),
                                  activebackground="red",
                                  background="red")
             self.upd.grid(column=0, row=1, columnspan=4)
@@ -211,27 +204,6 @@ class window(tk.Frame):
             self.notHere.insert(I, i)
             I += 1
 
-    #define update service
-    def upd(self):
-      try:
-        r = requests.get("https://raw.githubusercontent.com/badgeminer/autoAtendance/RELEASE/files.json")
-        r.raise_for_status()
-        files = json.loads(r.text)["reqs"]
-        r.close()
-        for file in files:
-          f = open(file, 'wb')
-          for chunk in r.iter_content(chunk_size=int(config['DEFAULT']["downloadChunkSize"])): 
-            if chunk: # filter out keep-alive new chunks
-              f.write(chunk)
-          f.close()
-          r.close()
-        
-        print(colored('done, ready for restart', "green"))
-        mb.showinfo("updater", "auto Atendance will now restart")
-        sys.exit()
-      except Exception as e:
-        logging.fatal(f"InstallError: {str(e)}, reinstall might be required")
-        sys.exit(137707)
 
 
 #run the app
