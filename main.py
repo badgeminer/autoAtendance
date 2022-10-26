@@ -38,6 +38,7 @@ coloredlogs.install(level='DEBUG',fmt="%(asctime)s [%(levelname)s]: %(message)s"
 ver = config['DEFAULT']['version']
 
 logging.debug("starting system\n\n\n\n")
+updr.chunks = int(config["DEFAULT"]['downloadChunkSize'])
 
 #cmdline args
 clas = "usrs"
@@ -84,7 +85,7 @@ class window(tk.Frame):
         #if there is a update add the update btn
         if upd:
             self.upd = tk.Button(text="Update",
-                                 command=updr.upd(config["DEFAULT"]['downloadChunkSize']),
+                                 command=updr.upd,
                                  activebackground="red",
                                  background="red")
             self.upd.grid(column=0, row=1, columnspan=4)
