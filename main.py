@@ -14,17 +14,33 @@
 
 #imports 
 import tkinter as tk
-from tkinter import messagebox as mb
-import json, sys, os
-import requests, colorama
+import json, sys
+import colorama
 from termcolor import colored
 import configparser
 import getopt
+import logging
+import coloredlogs
+import vercheck as updr
+
 
 #inits
 colorama.init(autoreset=True)
+
 upd = False
 argv = sys.argv[1:]
+
+config = configparser.ConfigParser()
+config.read('cfgs.ini')
+
+logging.basicConfig(format="%(asctime)s [%(levelname)s]: %(message)s", level=logging.DEBUG,filename=config['logging']['file'])
+coloredlogs.install(level='DEBUG',fmt="%(asctime)s [%(levelname)s]: %(message)s",filename=config['logging']['file'])
+
+ver = config['DEFAULT']['version']
+
+logging.debug("starting system\n\n\n\n")
+updr.chunks = int(config["DEFAULT"]['downloadChunkSize'])
+
 
 #cmdline args
 clas = "usrs"
@@ -44,23 +60,16 @@ studLs.sort()
 studs = dict.fromkeys(studLs, False)
 
 #cofigs
-config = configparser.ConfigParser()
-config.read('cfgs.ini')
+
 
 dcs = int(config['DEFAULT']['downloadChunkSize'])
 max = int(config['ATTENDANCE']['maxStud'])
 
-ver = config['DEFAULT']['version']
+
 
 #update checking
 if config['UPDATE'].getboolean('checkForUpd'):
-    with requests.get(f"https://raw.githubusercontent.com/badgeminer/autoAtendance/{config['UPDATE']['verBranch']}/Ver") as v:
-        if ver != v.text:
-            upd = True
-            mb.showinfo(
-                "new version!",
-                f"there is a new version available!\n you are on V{ver}\n V{v.text} is available"
-            )
+    upd =updr.check(config["UPDATE"]["verBranch"],ver)
 
 #define the main window
 class window(tk.Frame):
@@ -78,7 +87,7 @@ class window(tk.Frame):
         #if there is a update add the update btn
         if upd:
             self.upd = tk.Button(text="Update",
-                                 command=self.upd,
+                                 command=updr.upd,
                                  activebackground="red",
                                  background="red")
             self.upd.grid(column=0, row=1, columnspan=4)
@@ -151,8 +160,8 @@ class window(tk.Frame):
 
             self.Here.delete(entrys.index(place))
             self.notHere.insert(studLs.index(place), place)
-        except tk.TclError:
-            pass
+        except tk.TclError as e:
+            logging.warning(f"usrMoveErr: {str(e)}")
 
     #move ppl to here
     def move_st_H(self, event):
@@ -164,8 +173,8 @@ class window(tk.Frame):
 
             self.notHere.delete(entrys.index(place))
             self.Here.insert(studLs.index(place), place)
-        except tk.TclError:
-            pass
+        except tk.TclError as e:
+            logging.warning(f"usrMoveErr: {str(e)}")
 
     #scan and move
     #runs on <enter> pressed in input box
@@ -175,16 +184,12 @@ class window(tk.Frame):
         #get if student is valid
         if self.contents.get() in stud.keys():
             try:
-                print(
-                    colored(
-                        f"{self.contents.get()}:{stud[self.contents.get()]} NotHere -> Here",
-                        "green"))
                 self.notHere.delete(entrys.index(stud[self.contents.get()]))
                 self.Here.insert(studLs.index(stud[self.contents.get()]),
                                  stud[self.contents.get()])
-            except:
-                #do nothing this is ok
-                pass
+                print(colored(f"{self.contents.get()}:{stud[self.contents.get()]} NotHere -> Here","green"))
+            except Exception as e:
+                logging.warning(f"problem with moving student: {str(e)}")
         else:
             print(colored(f"Not found:{self.contents.get()}", "red"))
         self.contents.set("")
@@ -198,64 +203,18 @@ class window(tk.Frame):
 
         I = 0
         for i in studLs:
+            logging.debug(f"moving {str(i)} to id_{str(I)}")
             self.notHere.insert(I, i)
             I += 1
 
-    #define update service
-    def upd(self):
-        print(colored('loading updater...', "grey"))
-        f = open("main.py", mode="w")
-
-        print(colored('downloading main.py file...', "grey"))
-        c = requests.get(
-            f"https://raw.githubusercontent.com/badgeminer/autoAtendance/{config['UPDATE']['verBranch']}/main.py"
-        )
-
-        print(colored('writing main.py...', "grey"))
-        #loop thru main.py download chunks and write to file
-        i = 1
-        for chunk in c.iter_content(dcs,
-                                    decode_unicode=True):
-            print(colored(f'writing main chunk {i}...', "grey"))
-            f.write(chunk)
-            i += 1
-
-        #save file
-        print(colored('saving main.py...', "grey"))
-        f.close()
-
-        #begin downloading requirements.txt
-        print(colored('downloading requirements.txt...', "grey"))
-        r = requests.get(
-            f"https://raw.githubusercontent.com/badgeminer/autoAtendance/{config['UPDATE']['verBranch']}/requirements.txt"
-        )
-
-        print(colored('writing requirements.txt...', "grey"))
-
-        with open("requirements.txt", 'w') as f:
-            
-            #loop thru requests.txt download chunks and write to file
-            i = 0
-            for chunk in r.iter_content(dcs,
-                                        decode_unicode=True):
-
-                print(colored(f'writing rqs chunk {i}...', "grey"))
-                f.write(chunk)
-                i += 1
-
-            print(colored('saving reqirements.py', "grey"))
-
-        #install requirements
-        print(colored('installing requirements...', "grey"))
-        os.system('python -m pip install -r requirements.txt')
-
-        print(colored('done, ready for restart', "green"))
-        mb.showinfo("updater", "auto Atendance will now restart")
-        sys.exit()
 
 
 #run the app
 root = tk.Tk()
 myapp = window(root)
 myapp.master.title(f"Auto Attendance V{ver}")
-myapp.mainloop()
+try:
+  myapp.mainloop()
+except Exception as e:
+  logging.fatal(str(e))
+logging.debug("shuting down")
