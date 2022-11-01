@@ -23,7 +23,6 @@ import logging
 import coloredlogs
 import vercheck as updr
 
-
 #inits
 colorama.init(autoreset=True)
 
@@ -40,7 +39,6 @@ ver = config['DEFAULT']['version']
 
 logging.debug("starting system\n\n\n\n")
 updr.chunks = int(config["DEFAULT"]['downloadChunkSize'])
-
 
 #cmdline args
 clas = "usrs"
