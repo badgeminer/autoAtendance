@@ -1,5 +1,7 @@
 import requests,logging,sys,json
+
 chunks = 100
+
 def check(branch,cver):  
   try:
     with requests.get(f"https://raw.githubusercontent.com/badgeminer/autoAtendance/{branch}/Ver") as v:
@@ -10,7 +12,9 @@ def check(branch,cver):
   except requests.HTTPError as e:
       logging.error(f"cant retreive latest version {str(e)}")
 
+
 def upd():
+
   try:
     r = requests.get("https://raw.githubusercontent.com/badgeminer/autoAtendance/RELEASE/files.json")
     r.raise_for_status()

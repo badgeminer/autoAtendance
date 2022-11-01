@@ -2,6 +2,7 @@
   "reqs":[
   "main.py",
   "requirements.txt",
-  "vercheck.py"
+  "vercheck.py",
+  "gs.py"
   ]
 }
