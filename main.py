@@ -22,6 +22,7 @@ import getopt
 import logging
 import coloredlogs
 import vercheck as updr
+import gs
 
 
 #inits
@@ -41,6 +42,8 @@ ver = config['DEFAULT']['version']
 logging.debug("starting system\n\n\n\n")
 updr.chunks = int(config["DEFAULT"]['downloadChunkSize'])
 
+if config["sheets"].getboolean('enabled'):
+  gs.init(config["sheets"]["id"])
 
 #cmdline args
 clas = "usrs"
