@@ -63,12 +63,13 @@ studLs = list(stud.values())
 studLs.sort()
 studs = dict.fromkeys(studLs, False)
 
+
 #cofigs
 
 
 dcs = int(config['DEFAULT']['downloadChunkSize'])
 max = int(config['ATTENDANCE']['maxStud'])
-
+sync = config['sheets'].getboolean('enabled')
 
 
 #update checking
@@ -118,10 +119,16 @@ class window(tk.Frame):
         #setup labels
         self.lableNH = tk.Label(text="Not Here")
         self.lableH = tk.Label(text="Here")
+
+        #setup btns
         self.resetB = tk.Button(text="reset", command=self.reset, activeforeground="red")
+        self.syncb = tk.Button(text="sync", command=self.sync, activeforeground="blue")
 
         #add reset button to grid
         self.resetB.grid(column=2, row=1)
+
+        #add sync
+        self.syncb.grid(column=0, row=1)
 
         #add entry box to grid
         self.entrythingy.grid(column=0, row=0, columnspan=4)
@@ -164,6 +171,7 @@ class window(tk.Frame):
 
             self.Here.delete(entrys.index(place))
             self.notHere.insert(studLs.index(place), place)
+            studs[place] = False
         except tk.TclError as e:
             logging.warning(f"usrMoveErr: {str(e)}")
 
@@ -177,6 +185,7 @@ class window(tk.Frame):
 
             self.notHere.delete(entrys.index(place))
             self.Here.insert(studLs.index(place), place)
+            studs[place] = True
         except tk.TclError as e:
             logging.warning(f"usrMoveErr: {str(e)}")
 
@@ -191,6 +200,7 @@ class window(tk.Frame):
                 self.notHere.delete(entrys.index(stud[self.contents.get()]))
                 self.Here.insert(studLs.index(stud[self.contents.get()]),
                                  stud[self.contents.get()])
+                studs[stud[self.contents.get()]] = True
                 print(colored(f"{self.contents.get()}:{stud[self.contents.get()]} NotHere -> Here","green"))
             except Exception as e:
                 logging.warning(f"problem with moving student: {str(e)}")
@@ -210,6 +220,12 @@ class window(tk.Frame):
             logging.debug(f"moving {str(i)} to id_{str(I)}")
             self.notHere.insert(I, i)
             I += 1
+            studs[i] = False
+
+    def sync(self):
+      if sync:
+        gs.build_sheet(studs)
+      
 
 
 
