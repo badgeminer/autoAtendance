@@ -27,8 +27,8 @@ def upd():
       for chunk in r.iter_content(chunk_size=int(chunks)): 
         if chunk: # filter out keep-alive new chunks
               f.write(chunk)
-        f.close()
-        r.close()  
+      f.close()
+      r.close()  
       print('done, ready for restart', "green")
       sys.exit()
   except Exception as e:
