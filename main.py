@@ -1,4 +1,4 @@
-########################
+  ########################
 #   Auto Attendance    #
 #    By Badgeminer2    #
 # a open sorce project #
@@ -42,7 +42,7 @@ ver = config['DEFAULT']['version']
 
 logging.debug("starting system\n\n\n\n")
 updr.chunks = int(config["DEFAULT"]['downloadChunkSize'])
-
+updr.branch = config["UPDATE"]['verBranch']
 if config["sheets"].getboolean('enabled'):
   gs.init(config["sheets"]["id"])
 
