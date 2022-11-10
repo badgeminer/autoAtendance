@@ -23,7 +23,7 @@ def upd():
     r.close()
     for file in files:
       f = open(file, 'wb')
-      requests.get(f"https://raw.githubusercontent.com/badgeminer/autoAtendance/{branch}/{file}")
+      r = requests.get(f"https://raw.githubusercontent.com/badgeminer/autoAtendance/{branch}/{file}")
       for chunk in r.iter_content(chunk_size=int(chunks)): 
         if chunk: # filter out keep-alive new chunks
               f.write(chunk)
