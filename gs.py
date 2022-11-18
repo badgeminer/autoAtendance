@@ -48,7 +48,8 @@ def write():
     )
     response = request.execute()
 
-
+def build_sheet(studs):
+  pass #TODO: make this
 
 
 if __name__ == '__main__':
