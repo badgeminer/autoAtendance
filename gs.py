@@ -1,5 +1,6 @@
 from __future__ import print_function
 
+import logging
 
 from googleapiclient.discovery import build
 
@@ -30,7 +31,7 @@ def read():
     else:
         return values
 
-def write():
+def write(built:dict):
     service = build('sheets', 'v4', credentials=credentials)
 
     # Call the Sheets API
@@ -40,18 +41,26 @@ def write():
         range="data!a2",
         valueInputOption="USER_ENTERED",
         insertDataOption="INSERT_ROWS",
-        body={
+        body=built
+    )
+    try:
+        response = request.execute()
+    except BaseException as e:
+        logging.critical(str(e))
+
+def build_sheet(studs: dict()):
+    body={
             "values":[
-                ["e"]
+                [[]]
             ]
         }
-    )
-    response = request.execute()
+    stds = list(studs.keys())
+    stds.sort()
+    for s in stds:
+        body["values"][0].append(str(studs[s]))
+    write(body)
 
-def build_sheet(studs):
-  pass #TODO: make this
 
 
 if __name__ == '__main__':
-    #read()
-    write()
+    pass
