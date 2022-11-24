@@ -7,3 +7,4 @@ poetry.lock
 .replit
 latest.log
 *.log
+keys.json
