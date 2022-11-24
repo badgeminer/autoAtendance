@@ -23,6 +23,8 @@ import getopt
 import logging
 import coloredlogs
 import vercheck as updr
+#from ctypes import windll
+import platform
 
 import gs
 
@@ -175,6 +177,7 @@ class MyTitleBar(tk.Frame):
         
     def on_minimize(self):
         print('TODO: minimize')
+    
                 
     def on_other(self):
         print('TODO: other')
@@ -337,12 +340,19 @@ class window(ttk.Frame):
 
 
 
+
+
+
 #run the app
 root = tk.Tk()
 style = darkstyle(root)
 root.overrideredirect(True)
+root.attributes("-topmost", True)
 title_bar = MyTitleBar(root) 
-root.geometry('355x260')
+if platform.system() == "Windows":
+  root.geometry('285x260')
+else:
+  root.geometry('355x260')
 root.configure(background='#3d3d3d')
 myapp = window(root)
 myapp.master.title(f"Auto Attendance V{ver}")
