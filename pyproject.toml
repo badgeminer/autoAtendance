@@ -14,6 +14,7 @@ google-api-python-client = "^2.63.0"
 colorama = "^0.4.5"
 termcolor = "^2.0.1"
 coloredlogs = "^15.0.1"
+xds-protos = "^0.0.11"
 
 [tool.poetry.dev-dependencies]
 debugpy = "^1.6.2"

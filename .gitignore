@@ -6,3 +6,5 @@ poetry.lock
 .breakpoints
 .replit
 latest.log
+*.log
+keys.json
