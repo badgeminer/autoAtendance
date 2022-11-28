@@ -23,7 +23,7 @@ import getopt
 import logging
 import coloredlogs
 import vercheck as updr
-#from ctypes import windll
+
 import platform
 
 import gs
