@@ -3,7 +3,16 @@ import requests,logging,sys,json
 branch = "RELEASE"
 chunks = 100
 
-def check(branch,cver):  
+def check(branch:str,cver:str) -> bool:  
+  """_summary_
+
+  Args:
+      branch (str): branch to check
+      cver (str): curent version
+
+  Returns:
+      bool: update available
+  """
   try:
     with requests.get(f"https://raw.githubusercontent.com/badgeminer/autoAtendance/{branch}/Ver") as v:
         v.raise_for_status()
@@ -15,7 +24,6 @@ def check(branch,cver):
 
 
 def upd():
-
   try:
     r = requests.get("https://raw.githubusercontent.com/badgeminer/autoAtendance/RELEASE/files.json")
     r.raise_for_status()
