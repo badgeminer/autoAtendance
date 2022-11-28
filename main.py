@@ -23,7 +23,8 @@ import getopt
 import logging
 import coloredlogs
 import vercheck as updr
-
+from tkinter.simpledialog import askstring
+#from ctypes import windll
 import platform
 
 import gs
@@ -75,7 +76,8 @@ studs = dict.fromkeys(studLs, False)
 dcs = int(config['DEFAULT']['downloadChunkSize'])
 max = int(config['ATTENDANCE']['maxStud'])
 sync = config['sheets'].getboolean('enabled')
-
+safetoclose = not config['DEFAULT'].getboolean('closeprot')
+cpsw = config['DEFAULT']['closepsw']
 
 #update checking
 if config['UPDATE'].getboolean('checkForUpd'):
@@ -98,6 +100,17 @@ BUTTON_BACKGROUND_HOVER = 'red'
 # window colors
 WINDOW_BACKGROUND = "white"
 WINDOW_FOREGROUND = "black"
+
+def close(*args,**kwargs):
+    if safetoclose:
+        root.destroy()
+    else:
+        psw = askstring("enter the pasword to close", "enter the pasword to close auto attendance")
+        if psw == cpsw:
+            root.destroy()
+        else:
+            tk.messagebox.showerror("invalid psw","the psw entered is invalid")
+
 
 def darkstyle(root):
     ''' Return a dark style to the window'''
@@ -140,15 +153,15 @@ class MyTitleBar(tk.Frame):
                                     
         self.set_title("Auto Attendance V"+ver)
 
-        self.close_button = MyButton(self, text='x', command=master.destroy)
-        self.minimize_button = MyButton(self, text='-', command=self.on_minimize,afg=BUTTON_min_FOREGROUND_HOVER,abg=BUTTON_min_BACKGROUND_HOVER)
+        self.close_button = MyButton(self, text='x', command=close)
+        #self.minimize_button = MyButton(self, text='-', command=self.on_minimize,afg=BUTTON_min_FOREGROUND_HOVER,abg=BUTTON_min_BACKGROUND_HOVER)
         self.other_button = MyButton(self, text='?', command=self.on_other)
                          
         self.grid(column=0, row=0, sticky='ew',columnspan=4)
         self.title_label.grid(column=0, row=0,columnspan=4)
         self.close_button.grid(column=7, row=0,sticky='ew')
-        self.minimize_button.grid(column=6, row=0,sticky='w')
-        self.other_button.grid(column=5, row=0,sticky='w')
+        #self.minimize_button.grid(column=6, row=0,sticky='w')
+        self.other_button.grid(column=5, row=0,sticky="w")
 
         self.bind("<ButtonPress-1>", self.on_press)
         self.bind("<ButtonRelease-1>", self.on_release)
