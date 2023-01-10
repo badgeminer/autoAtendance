@@ -74,11 +74,11 @@ args = parser.parse_args()
 clas = args.useclass
 logging.log(25,f"[main.py]using class {clas}")
 clases = []
-for i in json.load(open("usrs.json")).keys():
+for i in json.load(open("usrs.json",encoding="utf-8")).keys():
     clases.append(i)
 #init students
 try:
-    stud = json.load(open("usrs.json"))[clas]
+    stud = json.load(open("usrs.json",encoding="utf-8"))[clas]
 except BaseException as e:
     logging.critical(f"[main.py]Invalid class:{clas}")
     logging.critical(f"[main.py]{traceback.format_exc()}")
@@ -140,7 +140,6 @@ def close(*args,**kwargs):
         else:
             tk.messagebox.showerror("invalid psw","the psw entered is invalid")
             logging.warning("[main.py]invalid close pasword")
-
 
 
 class MyButton(tk.Button):
@@ -247,8 +246,13 @@ class window(tk.Frame):
         self.tbz = {}
         #self.tabs.add(self.tb1,text="test")
         for c in clases:
+            if c == "usrs":
+                continue
             self.tbz[c] = ttk.Frame(self.tabs)
             self.tabs.add(self.tbz[c],text=c)
+            s = json.load(open("usrs.json",encoding="utf-8"))[c]
+            
+
 
         #if there is a update add the update btn
         if upd:
@@ -413,7 +417,7 @@ class window(tk.Frame):
         del studs
         clas = self.tabs.tab(self.tabs.select(), "text")
         try:
-            stud = json.load(open("usrs.json"))[clas]
+            stud = json.load(open("usrs.json",encoding="utf-8"))[clas]
             if "38302008" in stud.keys():
                 stud["38302008"] = stud["38302008"]+"⌁"
         except BaseException as e:
