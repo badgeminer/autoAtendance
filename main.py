@@ -27,6 +27,7 @@ from tkinter.simpledialog import askstring
 import platform
 import gc
 import verboselogs
+import time
 
 
 import gs
@@ -185,11 +186,12 @@ class MyTitleBar(tk.Frame):
         self.close_button = MyButton(self, text='x', command=close)
         #self.minimize_button = MyButton(self, text='-', command=self.on_minimize,afg=BUTTON_min_FOREGROUND_HOVER,abg=BUTTON_min_BACKGROUND_HOVER)
         self.other_button = MyButton(self, text='?', command=self.on_other)
+        self.edit_btn = MyButton(self,"🖉",self.on_other)
                          
         self.grid(column=0, row=0, sticky='ew',columnspan=4)
         self.title_label.grid(column=0, row=0,columnspan=4)
         self.close_button.grid(column=7, row=0,sticky='ew')
-        #self.minimize_button.grid(column=6, row=0,sticky='w')
+        self.edit_btn.grid(column=6, row=0,sticky='w')
         self.other_button.grid(column=5, row=0,sticky="w")
 
         self.bind("<ButtonPress-1>", self.on_press)
@@ -342,13 +344,13 @@ class window(tk.Frame):
         try:
             entrys = self.Here.get(0, max)
             place = self.Here.get(self.Here.curselection())
-            logging.log(15,f"[main.py]{place} Here -> NotHere")
+            logging.log(15,f"[main.py]<⎌>{place} Here -> NotHere")
 
             self.Here.delete(entrys.index(place))
             self.notHere.insert(studLs.index(place), place)
             studs[place] = False
         except tk.TclError as e:
-            logging.error(f"[main.py]usrMoveErr: {str(e)}")
+            logging.error(f"[main.py]<⎌>usrMoveErr: {str(e)}")
 
     #move ppl to here
     def move_st_H(self, event):
@@ -356,13 +358,13 @@ class window(tk.Frame):
             entrys = self.notHere.get(0, max)
             place = self.notHere.get(self.notHere.curselection())
 
-            logging.log(15,f"[main.py]{place} NotHere -> Here")
+            logging.log(15,f"[main.py]<⎌>{place} NotHere -> Here")
 
             self.notHere.delete(entrys.index(place))
             self.Here.insert(studLs.index(place), place)
             studs[place] = True
         except tk.TclError as e:
-            logging.error(f"[main.py]usrMoveErr: {str(e)}")
+            logging.error(f"[main.py]<⎌>usrMoveErr: {str(e)}")
 
     #scan and move
     #runs on <enter> pressed in input box
@@ -376,11 +378,11 @@ class window(tk.Frame):
                 self.Here.insert(studLs.index(stud[self.contents.get()]),
                                  stud[self.contents.get()])
                 studs[stud[self.contents.get()]] = True
-                logging.log(15,f"[main.py]{self.contents.get()}:{stud[self.contents.get()]} NotHere -> Here")
+                logging.log(15,f"[main.py]<⎌>{self.contents.get()}:{stud[self.contents.get()]} NotHere -> Here")
             except Exception as e:
-                logging.warning(f"[main.py]problem with moving student: {str(e)}")
+                logging.warning(f"[main.py]<⎌>problem with moving student: {str(e)}")
         else:
-            logging.warning(f"[main.py]Not found:{self.contents.get()}")
+            logging.warning(f"[main.py]<⎌>Not found:{self.contents.get()}")
         self.contents.set("")
 
     #reset btn
@@ -388,11 +390,11 @@ class window(tk.Frame):
     def reset(self):
         self.Here.delete(0, max)
         self.notHere.delete(0, max)
-        logging.log(15,f"[main.py]<*> Here -> NotHere")
+        logging.log(15,f"[main.py]<⎌> Here -> NotHere")
 
         I = 0
         for i in studLs:
-            logging.log(5,f"[main.py]moving {str(i)} to id_{str(I)}")
+            logging.log(5,f"[main.py]<⎌>moving {str(i)} to id_{str(I)}")
             self.notHere.insert(I, i)
             I += 1
             studs[i] = False
@@ -421,17 +423,20 @@ class window(tk.Frame):
             if "38302008" in stud.keys():
                 stud["38302008"] = stud["38302008"]+"⌁"
         except BaseException as e:
-            logging.critical(f"[main.py]Invalid class:{clas}")
-            logging.critical(f"[main.py]{traceback.format_exc()}")
+            tb = traceback.format_exc()
+            logging.critical(f"[main.py]<⎘>Invalid class:{clas}")
+            logging.critical(f"[main.py]{tb}")
             logging.error("[main.py]shuting down...")
             logging.log(5,"[main.py]cleaned up "+str(gc.collect())+" objects")
-            logging.error("[main.py]crashed with exit code -5")
-            sys.exit(-5)
+            logging.error("[main.py]crashed with exit code -15")
+            import report
+            report.report(tb)
+            sys.exit(-15)
         studLs = list(stud.values())
         studLs.sort()
         studs = dict.fromkeys(studLs, False)
         self.reset()
-        logging.log(15,"[main.py] swaped classes")
+        logging.log(15,"[main.py]<⎘> swaped classes")
       
 
 
@@ -458,9 +463,20 @@ myapp.master.title(f"Auto Attendance V{ver}")
 try:
   logging.log(5,"[main.py] run main loop")
   myapp.mainloop()
-except Exception as e:
-  logging.fatal(str(e))
-  logging.critical(f"[main.py]{traceback.format_exc()}")
-logging.info("[main.py]shuting down...")
-logging.log(5,"[main.py]cleaned up "+str(gc.collect())+" objects")
-logging.log(35,"[main.py]done")
+except BaseException as e:
+    try:
+        time.sleep(0.5)
+        root.overrideredirect(False)
+        tb = traceback.format_exc()
+        logging.fatal(str(e))
+        logging.critical(f"[main.py]{tb}")
+        import report
+        report.report(tb)
+    except:
+        pass
+try:
+    logging.info("[main.py]shuting down...")
+    logging.log(5,"[main.py]cleaned up "+str(gc.collect())+" objects")
+    logging.log(35,"[main.py]done")
+except:
+        pass

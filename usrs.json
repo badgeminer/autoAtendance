@@ -1,6 +1,44 @@
 {
   "usrs":{
-    "38302008":"Ben",
-    "0":"test"
+  },
+  "9-1":{
+    "38106006":"Ambury Ryan",
+    "38355002":"Anderson Eamon",
+    "38246004":"Bryant Alain",
+    "38302504":"Budd Elisabeth",
+    "38139005":"Campbell Troy",
+    "1100052812":"Cheveldeoff Sarah",
+    "38115502":"Christianson April",
+    "39005501":"Clements Paula",
+    "38171010":"Daradich Talan",
+    "58187501":"Fatima Mariam",
+    "38165004":"Flaman Teigen",
+    "68151502":"Forgsberg Ashtynn",
+    "38302008":"Hunt Ben",
+    "38179503":"Jones London",
+    "38129510":"Kravets Marlo",
+    "1100051456":"Leamy Taylor",
+    "38095509":"McEachern Chelsea",
+    "1100001532":"Monaghan Finnegan",
+    "38128006":"Oviatt Jacob",
+    "1100055809":"Perry Xavier",
+    "38179007":"Perschon Grayson",
+    "58304501":"Porter Annette",
+    "28245001":"Ross Ethan",
+    "1100025298":"Sharma Ksitij",
+    "38354505":"Sloane Robin",
+    "38309504":"Steele Lauren",
+    "38274008":"Sutherland Ryan",
+    "38077006":"Wiehler Conner"
+  },
+  "stay-in": {
+    "38302008":"Hunt Ben"
+  },
+  "9-2":{
+    "37347002":"Crowshoe Shade"
+  },
+  "dev Test":{
+    "01":"01",
+    "02":"02"
   }
 }

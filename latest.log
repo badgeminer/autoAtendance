@@ -1,437 +1,893 @@
-2023-01-09 12:45:08,188 [DEBUG]: [main.py]starting system
-2023-01-09 12:45:08,188 [VERBOSE]: [main.py]using version v0.1.0
-2023-01-09 12:45:08,203 [SPAM]: [main.py]loading command-line arguments
-2023-01-09 12:45:08,206 [NOTICE]: [main.py]using class usrs
-2023-01-09 12:45:08,213 [DEBUG]: [main.py]loaded class
-2023-01-09 12:45:08,213 [SPAM]: [main.py]reading configs
-2023-01-09 12:45:38,744 [DEBUG]: [main.py]starting system
-2023-01-09 12:45:38,744 [VERBOSE]: [main.py]using version v0.1.1
-2023-01-09 12:45:38,749 [SPAM]: [main.py]loading command-line arguments
-2023-01-09 12:45:38,756 [NOTICE]: [main.py]using class usrs
-2023-01-09 12:45:38,758 [DEBUG]: [main.py]loaded class
-2023-01-09 12:45:38,759 [SPAM]: [main.py]reading configs
-2023-01-09 12:45:38,761 [DEBUG]: [main.py] configs read
-2023-01-09 12:45:38,761 [VERBOSE]: [main.py]checking for updates
-2023-01-09 12:45:38,763 [VERBOSE]: [main.py] loading window
-2023-01-09 12:45:38,867 [SPAM]: [main.py] root init
-2023-01-09 12:45:38,867 [SPAM]: [main.py] root configs
-2023-01-09 12:45:38,873 [SPAM]: [main.py] title bar init
-2023-01-09 12:45:38,982 [SPAM]: [main.py] init window size
-2023-01-09 12:45:38,982 [SPAM]: [main.py] contents init
-2023-01-09 12:45:39,010 [SPAM]: [main.py] run main loop
-2023-01-09 12:45:39,012 [VERBOSE]: [main.py]<*> Here -> NotHere
-2023-01-09 12:45:39,013 [SPAM]: [main.py]moving Ben\u2301 to id_0
-2023-01-09 12:45:39,014 [SPAM]: [main.py]moving test to id_1
-2023-01-09 12:45:39,014 [VERBOSE]: [main.py] swaped classes
-2023-01-09 12:45:42,878 [INFO]: [main.py]shuting down...
-2023-01-09 12:45:42,915 [SPAM]: [main.py]cleaned up 0 objects
-2023-01-09 12:45:42,917 [SUCCESS]: [main.py]done
-2023-01-09 12:45:52,413 [DEBUG]: [main.py]starting system
-2023-01-09 12:45:52,415 [VERBOSE]: [main.py]using version v0.1.1
-2023-01-09 12:45:52,416 [SPAM]: [main.py]loading command-line arguments
-2023-01-09 12:45:52,423 [NOTICE]: [main.py]using class usrs
-2023-01-09 12:45:52,432 [DEBUG]: [main.py]loaded class
-2023-01-09 12:45:52,432 [SPAM]: [main.py]reading configs
-2023-01-09 12:45:52,434 [DEBUG]: [main.py] configs read
-2023-01-09 12:45:52,434 [VERBOSE]: [main.py]checking for updates
-2023-01-09 12:45:52,436 [VERBOSE]: [main.py] loading window
-2023-01-09 12:45:52,541 [SPAM]: [main.py] root init
-2023-01-09 12:45:52,542 [SPAM]: [main.py] root configs
-2023-01-09 12:45:52,544 [SPAM]: [main.py] title bar init
-2023-01-09 12:45:52,652 [SPAM]: [main.py] init window size
-2023-01-09 12:45:52,653 [SPAM]: [main.py] contents init
-2023-01-09 12:45:52,681 [SPAM]: [main.py] run main loop
-2023-01-09 12:45:52,685 [VERBOSE]: [main.py]<*> Here -> NotHere
-2023-01-09 12:45:52,686 [SPAM]: [main.py]moving Ambury Ryan to id_0
-2023-01-09 12:45:52,687 [SPAM]: [main.py]moving Anderson Eamon to id_1
-2023-01-09 12:45:52,688 [SPAM]: [main.py]moving Bryant Alain to id_2
-2023-01-09 12:45:52,689 [SPAM]: [main.py]moving Budd Elisabeth to id_3
-2023-01-09 12:45:52,690 [SPAM]: [main.py]moving Campbell Troy to id_4
-2023-01-09 12:45:52,691 [SPAM]: [main.py]moving Cheveldeoff Sarah to id_5
-2023-01-09 12:45:52,691 [SPAM]: [main.py]moving Christianson April to id_6
-2023-01-09 12:45:52,692 [SPAM]: [main.py]moving Clements Paula to id_7
-2023-01-09 12:45:52,693 [SPAM]: [main.py]moving Daradich Talan to id_8
-2023-01-09 12:45:52,694 [SPAM]: [main.py]moving Fatima Mariam to id_9
-2023-01-09 12:45:52,695 [SPAM]: [main.py]moving Flaman Teigen to id_10
-2023-01-09 12:45:52,696 [SPAM]: [main.py]moving Forgsberg Ashtynn to id_11
-2023-01-09 12:45:52,697 [SPAM]: [main.py]moving Hunt Ben\u2301 to id_12
-2023-01-09 12:45:52,698 [SPAM]: [main.py]moving Jones London to id_13
-2023-01-09 12:45:52,699 [SPAM]: [main.py]moving Kravets Marlo to id_14
-2023-01-09 12:45:52,700 [SPAM]: [main.py]moving Leamy Taylor to id_15
-2023-01-09 12:45:52,701 [SPAM]: [main.py]moving McEachern Chelsea to id_16
-2023-01-09 12:45:52,702 [SPAM]: [main.py]moving Monaghan Finnegan to id_17
-2023-01-09 12:45:52,703 [SPAM]: [main.py]moving Oviatt Jacob to id_18
-2023-01-09 12:45:52,704 [SPAM]: [main.py]moving Perry Xavier to id_19
-2023-01-09 12:45:52,705 [SPAM]: [main.py]moving Perschon Grayson to id_20
-2023-01-09 12:45:52,706 [SPAM]: [main.py]moving Porter Annette to id_21
-2023-01-09 12:45:52,707 [SPAM]: [main.py]moving Ross Ethan to id_22
-2023-01-09 12:45:52,708 [SPAM]: [main.py]moving Sharma Ksitij to id_23
-2023-01-09 12:45:52,709 [SPAM]: [main.py]moving Sloane Robin to id_24
-2023-01-09 12:45:52,710 [SPAM]: [main.py]moving Steele Lauren to id_25
-2023-01-09 12:45:52,711 [SPAM]: [main.py]moving Sutherland Ryan to id_26
-2023-01-09 12:45:52,712 [SPAM]: [main.py]moving Wiehler Conner to id_27
-2023-01-09 12:45:52,713 [VERBOSE]: [main.py] swaped classes
-2023-01-09 12:45:55,783 [VERBOSE]: [main.py]<*> Here -> NotHere
-2023-01-09 12:45:55,783 [SPAM]: [main.py]moving Hunt Ben\u2301 to id_0
-2023-01-09 12:45:55,785 [VERBOSE]: [main.py] swaped classes
-2023-01-09 12:45:57,550 [INFO]: [main.py]shuting down...
-2023-01-09 12:45:57,583 [SPAM]: [main.py]cleaned up 0 objects
-2023-01-09 12:45:57,584 [SUCCESS]: [main.py]done
-2023-01-09 12:46:25,171 [DEBUG]: [main.py]starting system
-2023-01-09 12:46:25,171 [VERBOSE]: [main.py]using version v0.1.1
-2023-01-09 12:46:25,187 [SPAM]: [main.py]loading command-line arguments
-2023-01-09 12:46:25,194 [NOTICE]: [main.py]using class usrs
-2023-01-09 12:46:37,819 [DEBUG]: [main.py]starting system
-2023-01-09 12:46:37,835 [VERBOSE]: [main.py]using version v0.1.1
-2023-01-09 12:46:37,837 [SPAM]: [main.py]loading command-line arguments
-2023-01-09 12:46:37,844 [NOTICE]: [main.py]using class usrs
-2023-01-09 12:46:37,854 [DEBUG]: [main.py]loaded class
-2023-01-09 12:46:37,856 [SPAM]: [main.py]reading configs
-2023-01-09 12:46:37,857 [DEBUG]: [main.py] configs read
-2023-01-09 12:46:37,858 [VERBOSE]: [main.py]checking for updates
-2023-01-09 12:46:37,859 [VERBOSE]: [main.py] loading window
-2023-01-09 12:46:37,975 [SPAM]: [main.py] root init
-2023-01-09 12:46:37,976 [SPAM]: [main.py] root configs
-2023-01-09 12:46:37,978 [SPAM]: [main.py] title bar init
-2023-01-09 12:46:38,086 [SPAM]: [main.py] init window size
-2023-01-09 12:46:38,087 [SPAM]: [main.py] contents init
-2023-01-09 12:46:38,114 [SPAM]: [main.py] run main loop
-2023-01-09 12:46:38,116 [VERBOSE]: [main.py]<*> Here -> NotHere
-2023-01-09 12:46:38,117 [VERBOSE]: [main.py] swaped classes
-2023-01-09 12:46:40,854 [VERBOSE]: [main.py]<*> Here -> NotHere
-2023-01-09 12:46:40,854 [SPAM]: [main.py]moving Ambury Ryan to id_0
-2023-01-09 12:46:40,854 [SPAM]: [main.py]moving Anderson Eamon to id_1
-2023-01-09 12:46:40,857 [SPAM]: [main.py]moving Bryant Alain to id_2
-2023-01-09 12:46:40,858 [SPAM]: [main.py]moving Budd Elisabeth to id_3
-2023-01-09 12:46:40,859 [SPAM]: [main.py]moving Campbell Troy to id_4
-2023-01-09 12:46:40,860 [SPAM]: [main.py]moving Cheveldeoff Sarah to id_5
-2023-01-09 12:46:40,861 [SPAM]: [main.py]moving Christianson April to id_6
-2023-01-09 12:46:40,862 [SPAM]: [main.py]moving Clements Paula to id_7
-2023-01-09 12:46:40,863 [SPAM]: [main.py]moving Daradich Talan to id_8
-2023-01-09 12:46:40,863 [SPAM]: [main.py]moving Fatima Mariam to id_9
-2023-01-09 12:46:40,864 [SPAM]: [main.py]moving Flaman Teigen to id_10
-2023-01-09 12:46:40,865 [SPAM]: [main.py]moving Forgsberg Ashtynn to id_11
-2023-01-09 12:46:40,866 [SPAM]: [main.py]moving Hunt Ben\u2301 to id_12
-2023-01-09 12:46:40,868 [SPAM]: [main.py]moving Jones London to id_13
-2023-01-09 12:46:40,868 [SPAM]: [main.py]moving Kravets Marlo to id_14
-2023-01-09 12:46:40,869 [SPAM]: [main.py]moving Leamy Taylor to id_15
-2023-01-09 12:46:40,870 [SPAM]: [main.py]moving McEachern Chelsea to id_16
-2023-01-09 12:46:40,871 [SPAM]: [main.py]moving Monaghan Finnegan to id_17
-2023-01-09 12:46:40,872 [SPAM]: [main.py]moving Oviatt Jacob to id_18
-2023-01-09 12:46:40,873 [SPAM]: [main.py]moving Perry Xavier to id_19
-2023-01-09 12:46:40,874 [SPAM]: [main.py]moving Perschon Grayson to id_20
-2023-01-09 12:46:40,875 [SPAM]: [main.py]moving Porter Annette to id_21
-2023-01-09 12:46:40,876 [SPAM]: [main.py]moving Ross Ethan to id_22
-2023-01-09 12:46:40,877 [SPAM]: [main.py]moving Sharma Ksitij to id_23
-2023-01-09 12:46:40,878 [SPAM]: [main.py]moving Sloane Robin to id_24
-2023-01-09 12:46:40,879 [SPAM]: [main.py]moving Steele Lauren to id_25
-2023-01-09 12:46:40,880 [SPAM]: [main.py]moving Sutherland Ryan to id_26
-2023-01-09 12:46:40,881 [SPAM]: [main.py]moving Wiehler Conner to id_27
-2023-01-09 12:46:40,881 [VERBOSE]: [main.py] swaped classes
-2023-01-09 12:57:22,673 [DEBUG]: [main.py]starting system
-2023-01-09 12:57:22,675 [VERBOSE]: [main.py]using version v0.1.1
-2023-01-09 12:57:22,676 [SPAM]: [main.py]loading command-line arguments
-2023-01-09 12:57:22,682 [NOTICE]: [main.py]using class usrs
-2023-01-09 12:58:58,520 [DEBUG]: [main.py]starting system
-2023-01-09 12:58:58,522 [VERBOSE]: [main.py]using version v0.1.1
-2023-01-09 12:58:58,524 [SPAM]: [main.py]loading command-line arguments
-2023-01-09 12:58:58,530 [NOTICE]: [main.py]using class usrs
-2023-01-09 13:00:21,941 [DEBUG]: [main.py]starting system
-2023-01-09 13:00:21,943 [VERBOSE]: [main.py]using version v0.1.1
-2023-01-09 13:00:21,944 [SPAM]: [main.py]loading command-line arguments
-2023-01-09 13:00:21,951 [NOTICE]: [main.py]using class usrs
-2023-01-09 13:02:03,105 [DEBUG]: [main.py]starting system
-2023-01-09 13:02:03,105 [VERBOSE]: [main.py]using version v0.1.1
-2023-01-09 13:02:03,112 [SPAM]: [main.py]loading command-line arguments
-2023-01-09 13:02:03,119 [NOTICE]: [main.py]using class usrs
-2023-01-09 13:02:03,128 [DEBUG]: [main.py]loaded class
-2023-01-09 13:02:03,129 [SPAM]: [main.py]reading configs
-2023-01-09 13:02:03,130 [DEBUG]: [main.py] configs read
-2023-01-09 13:02:03,131 [VERBOSE]: [main.py]checking for updates
-2023-01-09 13:02:03,132 [VERBOSE]: [main.py] loading window
-2023-01-09 13:02:03,227 [SPAM]: [main.py] root init
-2023-01-09 13:02:03,227 [SPAM]: [main.py] root configs
-2023-01-09 13:02:03,235 [SPAM]: [main.py] title bar init
-2023-01-09 13:02:03,335 [SPAM]: [main.py] init window size
-2023-01-09 13:02:03,336 [SPAM]: [main.py] contents init
-2023-01-09 13:02:03,361 [SPAM]: [main.py] run main loop
-2023-01-09 13:02:03,363 [VERBOSE]: [main.py]<*> Here -> NotHere
-2023-01-09 13:02:03,363 [SPAM]: [main.py]moving Ambury Ryan to id_0
-2023-01-09 13:02:03,364 [SPAM]: [main.py]moving Anderson Eamon to id_1
-2023-01-09 13:02:03,365 [SPAM]: [main.py]moving Bryant Alain to id_2
-2023-01-09 13:02:03,366 [SPAM]: [main.py]moving Budd Elisabeth to id_3
-2023-01-09 13:02:03,366 [SPAM]: [main.py]moving Campbell Troy to id_4
-2023-01-09 13:02:03,367 [SPAM]: [main.py]moving Cheveldeoff Sarah to id_5
-2023-01-09 13:02:03,368 [SPAM]: [main.py]moving Christianson April to id_6
-2023-01-09 13:02:03,369 [SPAM]: [main.py]moving Clements Paula to id_7
-2023-01-09 13:02:03,369 [SPAM]: [main.py]moving Daradich Talan to id_8
-2023-01-09 13:02:03,370 [SPAM]: [main.py]moving Fatima Mariam to id_9
-2023-01-09 13:02:03,371 [SPAM]: [main.py]moving Flaman Teigen to id_10
-2023-01-09 13:02:03,372 [SPAM]: [main.py]moving Forgsberg Ashtynn to id_11
-2023-01-09 13:02:03,372 [SPAM]: [main.py]moving Hunt Ben\u2301 to id_12
-2023-01-09 13:02:03,373 [SPAM]: [main.py]moving Jones London to id_13
-2023-01-09 13:02:03,374 [SPAM]: [main.py]moving Kravets Marlo to id_14
-2023-01-09 13:02:03,375 [SPAM]: [main.py]moving Leamy Taylor to id_15
-2023-01-09 13:02:03,375 [SPAM]: [main.py]moving McEachern Chelsea to id_16
-2023-01-09 13:02:03,377 [SPAM]: [main.py]moving Monaghan Finnegan to id_17
-2023-01-09 13:02:03,379 [SPAM]: [main.py]moving Oviatt Jacob to id_18
-2023-01-09 13:02:03,380 [SPAM]: [main.py]moving Perry Xavier to id_19
-2023-01-09 13:02:03,381 [SPAM]: [main.py]moving Perschon Grayson to id_20
-2023-01-09 13:02:03,382 [SPAM]: [main.py]moving Porter Annette to id_21
-2023-01-09 13:02:03,382 [SPAM]: [main.py]moving Ross Ethan to id_22
-2023-01-09 13:02:03,383 [SPAM]: [main.py]moving Sharma Ksitij to id_23
-2023-01-09 13:02:03,384 [SPAM]: [main.py]moving Sloane Robin to id_24
-2023-01-09 13:02:03,385 [SPAM]: [main.py]moving Steele Lauren to id_25
-2023-01-09 13:02:03,386 [SPAM]: [main.py]moving Sutherland Ryan to id_26
-2023-01-09 13:02:03,386 [SPAM]: [main.py]moving Wiehler Conner to id_27
-2023-01-09 13:02:03,387 [VERBOSE]: [main.py] swaped classes
-2023-01-09 13:02:05,908 [VERBOSE]: [main.py]<*> Here -> NotHere
-2023-01-09 13:02:05,908 [SPAM]: [main.py]moving Hunt Ben\u2301 to id_0
-2023-01-09 13:02:05,922 [VERBOSE]: [main.py] swaped classes
-2023-01-09 13:02:12,964 [INFO]: [main.py]shuting down...
-2023-01-09 13:02:12,993 [SPAM]: [main.py]cleaned up 0 objects
-2023-01-09 13:02:12,994 [SUCCESS]: [main.py]done
-2023-01-09 13:07:45,862 [DEBUG]: [main.py]starting system
-2023-01-09 13:07:45,862 [VERBOSE]: [main.py]using version v0.1.1
-2023-01-09 13:07:45,871 [SPAM]: [main.py]loading command-line arguments
-2023-01-09 13:07:45,878 [NOTICE]: [main.py]using class usrs
-2023-01-09 13:07:45,880 [DEBUG]: [main.py]loaded class
-2023-01-09 13:07:45,881 [SPAM]: [main.py]reading configs
-2023-01-09 13:07:45,882 [DEBUG]: [main.py] configs read
-2023-01-09 13:07:45,883 [VERBOSE]: [main.py]checking for updates
-2023-01-09 13:07:45,884 [VERBOSE]: [main.py] loading window
-2023-01-09 13:07:45,985 [SPAM]: [main.py] root init
-2023-01-09 13:07:45,986 [SPAM]: [main.py] root configs
-2023-01-09 13:07:45,986 [SPAM]: [main.py] title bar init
-2023-01-09 13:07:46,087 [SPAM]: [main.py] init window size
-2023-01-09 13:07:46,089 [SPAM]: [main.py] contents init
-2023-01-09 13:07:46,113 [SPAM]: [main.py] run main loop
-2023-01-09 13:07:46,115 [VERBOSE]: [main.py]<*> Here -> NotHere
-2023-01-09 13:07:46,116 [SPAM]: [main.py]moving Ambury Ryan to id_0
-2023-01-09 13:07:46,117 [SPAM]: [main.py]moving Anderson Eamon to id_1
-2023-01-09 13:07:46,117 [SPAM]: [main.py]moving Bryant Alain to id_2
-2023-01-09 13:07:46,118 [SPAM]: [main.py]moving Budd Elisabeth to id_3
-2023-01-09 13:07:46,119 [SPAM]: [main.py]moving Campbell Troy to id_4
-2023-01-09 13:07:46,119 [SPAM]: [main.py]moving Cheveldeoff Sarah to id_5
-2023-01-09 13:07:46,120 [SPAM]: [main.py]moving Christianson April to id_6
-2023-01-09 13:07:46,121 [SPAM]: [main.py]moving Clements Paula to id_7
-2023-01-09 13:07:46,122 [SPAM]: [main.py]moving Daradich Talan to id_8
-2023-01-09 13:07:46,123 [SPAM]: [main.py]moving Fatima Mariam to id_9
-2023-01-09 13:07:46,123 [SPAM]: [main.py]moving Flaman Teigen to id_10
-2023-01-09 13:07:46,124 [SPAM]: [main.py]moving Forgsberg Ashtynn to id_11
-2023-01-09 13:07:46,125 [SPAM]: [main.py]moving Hunt Ben\u2301 to id_12
-2023-01-09 13:07:46,126 [SPAM]: [main.py]moving Jones London to id_13
-2023-01-09 13:07:46,126 [SPAM]: [main.py]moving Kravets Marlo to id_14
-2023-01-09 13:07:46,127 [SPAM]: [main.py]moving Leamy Taylor to id_15
-2023-01-09 13:07:46,128 [SPAM]: [main.py]moving McEachern Chelsea to id_16
-2023-01-09 13:07:46,129 [SPAM]: [main.py]moving Monaghan Finnegan to id_17
-2023-01-09 13:07:46,130 [SPAM]: [main.py]moving Oviatt Jacob to id_18
-2023-01-09 13:07:46,131 [SPAM]: [main.py]moving Perry Xavier to id_19
-2023-01-09 13:07:46,131 [SPAM]: [main.py]moving Perschon Grayson to id_20
-2023-01-09 13:07:46,132 [SPAM]: [main.py]moving Porter Annette to id_21
-2023-01-09 13:07:46,133 [SPAM]: [main.py]moving Ross Ethan to id_22
-2023-01-09 13:07:46,133 [SPAM]: [main.py]moving Sharma Ksitij to id_23
-2023-01-09 13:07:46,134 [SPAM]: [main.py]moving Sloane Robin to id_24
-2023-01-09 13:07:46,135 [SPAM]: [main.py]moving Steele Lauren to id_25
-2023-01-09 13:07:46,136 [SPAM]: [main.py]moving Sutherland Ryan to id_26
-2023-01-09 13:07:46,136 [SPAM]: [main.py]moving Wiehler Conner to id_27
-2023-01-09 13:07:46,137 [VERBOSE]: [main.py] swaped classes
-2023-01-09 13:11:32,822 [VERBOSE]: [main.py]<*> Here -> NotHere
-2023-01-09 13:11:32,822 [SPAM]: [main.py]moving Hunt Ben\u2301 to id_0
-2023-01-09 13:11:32,827 [VERBOSE]: [main.py] swaped classes
-2023-01-09 13:11:36,563 [VERBOSE]: [main.py]<*> Here -> NotHere
-2023-01-09 13:11:36,564 [SPAM]: [main.py]moving Ambury Ryan to id_0
-2023-01-09 13:11:36,565 [SPAM]: [main.py]moving Anderson Eamon to id_1
-2023-01-09 13:11:36,567 [SPAM]: [main.py]moving Bryant Alain to id_2
-2023-01-09 13:11:36,568 [SPAM]: [main.py]moving Budd Elisabeth to id_3
-2023-01-09 13:11:36,569 [SPAM]: [main.py]moving Campbell Troy to id_4
-2023-01-09 13:11:36,570 [SPAM]: [main.py]moving Cheveldeoff Sarah to id_5
-2023-01-09 13:11:36,572 [SPAM]: [main.py]moving Christianson April to id_6
-2023-01-09 13:11:36,573 [SPAM]: [main.py]moving Clements Paula to id_7
-2023-01-09 13:11:36,575 [SPAM]: [main.py]moving Daradich Talan to id_8
-2023-01-09 13:11:36,577 [SPAM]: [main.py]moving Fatima Mariam to id_9
-2023-01-09 13:11:36,578 [SPAM]: [main.py]moving Flaman Teigen to id_10
-2023-01-09 13:11:36,580 [SPAM]: [main.py]moving Forgsberg Ashtynn to id_11
-2023-01-09 13:11:36,581 [SPAM]: [main.py]moving Hunt Ben\u2301 to id_12
-2023-01-09 13:11:36,582 [SPAM]: [main.py]moving Jones London to id_13
-2023-01-09 13:11:36,583 [SPAM]: [main.py]moving Kravets Marlo to id_14
-2023-01-09 13:11:36,585 [SPAM]: [main.py]moving Leamy Taylor to id_15
-2023-01-09 13:11:36,587 [SPAM]: [main.py]moving McEachern Chelsea to id_16
-2023-01-09 13:11:36,588 [SPAM]: [main.py]moving Monaghan Finnegan to id_17
-2023-01-09 13:11:36,590 [SPAM]: [main.py]moving Oviatt Jacob to id_18
-2023-01-09 13:11:36,591 [SPAM]: [main.py]moving Perry Xavier to id_19
-2023-01-09 13:11:36,593 [SPAM]: [main.py]moving Perschon Grayson to id_20
-2023-01-09 13:11:36,594 [SPAM]: [main.py]moving Porter Annette to id_21
-2023-01-09 13:11:36,595 [SPAM]: [main.py]moving Ross Ethan to id_22
-2023-01-09 13:11:36,596 [SPAM]: [main.py]moving Sharma Ksitij to id_23
-2023-01-09 13:11:36,598 [SPAM]: [main.py]moving Sloane Robin to id_24
-2023-01-09 13:11:36,599 [SPAM]: [main.py]moving Steele Lauren to id_25
-2023-01-09 13:11:36,600 [SPAM]: [main.py]moving Sutherland Ryan to id_26
-2023-01-09 13:11:36,602 [SPAM]: [main.py]moving Wiehler Conner to id_27
-2023-01-09 13:11:36,603 [VERBOSE]: [main.py] swaped classes
-2023-01-09 13:11:54,693 [INFO]: [main.py]shuting down...
-2023-01-09 13:11:54,724 [SPAM]: [main.py]cleaned up 0 objects
-2023-01-09 13:11:54,725 [SUCCESS]: [main.py]done
-2023-01-10 10:31:10,883 [DEBUG]: [main.py]starting system
-2023-01-10 10:31:10,885 [VERBOSE]: [main.py]using version v0.1.1
-2023-01-10 10:31:10,886 [SPAM]: [main.py]loading command-line arguments
-2023-01-10 10:31:10,892 [NOTICE]: [main.py]using class usrs
-2023-01-10 10:31:10,896 [DEBUG]: [main.py]loaded class
-2023-01-10 10:31:10,896 [SPAM]: [main.py]reading configs
-2023-01-10 10:31:10,897 [DEBUG]: [main.py] configs read
-2023-01-10 10:31:10,898 [VERBOSE]: [main.py]checking for updates
-2023-01-10 10:31:10,899 [VERBOSE]: [main.py] loading window
-2023-01-10 10:31:11,282 [SPAM]: [main.py] root init
-2023-01-10 10:31:11,283 [SPAM]: [main.py] root configs
-2023-01-10 10:31:11,284 [SPAM]: [main.py] title bar init
-2023-01-10 10:31:11,396 [SPAM]: [main.py] init window size
-2023-01-10 10:31:11,397 [SPAM]: [main.py] contents init
-2023-01-10 10:31:11,423 [SPAM]: [main.py] run main loop
-2023-01-10 10:31:11,425 [VERBOSE]: [main.py]<*> Here -> NotHere
-2023-01-10 10:31:11,425 [SPAM]: [main.py]moving Ambury Ryan to id_0
-2023-01-10 10:31:11,426 [SPAM]: [main.py]moving Anderson Eamon to id_1
-2023-01-10 10:31:11,427 [SPAM]: [main.py]moving Bryant Alain to id_2
-2023-01-10 10:31:11,428 [SPAM]: [main.py]moving Budd Elisabeth to id_3
-2023-01-10 10:31:11,428 [SPAM]: [main.py]moving Campbell Troy to id_4
-2023-01-10 10:31:11,429 [SPAM]: [main.py]moving Cheveldeoff Sarah to id_5
-2023-01-10 10:31:11,430 [SPAM]: [main.py]moving Christianson April to id_6
-2023-01-10 10:31:11,431 [SPAM]: [main.py]moving Clements Paula to id_7
-2023-01-10 10:31:11,432 [SPAM]: [main.py]moving Daradich Talan to id_8
-2023-01-10 10:31:11,433 [SPAM]: [main.py]moving Fatima Mariam to id_9
-2023-01-10 10:31:11,433 [SPAM]: [main.py]moving Flaman Teigen to id_10
-2023-01-10 10:31:11,434 [SPAM]: [main.py]moving Forgsberg Ashtynn to id_11
-2023-01-10 10:31:11,435 [SPAM]: [main.py]moving Hunt Ben\u2301 to id_12
-2023-01-10 10:31:11,435 [SPAM]: [main.py]moving Jones London to id_13
-2023-01-10 10:31:11,436 [SPAM]: [main.py]moving Kravets Marlo to id_14
-2023-01-10 10:31:11,437 [SPAM]: [main.py]moving Leamy Taylor to id_15
-2023-01-10 10:31:11,438 [SPAM]: [main.py]moving McEachern Chelsea to id_16
-2023-01-10 10:31:11,439 [SPAM]: [main.py]moving Monaghan Finnegan to id_17
-2023-01-10 10:31:11,439 [SPAM]: [main.py]moving Oviatt Jacob to id_18
-2023-01-10 10:31:11,440 [SPAM]: [main.py]moving Perry Xavier to id_19
-2023-01-10 10:31:11,441 [SPAM]: [main.py]moving Perschon Grayson to id_20
-2023-01-10 10:31:11,441 [SPAM]: [main.py]moving Porter Annette to id_21
-2023-01-10 10:31:11,442 [SPAM]: [main.py]moving Ross Ethan to id_22
-2023-01-10 10:31:11,443 [SPAM]: [main.py]moving Sharma Ksitij to id_23
-2023-01-10 10:31:11,444 [SPAM]: [main.py]moving Sloane Robin to id_24
-2023-01-10 10:31:11,444 [SPAM]: [main.py]moving Steele Lauren to id_25
-2023-01-10 10:31:11,445 [SPAM]: [main.py]moving Sutherland Ryan to id_26
-2023-01-10 10:31:11,446 [SPAM]: [main.py]moving Wiehler Conner to id_27
-2023-01-10 10:31:11,447 [VERBOSE]: [main.py] swaped classes
-2023-01-10 10:31:24,948 [VERBOSE]: [main.py]<*> Here -> NotHere
-2023-01-10 10:31:24,950 [SPAM]: [main.py]moving Hunt Ben\u2301 to id_0
-2023-01-10 10:31:24,951 [VERBOSE]: [main.py] swaped classes
-2023-01-10 10:31:25,832 [VERBOSE]: [main.py]<*> Here -> NotHere
-2023-01-10 10:31:25,833 [SPAM]: [main.py]moving Ambury Ryan to id_0
-2023-01-10 10:31:25,835 [SPAM]: [main.py]moving Anderson Eamon to id_1
-2023-01-10 10:31:25,836 [SPAM]: [main.py]moving Bryant Alain to id_2
-2023-01-10 10:31:25,837 [SPAM]: [main.py]moving Budd Elisabeth to id_3
-2023-01-10 10:31:25,838 [SPAM]: [main.py]moving Campbell Troy to id_4
-2023-01-10 10:31:25,840 [SPAM]: [main.py]moving Cheveldeoff Sarah to id_5
-2023-01-10 10:31:25,841 [SPAM]: [main.py]moving Christianson April to id_6
-2023-01-10 10:31:25,842 [SPAM]: [main.py]moving Clements Paula to id_7
-2023-01-10 10:31:25,843 [SPAM]: [main.py]moving Daradich Talan to id_8
-2023-01-10 10:31:25,845 [SPAM]: [main.py]moving Fatima Mariam to id_9
-2023-01-10 10:31:25,846 [SPAM]: [main.py]moving Flaman Teigen to id_10
-2023-01-10 10:31:25,848 [SPAM]: [main.py]moving Forgsberg Ashtynn to id_11
-2023-01-10 10:31:25,849 [SPAM]: [main.py]moving Hunt Ben\u2301 to id_12
-2023-01-10 10:31:25,851 [SPAM]: [main.py]moving Jones London to id_13
-2023-01-10 10:31:25,852 [SPAM]: [main.py]moving Kravets Marlo to id_14
-2023-01-10 10:31:25,853 [SPAM]: [main.py]moving Leamy Taylor to id_15
-2023-01-10 10:31:25,854 [SPAM]: [main.py]moving McEachern Chelsea to id_16
-2023-01-10 10:31:25,855 [SPAM]: [main.py]moving Monaghan Finnegan to id_17
-2023-01-10 10:31:25,857 [SPAM]: [main.py]moving Oviatt Jacob to id_18
-2023-01-10 10:31:25,858 [SPAM]: [main.py]moving Perry Xavier to id_19
-2023-01-10 10:31:25,860 [SPAM]: [main.py]moving Perschon Grayson to id_20
-2023-01-10 10:31:25,861 [SPAM]: [main.py]moving Porter Annette to id_21
-2023-01-10 10:31:25,862 [SPAM]: [main.py]moving Ross Ethan to id_22
-2023-01-10 10:31:25,863 [SPAM]: [main.py]moving Sharma Ksitij to id_23
-2023-01-10 10:31:25,864 [SPAM]: [main.py]moving Sloane Robin to id_24
-2023-01-10 10:31:25,865 [SPAM]: [main.py]moving Steele Lauren to id_25
-2023-01-10 10:31:25,866 [SPAM]: [main.py]moving Sutherland Ryan to id_26
-2023-01-10 10:31:25,867 [SPAM]: [main.py]moving Wiehler Conner to id_27
-2023-01-10 10:31:25,868 [VERBOSE]: [main.py] swaped classes
-2023-01-10 10:43:13,247 [VERBOSE]: [main.py]Ambury Ryan NotHere -> Here
-2023-01-10 10:43:13,416 [ERROR]: [main.py]usrMoveErr: bad listbox index "": must be active, anchor, end, @x,y, or a number
-2023-01-10 10:43:13,584 [ERROR]: [main.py]usrMoveErr: bad listbox index "": must be active, anchor, end, @x,y, or a number
-2023-01-10 10:43:13,749 [ERROR]: [main.py]usrMoveErr: bad listbox index "": must be active, anchor, end, @x,y, or a number
-2023-01-10 10:43:13,936 [ERROR]: [main.py]usrMoveErr: bad listbox index "": must be active, anchor, end, @x,y, or a number
-2023-01-10 10:43:14,805 [VERBOSE]: [main.py]Anderson Eamon NotHere -> Here
-2023-01-10 10:43:15,176 [ERROR]: [main.py]usrMoveErr: bad listbox index "": must be active, anchor, end, @x,y, or a number
-2023-01-10 10:43:16,750 [VERBOSE]: [main.py]Budd Elisabeth NotHere -> Here
-2023-01-10 10:43:17,226 [ERROR]: [main.py]usrMoveErr: bad listbox index "": must be active, anchor, end, @x,y, or a number
-2023-01-10 10:43:17,674 [ERROR]: [main.py]usrMoveErr: bad listbox index "": must be active, anchor, end, @x,y, or a number
-2023-01-10 10:43:18,946 [VERBOSE]: [main.py]Campbell Troy NotHere -> Here
-2023-01-10 10:43:19,990 [VERBOSE]: [main.py]Cheveldeoff Sarah NotHere -> Here
-2023-01-10 10:43:20,474 [ERROR]: [main.py]usrMoveErr: bad listbox index "": must be active, anchor, end, @x,y, or a number
-2023-01-10 10:43:20,798 [ERROR]: [main.py]usrMoveErr: bad listbox index "": must be active, anchor, end, @x,y, or a number
-2023-01-10 10:43:20,999 [ERROR]: [main.py]usrMoveErr: bad listbox index "": must be active, anchor, end, @x,y, or a number
-2023-01-10 10:43:22,327 [VERBOSE]: [main.py]Christianson April NotHere -> Here
-2023-01-10 10:43:23,222 [VERBOSE]: [main.py]Clements Paula NotHere -> Here
-2023-01-10 10:43:23,722 [ERROR]: [main.py]usrMoveErr: bad listbox index "": must be active, anchor, end, @x,y, or a number
-2023-01-10 10:43:25,789 [VERBOSE]: [main.py]Daradich Talan NotHere -> Here
-2023-01-10 10:43:26,622 [VERBOSE]: [main.py]Fatima Mariam NotHere -> Here
-2023-01-10 10:43:27,465 [VERBOSE]: [main.py]Flaman Teigen NotHere -> Here
-2023-01-10 10:43:28,294 [VERBOSE]: [main.py]Forgsberg Ashtynn NotHere -> Here
-2023-01-10 10:43:30,359 [VERBOSE]: [main.py]Hunt Ben\u2301 NotHere -> Here
-2023-01-10 10:43:30,818 [ERROR]: [main.py]usrMoveErr: bad listbox index "": must be active, anchor, end, @x,y, or a number
-2023-01-10 10:43:31,058 [ERROR]: [main.py]usrMoveErr: bad listbox index "": must be active, anchor, end, @x,y, or a number
-2023-01-10 10:43:32,196 [VERBOSE]: [main.py]Jones London NotHere -> Here
-2023-01-10 10:43:33,085 [VERBOSE]: [main.py]Kravets Marlo NotHere -> Here
-2023-01-10 10:43:33,538 [ERROR]: [main.py]usrMoveErr: bad listbox index "": must be active, anchor, end, @x,y, or a number
-2023-01-10 10:43:34,525 [VERBOSE]: [main.py]Leamy Taylor NotHere -> Here
-2023-01-10 10:43:35,349 [VERBOSE]: [main.py]McEachern Chelsea NotHere -> Here
-2023-01-10 10:43:36,198 [VERBOSE]: [main.py]Monaghan Finnegan NotHere -> Here
-2023-01-10 10:43:36,642 [ERROR]: [main.py]usrMoveErr: bad listbox index "": must be active, anchor, end, @x,y, or a number
-2023-01-10 10:43:36,972 [ERROR]: [main.py]usrMoveErr: bad listbox index "": must be active, anchor, end, @x,y, or a number
-2023-01-10 10:43:37,997 [VERBOSE]: [main.py]Oviatt Jacob NotHere -> Here
-2023-01-10 10:43:38,504 [ERROR]: [main.py]usrMoveErr: bad listbox index "": must be active, anchor, end, @x,y, or a number
-2023-01-10 10:43:38,869 [ERROR]: [main.py]usrMoveErr: bad listbox index "": must be active, anchor, end, @x,y, or a number
-2023-01-10 10:43:41,198 [VERBOSE]: [main.py]Perry Xavier NotHere -> Here
-2023-01-10 10:43:41,673 [ERROR]: [main.py]usrMoveErr: bad listbox index "": must be active, anchor, end, @x,y, or a number
-2023-01-10 10:43:42,998 [VERBOSE]: [main.py]Perschon Grayson NotHere -> Here
-2023-01-10 10:43:43,918 [VERBOSE]: [main.py]Porter Annette NotHere -> Here
-2023-01-10 10:43:44,782 [VERBOSE]: [main.py]Ross Ethan NotHere -> Here
-2023-01-10 10:43:45,258 [ERROR]: [main.py]usrMoveErr: bad listbox index "": must be active, anchor, end, @x,y, or a number
-2023-01-10 10:43:45,542 [ERROR]: [main.py]usrMoveErr: bad listbox index "": must be active, anchor, end, @x,y, or a number
-2023-01-10 10:43:46,694 [VERBOSE]: [main.py]Sharma Ksitij NotHere -> Here
-2023-01-10 10:43:47,138 [ERROR]: [main.py]usrMoveErr: bad listbox index "": must be active, anchor, end, @x,y, or a number
-2023-01-10 10:43:48,044 [VERBOSE]: [main.py]Sloane Robin NotHere -> Here
-2023-01-10 10:43:48,926 [VERBOSE]: [main.py]Steele Lauren NotHere -> Here
-2023-01-10 10:43:49,750 [VERBOSE]: [main.py]Sutherland Ryan NotHere -> Here
-2023-01-10 10:43:50,693 [VERBOSE]: [main.py]Wiehler Conner NotHere -> Here
-2023-01-10 10:43:58,504 [VERBOSE]: [main.py]<*> Here -> NotHere
-2023-01-10 10:43:58,504 [SPAM]: [main.py]moving Hunt Ben\u2301 to id_0
-2023-01-10 10:43:58,509 [VERBOSE]: [main.py] swaped classes
-2023-01-10 10:44:00,108 [VERBOSE]: [main.py]<*> Here -> NotHere
-2023-01-10 10:44:00,108 [SPAM]: [main.py]moving Ambury Ryan to id_0
-2023-01-10 10:44:00,122 [SPAM]: [main.py]moving Anderson Eamon to id_1
-2023-01-10 10:44:00,123 [SPAM]: [main.py]moving Bryant Alain to id_2
-2023-01-10 10:44:00,124 [SPAM]: [main.py]moving Budd Elisabeth to id_3
-2023-01-10 10:44:00,125 [SPAM]: [main.py]moving Campbell Troy to id_4
-2023-01-10 10:44:00,127 [SPAM]: [main.py]moving Cheveldeoff Sarah to id_5
-2023-01-10 10:44:00,128 [SPAM]: [main.py]moving Christianson April to id_6
-2023-01-10 10:44:00,129 [SPAM]: [main.py]moving Clements Paula to id_7
-2023-01-10 10:44:00,130 [SPAM]: [main.py]moving Daradich Talan to id_8
-2023-01-10 10:44:00,131 [SPAM]: [main.py]moving Fatima Mariam to id_9
-2023-01-10 10:44:00,133 [SPAM]: [main.py]moving Flaman Teigen to id_10
-2023-01-10 10:44:00,134 [SPAM]: [main.py]moving Forgsberg Ashtynn to id_11
-2023-01-10 10:44:00,136 [SPAM]: [main.py]moving Hunt Ben\u2301 to id_12
-2023-01-10 10:44:00,137 [SPAM]: [main.py]moving Jones London to id_13
-2023-01-10 10:44:00,138 [SPAM]: [main.py]moving Kravets Marlo to id_14
-2023-01-10 10:44:00,139 [SPAM]: [main.py]moving Leamy Taylor to id_15
-2023-01-10 10:44:00,141 [SPAM]: [main.py]moving McEachern Chelsea to id_16
-2023-01-10 10:44:00,142 [SPAM]: [main.py]moving Monaghan Finnegan to id_17
-2023-01-10 10:44:00,143 [SPAM]: [main.py]moving Oviatt Jacob to id_18
-2023-01-10 10:44:00,144 [SPAM]: [main.py]moving Perry Xavier to id_19
-2023-01-10 10:44:00,145 [SPAM]: [main.py]moving Perschon Grayson to id_20
-2023-01-10 10:44:00,146 [SPAM]: [main.py]moving Porter Annette to id_21
-2023-01-10 10:44:00,148 [SPAM]: [main.py]moving Ross Ethan to id_22
-2023-01-10 10:44:00,149 [SPAM]: [main.py]moving Sharma Ksitij to id_23
-2023-01-10 10:44:00,151 [SPAM]: [main.py]moving Sloane Robin to id_24
-2023-01-10 10:44:00,152 [SPAM]: [main.py]moving Steele Lauren to id_25
-2023-01-10 10:44:00,153 [SPAM]: [main.py]moving Sutherland Ryan to id_26
-2023-01-10 10:44:00,154 [SPAM]: [main.py]moving Wiehler Conner to id_27
-2023-01-10 10:44:00,155 [VERBOSE]: [main.py] swaped classes
-2023-01-10 10:44:01,449 [INFO]: [main.py]shuting down...
-2023-01-10 10:44:01,481 [SPAM]: [main.py]cleaned up 0 objects
-2023-01-10 10:44:01,482 [SUCCESS]: [main.py]done
+2023-01-10 12:41:25,094 [DEBUG]: [main.py]starting system
+2023-01-10 12:41:25,097 [VERBOSE]: [main.py]using version v0.1.1
+2023-01-10 12:41:25,099 [SPAM]: [main.py]loading command-line arguments
+2023-01-10 12:41:25,108 [NOTICE]: [main.py]using class usrs
+2023-01-10 12:41:25,111 [DEBUG]: [main.py]loaded class
+2023-01-10 12:41:25,112 [SPAM]: [main.py]reading configs
+2023-01-10 12:41:25,113 [DEBUG]: [main.py] configs read
+2023-01-10 12:41:25,114 [VERBOSE]: [main.py]checking for updates
+2023-01-10 12:41:25,115 [VERBOSE]: [main.py] loading window
+2023-01-10 12:41:25,234 [SPAM]: [main.py] root init
+2023-01-10 12:41:25,235 [SPAM]: [main.py] root configs
+2023-01-10 12:41:25,236 [SPAM]: [main.py] title bar init
+2023-01-10 12:41:25,333 [SPAM]: [main.py] init window size
+2023-01-10 12:41:25,333 [SPAM]: [main.py] contents init
+2023-01-10 12:41:25,373 [SPAM]: [main.py] run main loop
+2023-01-10 12:41:25,375 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 12:41:25,376 [SPAM]: [main.py]<\u238c>moving Ambury Ryan to id_0
+2023-01-10 12:41:25,376 [SPAM]: [main.py]<\u238c>moving Anderson Eamon to id_1
+2023-01-10 12:41:25,377 [SPAM]: [main.py]<\u238c>moving Bryant Alain to id_2
+2023-01-10 12:41:25,378 [SPAM]: [main.py]<\u238c>moving Budd Elisabeth to id_3
+2023-01-10 12:41:25,379 [SPAM]: [main.py]<\u238c>moving Campbell Troy to id_4
+2023-01-10 12:41:25,379 [SPAM]: [main.py]<\u238c>moving Cheveldeoff Sarah to id_5
+2023-01-10 12:41:25,380 [SPAM]: [main.py]<\u238c>moving Christianson April to id_6
+2023-01-10 12:41:25,381 [SPAM]: [main.py]<\u238c>moving Clements Paula to id_7
+2023-01-10 12:41:25,381 [SPAM]: [main.py]<\u238c>moving Daradich Talan to id_8
+2023-01-10 12:41:25,382 [SPAM]: [main.py]<\u238c>moving Fatima Mariam to id_9
+2023-01-10 12:41:25,383 [SPAM]: [main.py]<\u238c>moving Flaman Teigen to id_10
+2023-01-10 12:41:25,384 [SPAM]: [main.py]<\u238c>moving Forgsberg Ashtynn to id_11
+2023-01-10 12:41:25,385 [SPAM]: [main.py]<\u238c>moving Hunt Ben\u2301 to id_12
+2023-01-10 12:41:25,385 [SPAM]: [main.py]<\u238c>moving Jones London to id_13
+2023-01-10 12:41:25,387 [SPAM]: [main.py]<\u238c>moving Kravets Marlo to id_14
+2023-01-10 12:41:25,388 [SPAM]: [main.py]<\u238c>moving Leamy Taylor to id_15
+2023-01-10 12:41:25,389 [SPAM]: [main.py]<\u238c>moving McEachern Chelsea to id_16
+2023-01-10 12:41:25,389 [SPAM]: [main.py]<\u238c>moving Monaghan Finnegan to id_17
+2023-01-10 12:41:25,390 [SPAM]: [main.py]<\u238c>moving Oviatt Jacob to id_18
+2023-01-10 12:41:25,391 [SPAM]: [main.py]<\u238c>moving Perry Xavier to id_19
+2023-01-10 12:41:25,392 [SPAM]: [main.py]<\u238c>moving Perschon Grayson to id_20
+2023-01-10 12:41:25,393 [SPAM]: [main.py]<\u238c>moving Porter Annette to id_21
+2023-01-10 12:41:25,393 [SPAM]: [main.py]<\u238c>moving Ross Ethan to id_22
+2023-01-10 12:41:25,394 [SPAM]: [main.py]<\u238c>moving Sharma Ksitij to id_23
+2023-01-10 12:41:25,395 [SPAM]: [main.py]<\u238c>moving Sloane Robin to id_24
+2023-01-10 12:41:25,396 [SPAM]: [main.py]<\u238c>moving Steele Lauren to id_25
+2023-01-10 12:41:25,397 [SPAM]: [main.py]<\u238c>moving Sutherland Ryan to id_26
+2023-01-10 12:41:25,397 [SPAM]: [main.py]<\u238c>moving Wiehler Conner to id_27
+2023-01-10 12:41:25,398 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 12:43:47,232 [CRITICAL]: 
+2023-01-10 12:43:47,233 [CRITICAL]: [main.py]Traceback (most recent call last):
+  File "c:\Users\Auto Atendance\Documents\GitHub\autoAtendance\main.py", line 464, in <module>
+    myapp.mainloop()
+  File "C:\Program Files\Python310\lib\tkinter\__init__.py", line 1458, in mainloop
+    self.tk.mainloop(n)
+KeyboardInterrupt
+
+2023-01-10 12:43:47,252 [DEBUG]: Starting new HTTPS connection (1): crashreporter.badgeminer2.repl.co:443
+2023-01-10 12:43:47,877 [DEBUG]: https://crashreporter.badgeminer2.repl.co:443 "POST /aatend HTTP/1.1" 200 544
+2023-01-10 12:43:47,883 [INFO]: [main.py]shuting down...
+2023-01-10 12:43:47,910 [SPAM]: [main.py]cleaned up 0 objects
+2023-01-10 12:43:47,911 [SUCCESS]: [main.py]done
+2023-01-10 12:44:29,593 [DEBUG]: [main.py]starting system
+2023-01-10 12:44:29,593 [VERBOSE]: [main.py]using version v0.1.1
+2023-01-10 12:44:29,597 [SPAM]: [main.py]loading command-line arguments
+2023-01-10 12:44:29,603 [NOTICE]: [main.py]using class usrs
+2023-01-10 12:44:29,606 [DEBUG]: [main.py]loaded class
+2023-01-10 12:44:29,606 [SPAM]: [main.py]reading configs
+2023-01-10 12:44:29,607 [DEBUG]: [main.py] configs read
+2023-01-10 12:44:29,608 [VERBOSE]: [main.py]checking for updates
+2023-01-10 12:44:29,609 [VERBOSE]: [main.py] loading window
+2023-01-10 12:44:29,710 [SPAM]: [main.py] root init
+2023-01-10 12:44:29,710 [SPAM]: [main.py] root configs
+2023-01-10 12:44:29,712 [SPAM]: [main.py] title bar init
+2023-01-10 12:44:29,811 [SPAM]: [main.py] init window size
+2023-01-10 12:44:29,812 [SPAM]: [main.py] contents init
+2023-01-10 12:44:29,838 [SPAM]: [main.py] run main loop
+2023-01-10 12:44:29,839 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 12:44:29,840 [SPAM]: [main.py]<\u238c>moving Ambury Ryan to id_0
+2023-01-10 12:44:29,841 [SPAM]: [main.py]<\u238c>moving Anderson Eamon to id_1
+2023-01-10 12:44:29,842 [SPAM]: [main.py]<\u238c>moving Bryant Alain to id_2
+2023-01-10 12:44:29,843 [SPAM]: [main.py]<\u238c>moving Budd Elisabeth to id_3
+2023-01-10 12:44:29,844 [SPAM]: [main.py]<\u238c>moving Campbell Troy to id_4
+2023-01-10 12:44:29,845 [SPAM]: [main.py]<\u238c>moving Cheveldeoff Sarah to id_5
+2023-01-10 12:44:29,846 [SPAM]: [main.py]<\u238c>moving Christianson April to id_6
+2023-01-10 12:44:29,846 [SPAM]: [main.py]<\u238c>moving Clements Paula to id_7
+2023-01-10 12:44:29,847 [SPAM]: [main.py]<\u238c>moving Daradich Talan to id_8
+2023-01-10 12:44:29,848 [SPAM]: [main.py]<\u238c>moving Fatima Mariam to id_9
+2023-01-10 12:44:29,849 [SPAM]: [main.py]<\u238c>moving Flaman Teigen to id_10
+2023-01-10 12:44:29,850 [SPAM]: [main.py]<\u238c>moving Forgsberg Ashtynn to id_11
+2023-01-10 12:44:29,851 [SPAM]: [main.py]<\u238c>moving Hunt Ben\u2301 to id_12
+2023-01-10 12:44:29,851 [SPAM]: [main.py]<\u238c>moving Jones London to id_13
+2023-01-10 12:44:29,852 [SPAM]: [main.py]<\u238c>moving Kravets Marlo to id_14
+2023-01-10 12:44:29,853 [SPAM]: [main.py]<\u238c>moving Leamy Taylor to id_15
+2023-01-10 12:44:29,854 [SPAM]: [main.py]<\u238c>moving McEachern Chelsea to id_16
+2023-01-10 12:44:29,855 [SPAM]: [main.py]<\u238c>moving Monaghan Finnegan to id_17
+2023-01-10 12:44:29,855 [SPAM]: [main.py]<\u238c>moving Oviatt Jacob to id_18
+2023-01-10 12:44:29,856 [SPAM]: [main.py]<\u238c>moving Perry Xavier to id_19
+2023-01-10 12:44:29,857 [SPAM]: [main.py]<\u238c>moving Perschon Grayson to id_20
+2023-01-10 12:44:29,858 [SPAM]: [main.py]<\u238c>moving Porter Annette to id_21
+2023-01-10 12:44:29,858 [SPAM]: [main.py]<\u238c>moving Ross Ethan to id_22
+2023-01-10 12:44:29,860 [SPAM]: [main.py]<\u238c>moving Sharma Ksitij to id_23
+2023-01-10 12:44:29,861 [SPAM]: [main.py]<\u238c>moving Sloane Robin to id_24
+2023-01-10 12:44:29,862 [SPAM]: [main.py]<\u238c>moving Steele Lauren to id_25
+2023-01-10 12:44:29,863 [SPAM]: [main.py]<\u238c>moving Sutherland Ryan to id_26
+2023-01-10 12:44:29,864 [SPAM]: [main.py]<\u238c>moving Wiehler Conner to id_27
+2023-01-10 12:44:29,865 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 12:45:16,317 [VERBOSE]: [main.py]<\u238c>38302008:Hunt Ben\u2301 NotHere -> Here
+2023-01-10 12:45:30,284 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 12:45:30,284 [SPAM]: [main.py]<\u238c>moving Ambury Ryan to id_0
+2023-01-10 12:45:30,285 [SPAM]: [main.py]<\u238c>moving Anderson Eamon to id_1
+2023-01-10 12:45:30,286 [SPAM]: [main.py]<\u238c>moving Bryant Alain to id_2
+2023-01-10 12:45:30,287 [SPAM]: [main.py]<\u238c>moving Budd Elisabeth to id_3
+2023-01-10 12:45:30,287 [SPAM]: [main.py]<\u238c>moving Campbell Troy to id_4
+2023-01-10 12:45:30,288 [SPAM]: [main.py]<\u238c>moving Cheveldeoff Sarah to id_5
+2023-01-10 12:45:30,289 [SPAM]: [main.py]<\u238c>moving Christianson April to id_6
+2023-01-10 12:45:30,290 [SPAM]: [main.py]<\u238c>moving Clements Paula to id_7
+2023-01-10 12:45:30,291 [SPAM]: [main.py]<\u238c>moving Daradich Talan to id_8
+2023-01-10 12:45:30,292 [SPAM]: [main.py]<\u238c>moving Fatima Mariam to id_9
+2023-01-10 12:45:30,292 [SPAM]: [main.py]<\u238c>moving Flaman Teigen to id_10
+2023-01-10 12:45:30,293 [SPAM]: [main.py]<\u238c>moving Forgsberg Ashtynn to id_11
+2023-01-10 12:45:30,294 [SPAM]: [main.py]<\u238c>moving Hunt Ben\u2301 to id_12
+2023-01-10 12:45:30,295 [SPAM]: [main.py]<\u238c>moving Jones London to id_13
+2023-01-10 12:45:30,295 [SPAM]: [main.py]<\u238c>moving Kravets Marlo to id_14
+2023-01-10 12:45:30,296 [SPAM]: [main.py]<\u238c>moving Leamy Taylor to id_15
+2023-01-10 12:45:30,297 [SPAM]: [main.py]<\u238c>moving McEachern Chelsea to id_16
+2023-01-10 12:45:30,298 [SPAM]: [main.py]<\u238c>moving Monaghan Finnegan to id_17
+2023-01-10 12:45:30,299 [SPAM]: [main.py]<\u238c>moving Oviatt Jacob to id_18
+2023-01-10 12:45:30,300 [SPAM]: [main.py]<\u238c>moving Perry Xavier to id_19
+2023-01-10 12:45:30,301 [SPAM]: [main.py]<\u238c>moving Perschon Grayson to id_20
+2023-01-10 12:45:30,302 [SPAM]: [main.py]<\u238c>moving Porter Annette to id_21
+2023-01-10 12:45:30,303 [SPAM]: [main.py]<\u238c>moving Ross Ethan to id_22
+2023-01-10 12:45:30,303 [SPAM]: [main.py]<\u238c>moving Sharma Ksitij to id_23
+2023-01-10 12:45:30,304 [SPAM]: [main.py]<\u238c>moving Sloane Robin to id_24
+2023-01-10 12:45:30,305 [SPAM]: [main.py]<\u238c>moving Steele Lauren to id_25
+2023-01-10 12:45:30,306 [SPAM]: [main.py]<\u238c>moving Sutherland Ryan to id_26
+2023-01-10 12:45:30,306 [SPAM]: [main.py]<\u238c>moving Wiehler Conner to id_27
+2023-01-10 12:45:49,324 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 12:45:49,324 [SPAM]: [main.py]<\u238c>moving Hunt Ben\u2301 to id_0
+2023-01-10 12:45:49,334 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 12:45:50,946 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 12:45:50,946 [SPAM]: [main.py]<\u238c>moving Ambury Ryan to id_0
+2023-01-10 12:45:50,952 [SPAM]: [main.py]<\u238c>moving Anderson Eamon to id_1
+2023-01-10 12:45:50,954 [SPAM]: [main.py]<\u238c>moving Bryant Alain to id_2
+2023-01-10 12:45:50,955 [SPAM]: [main.py]<\u238c>moving Budd Elisabeth to id_3
+2023-01-10 12:45:50,956 [SPAM]: [main.py]<\u238c>moving Campbell Troy to id_4
+2023-01-10 12:45:50,957 [SPAM]: [main.py]<\u238c>moving Cheveldeoff Sarah to id_5
+2023-01-10 12:45:50,959 [SPAM]: [main.py]<\u238c>moving Christianson April to id_6
+2023-01-10 12:45:50,960 [SPAM]: [main.py]<\u238c>moving Clements Paula to id_7
+2023-01-10 12:45:50,961 [SPAM]: [main.py]<\u238c>moving Daradich Talan to id_8
+2023-01-10 12:45:50,963 [SPAM]: [main.py]<\u238c>moving Fatima Mariam to id_9
+2023-01-10 12:45:50,964 [SPAM]: [main.py]<\u238c>moving Flaman Teigen to id_10
+2023-01-10 12:45:50,966 [SPAM]: [main.py]<\u238c>moving Forgsberg Ashtynn to id_11
+2023-01-10 12:45:50,967 [SPAM]: [main.py]<\u238c>moving Hunt Ben\u2301 to id_12
+2023-01-10 12:45:50,969 [SPAM]: [main.py]<\u238c>moving Jones London to id_13
+2023-01-10 12:45:50,970 [SPAM]: [main.py]<\u238c>moving Kravets Marlo to id_14
+2023-01-10 12:45:50,971 [SPAM]: [main.py]<\u238c>moving Leamy Taylor to id_15
+2023-01-10 12:45:50,972 [SPAM]: [main.py]<\u238c>moving McEachern Chelsea to id_16
+2023-01-10 12:45:50,974 [SPAM]: [main.py]<\u238c>moving Monaghan Finnegan to id_17
+2023-01-10 12:45:50,975 [SPAM]: [main.py]<\u238c>moving Oviatt Jacob to id_18
+2023-01-10 12:45:50,976 [SPAM]: [main.py]<\u238c>moving Perry Xavier to id_19
+2023-01-10 12:45:50,977 [SPAM]: [main.py]<\u238c>moving Perschon Grayson to id_20
+2023-01-10 12:45:50,979 [SPAM]: [main.py]<\u238c>moving Porter Annette to id_21
+2023-01-10 12:45:50,980 [SPAM]: [main.py]<\u238c>moving Ross Ethan to id_22
+2023-01-10 12:45:50,982 [SPAM]: [main.py]<\u238c>moving Sharma Ksitij to id_23
+2023-01-10 12:45:50,983 [SPAM]: [main.py]<\u238c>moving Sloane Robin to id_24
+2023-01-10 12:45:50,985 [SPAM]: [main.py]<\u238c>moving Steele Lauren to id_25
+2023-01-10 12:45:50,986 [SPAM]: [main.py]<\u238c>moving Sutherland Ryan to id_26
+2023-01-10 12:45:50,988 [SPAM]: [main.py]<\u238c>moving Wiehler Conner to id_27
+2023-01-10 12:45:50,989 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 12:45:53,095 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 12:45:53,095 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 12:45:54,046 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 12:45:54,046 [SPAM]: [main.py]<\u238c>moving 01 to id_0
+2023-01-10 12:45:54,056 [SPAM]: [main.py]<\u238c>moving 02 to id_1
+2023-01-10 12:45:54,058 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 12:45:57,865 [VERBOSE]: [main.py]<\u238c>01:01 NotHere -> Here
+2023-01-10 12:45:59,911 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 12:45:59,911 [SPAM]: [main.py]<\u238c>moving Ambury Ryan to id_0
+2023-01-10 12:45:59,916 [SPAM]: [main.py]<\u238c>moving Anderson Eamon to id_1
+2023-01-10 12:45:59,918 [SPAM]: [main.py]<\u238c>moving Bryant Alain to id_2
+2023-01-10 12:45:59,919 [SPAM]: [main.py]<\u238c>moving Budd Elisabeth to id_3
+2023-01-10 12:45:59,920 [SPAM]: [main.py]<\u238c>moving Campbell Troy to id_4
+2023-01-10 12:45:59,921 [SPAM]: [main.py]<\u238c>moving Cheveldeoff Sarah to id_5
+2023-01-10 12:45:59,923 [SPAM]: [main.py]<\u238c>moving Christianson April to id_6
+2023-01-10 12:45:59,924 [SPAM]: [main.py]<\u238c>moving Clements Paula to id_7
+2023-01-10 12:45:59,925 [SPAM]: [main.py]<\u238c>moving Daradich Talan to id_8
+2023-01-10 12:45:59,926 [SPAM]: [main.py]<\u238c>moving Fatima Mariam to id_9
+2023-01-10 12:45:59,928 [SPAM]: [main.py]<\u238c>moving Flaman Teigen to id_10
+2023-01-10 12:45:59,929 [SPAM]: [main.py]<\u238c>moving Forgsberg Ashtynn to id_11
+2023-01-10 12:45:59,931 [SPAM]: [main.py]<\u238c>moving Hunt Ben\u2301 to id_12
+2023-01-10 12:45:59,932 [SPAM]: [main.py]<\u238c>moving Jones London to id_13
+2023-01-10 12:45:59,933 [SPAM]: [main.py]<\u238c>moving Kravets Marlo to id_14
+2023-01-10 12:45:59,934 [SPAM]: [main.py]<\u238c>moving Leamy Taylor to id_15
+2023-01-10 12:45:59,935 [SPAM]: [main.py]<\u238c>moving McEachern Chelsea to id_16
+2023-01-10 12:45:59,936 [SPAM]: [main.py]<\u238c>moving Monaghan Finnegan to id_17
+2023-01-10 12:45:59,938 [SPAM]: [main.py]<\u238c>moving Oviatt Jacob to id_18
+2023-01-10 12:45:59,939 [SPAM]: [main.py]<\u238c>moving Perry Xavier to id_19
+2023-01-10 12:45:59,940 [SPAM]: [main.py]<\u238c>moving Perschon Grayson to id_20
+2023-01-10 12:45:59,941 [SPAM]: [main.py]<\u238c>moving Porter Annette to id_21
+2023-01-10 12:45:59,942 [SPAM]: [main.py]<\u238c>moving Ross Ethan to id_22
+2023-01-10 12:45:59,944 [SPAM]: [main.py]<\u238c>moving Sharma Ksitij to id_23
+2023-01-10 12:45:59,946 [SPAM]: [main.py]<\u238c>moving Sloane Robin to id_24
+2023-01-10 12:45:59,947 [SPAM]: [main.py]<\u238c>moving Steele Lauren to id_25
+2023-01-10 12:45:59,948 [SPAM]: [main.py]<\u238c>moving Sutherland Ryan to id_26
+2023-01-10 12:45:59,949 [SPAM]: [main.py]<\u238c>moving Wiehler Conner to id_27
+2023-01-10 12:45:59,951 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 12:47:13,181 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 12:47:13,181 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 12:47:24,414 [INFO]: [main.py]shuting down...
+2023-01-10 12:47:24,448 [SPAM]: [main.py]cleaned up 0 objects
+2023-01-10 12:47:24,449 [SUCCESS]: [main.py]done
+2023-01-10 12:48:32,627 [DEBUG]: [main.py]starting system
+2023-01-10 12:48:32,643 [VERBOSE]: [main.py]using version v0.1.1
+2023-01-10 12:48:32,645 [SPAM]: [main.py]loading command-line arguments
+2023-01-10 12:48:32,651 [NOTICE]: [main.py]using class usrs
+2023-01-10 12:48:32,728 [DEBUG]: [main.py]loaded class
+2023-01-10 12:48:32,728 [SPAM]: [main.py]reading configs
+2023-01-10 12:48:32,741 [DEBUG]: [main.py] configs read
+2023-01-10 12:48:32,742 [VERBOSE]: [main.py]checking for updates
+2023-01-10 12:48:32,744 [VERBOSE]: [main.py] loading window
+2023-01-10 12:48:32,875 [SPAM]: [main.py] root init
+2023-01-10 12:48:32,875 [SPAM]: [main.py] root configs
+2023-01-10 12:48:32,886 [SPAM]: [main.py] title bar init
+2023-01-10 12:48:32,978 [SPAM]: [main.py] init window size
+2023-01-10 12:48:32,978 [SPAM]: [main.py] contents init
+2023-01-10 12:48:33,014 [SPAM]: [main.py] run main loop
+2023-01-10 12:48:33,016 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 12:48:33,016 [SPAM]: [main.py]<\u238c>moving Ambury Ryan to id_0
+2023-01-10 12:48:33,017 [SPAM]: [main.py]<\u238c>moving Anderson Eamon to id_1
+2023-01-10 12:48:33,018 [SPAM]: [main.py]<\u238c>moving Bryant Alain to id_2
+2023-01-10 12:48:33,019 [SPAM]: [main.py]<\u238c>moving Budd Elisabeth to id_3
+2023-01-10 12:48:33,020 [SPAM]: [main.py]<\u238c>moving Campbell Troy to id_4
+2023-01-10 12:48:33,020 [SPAM]: [main.py]<\u238c>moving Cheveldeoff Sarah to id_5
+2023-01-10 12:48:33,021 [SPAM]: [main.py]<\u238c>moving Christianson April to id_6
+2023-01-10 12:48:33,022 [SPAM]: [main.py]<\u238c>moving Clements Paula to id_7
+2023-01-10 12:48:33,022 [SPAM]: [main.py]<\u238c>moving Daradich Talan to id_8
+2023-01-10 12:48:33,023 [SPAM]: [main.py]<\u238c>moving Fatima Mariam to id_9
+2023-01-10 12:48:33,024 [SPAM]: [main.py]<\u238c>moving Flaman Teigen to id_10
+2023-01-10 12:48:33,025 [SPAM]: [main.py]<\u238c>moving Forgsberg Ashtynn to id_11
+2023-01-10 12:48:33,025 [SPAM]: [main.py]<\u238c>moving Hunt Ben\u2301 to id_12
+2023-01-10 12:48:33,026 [SPAM]: [main.py]<\u238c>moving Jones London to id_13
+2023-01-10 12:48:33,027 [SPAM]: [main.py]<\u238c>moving Kravets Marlo to id_14
+2023-01-10 12:48:33,028 [SPAM]: [main.py]<\u238c>moving Leamy Taylor to id_15
+2023-01-10 12:48:33,029 [SPAM]: [main.py]<\u238c>moving McEachern Chelsea to id_16
+2023-01-10 12:48:33,029 [SPAM]: [main.py]<\u238c>moving Monaghan Finnegan to id_17
+2023-01-10 12:48:33,030 [SPAM]: [main.py]<\u238c>moving Oviatt Jacob to id_18
+2023-01-10 12:48:33,031 [SPAM]: [main.py]<\u238c>moving Perry Xavier to id_19
+2023-01-10 12:48:33,032 [SPAM]: [main.py]<\u238c>moving Perschon Grayson to id_20
+2023-01-10 12:48:33,032 [SPAM]: [main.py]<\u238c>moving Porter Annette to id_21
+2023-01-10 12:48:33,033 [SPAM]: [main.py]<\u238c>moving Ross Ethan to id_22
+2023-01-10 12:48:33,034 [SPAM]: [main.py]<\u238c>moving Sharma Ksitij to id_23
+2023-01-10 12:48:33,035 [SPAM]: [main.py]<\u238c>moving Sloane Robin to id_24
+2023-01-10 12:48:33,035 [SPAM]: [main.py]<\u238c>moving Steele Lauren to id_25
+2023-01-10 12:48:33,036 [SPAM]: [main.py]<\u238c>moving Sutherland Ryan to id_26
+2023-01-10 12:48:33,037 [SPAM]: [main.py]<\u238c>moving Wiehler Conner to id_27
+2023-01-10 12:48:33,037 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 12:48:34,839 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 12:48:34,839 [SPAM]: [main.py]<\u238c>moving Crowshoe Shade to id_0
+2023-01-10 12:48:34,853 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 12:48:38,184 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 12:48:38,199 [SPAM]: [main.py]<\u238c>moving Ambury Ryan to id_0
+2023-01-10 12:48:38,200 [SPAM]: [main.py]<\u238c>moving Anderson Eamon to id_1
+2023-01-10 12:48:38,202 [SPAM]: [main.py]<\u238c>moving Bryant Alain to id_2
+2023-01-10 12:48:38,203 [SPAM]: [main.py]<\u238c>moving Budd Elisabeth to id_3
+2023-01-10 12:48:38,204 [SPAM]: [main.py]<\u238c>moving Campbell Troy to id_4
+2023-01-10 12:48:38,205 [SPAM]: [main.py]<\u238c>moving Cheveldeoff Sarah to id_5
+2023-01-10 12:48:38,207 [SPAM]: [main.py]<\u238c>moving Christianson April to id_6
+2023-01-10 12:48:38,208 [SPAM]: [main.py]<\u238c>moving Clements Paula to id_7
+2023-01-10 12:48:38,209 [SPAM]: [main.py]<\u238c>moving Daradich Talan to id_8
+2023-01-10 12:48:38,211 [SPAM]: [main.py]<\u238c>moving Fatima Mariam to id_9
+2023-01-10 12:48:38,212 [SPAM]: [main.py]<\u238c>moving Flaman Teigen to id_10
+2023-01-10 12:48:38,213 [SPAM]: [main.py]<\u238c>moving Forgsberg Ashtynn to id_11
+2023-01-10 12:48:38,215 [SPAM]: [main.py]<\u238c>moving Hunt Ben\u2301 to id_12
+2023-01-10 12:48:38,216 [SPAM]: [main.py]<\u238c>moving Jones London to id_13
+2023-01-10 12:48:38,217 [SPAM]: [main.py]<\u238c>moving Kravets Marlo to id_14
+2023-01-10 12:48:38,218 [SPAM]: [main.py]<\u238c>moving Leamy Taylor to id_15
+2023-01-10 12:48:38,219 [SPAM]: [main.py]<\u238c>moving McEachern Chelsea to id_16
+2023-01-10 12:48:38,221 [SPAM]: [main.py]<\u238c>moving Monaghan Finnegan to id_17
+2023-01-10 12:48:38,222 [SPAM]: [main.py]<\u238c>moving Oviatt Jacob to id_18
+2023-01-10 12:48:38,223 [SPAM]: [main.py]<\u238c>moving Perry Xavier to id_19
+2023-01-10 12:48:38,224 [SPAM]: [main.py]<\u238c>moving Perschon Grayson to id_20
+2023-01-10 12:48:38,225 [SPAM]: [main.py]<\u238c>moving Porter Annette to id_21
+2023-01-10 12:48:38,227 [SPAM]: [main.py]<\u238c>moving Ross Ethan to id_22
+2023-01-10 12:48:38,228 [SPAM]: [main.py]<\u238c>moving Sharma Ksitij to id_23
+2023-01-10 12:48:38,229 [SPAM]: [main.py]<\u238c>moving Sloane Robin to id_24
+2023-01-10 12:48:38,231 [SPAM]: [main.py]<\u238c>moving Steele Lauren to id_25
+2023-01-10 12:48:38,233 [SPAM]: [main.py]<\u238c>moving Sutherland Ryan to id_26
+2023-01-10 12:48:38,234 [SPAM]: [main.py]<\u238c>moving Wiehler Conner to id_27
+2023-01-10 12:48:38,236 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 12:48:39,125 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 12:48:39,125 [SPAM]: [main.py]<\u238c>moving Crowshoe Shade to id_0
+2023-01-10 12:48:39,127 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 12:48:39,913 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 12:48:39,913 [SPAM]: [main.py]<\u238c>moving Ambury Ryan to id_0
+2023-01-10 12:48:39,920 [SPAM]: [main.py]<\u238c>moving Anderson Eamon to id_1
+2023-01-10 12:48:39,921 [SPAM]: [main.py]<\u238c>moving Bryant Alain to id_2
+2023-01-10 12:48:39,922 [SPAM]: [main.py]<\u238c>moving Budd Elisabeth to id_3
+2023-01-10 12:48:39,923 [SPAM]: [main.py]<\u238c>moving Campbell Troy to id_4
+2023-01-10 12:48:39,924 [SPAM]: [main.py]<\u238c>moving Cheveldeoff Sarah to id_5
+2023-01-10 12:48:39,926 [SPAM]: [main.py]<\u238c>moving Christianson April to id_6
+2023-01-10 12:48:39,927 [SPAM]: [main.py]<\u238c>moving Clements Paula to id_7
+2023-01-10 12:48:39,929 [SPAM]: [main.py]<\u238c>moving Daradich Talan to id_8
+2023-01-10 12:48:39,930 [SPAM]: [main.py]<\u238c>moving Fatima Mariam to id_9
+2023-01-10 12:48:39,931 [SPAM]: [main.py]<\u238c>moving Flaman Teigen to id_10
+2023-01-10 12:48:39,933 [SPAM]: [main.py]<\u238c>moving Forgsberg Ashtynn to id_11
+2023-01-10 12:48:39,934 [SPAM]: [main.py]<\u238c>moving Hunt Ben\u2301 to id_12
+2023-01-10 12:48:39,935 [SPAM]: [main.py]<\u238c>moving Jones London to id_13
+2023-01-10 12:48:39,936 [SPAM]: [main.py]<\u238c>moving Kravets Marlo to id_14
+2023-01-10 12:48:39,937 [SPAM]: [main.py]<\u238c>moving Leamy Taylor to id_15
+2023-01-10 12:48:39,938 [SPAM]: [main.py]<\u238c>moving McEachern Chelsea to id_16
+2023-01-10 12:48:39,940 [SPAM]: [main.py]<\u238c>moving Monaghan Finnegan to id_17
+2023-01-10 12:48:39,941 [SPAM]: [main.py]<\u238c>moving Oviatt Jacob to id_18
+2023-01-10 12:48:39,942 [SPAM]: [main.py]<\u238c>moving Perry Xavier to id_19
+2023-01-10 12:48:39,943 [SPAM]: [main.py]<\u238c>moving Perschon Grayson to id_20
+2023-01-10 12:48:39,944 [SPAM]: [main.py]<\u238c>moving Porter Annette to id_21
+2023-01-10 12:48:39,946 [SPAM]: [main.py]<\u238c>moving Ross Ethan to id_22
+2023-01-10 12:48:39,947 [SPAM]: [main.py]<\u238c>moving Sharma Ksitij to id_23
+2023-01-10 12:48:39,949 [SPAM]: [main.py]<\u238c>moving Sloane Robin to id_24
+2023-01-10 12:48:39,950 [SPAM]: [main.py]<\u238c>moving Steele Lauren to id_25
+2023-01-10 12:48:39,951 [SPAM]: [main.py]<\u238c>moving Sutherland Ryan to id_26
+2023-01-10 12:48:39,951 [SPAM]: [main.py]<\u238c>moving Wiehler Conner to id_27
+2023-01-10 12:48:39,952 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 12:48:40,715 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 12:48:40,715 [SPAM]: [main.py]<\u238c>moving Crowshoe Shade to id_0
+2023-01-10 12:48:40,721 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 12:48:42,474 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 12:48:42,474 [SPAM]: [main.py]<\u238c>moving Ambury Ryan to id_0
+2023-01-10 12:48:42,480 [SPAM]: [main.py]<\u238c>moving Anderson Eamon to id_1
+2023-01-10 12:48:42,482 [SPAM]: [main.py]<\u238c>moving Bryant Alain to id_2
+2023-01-10 12:48:42,483 [SPAM]: [main.py]<\u238c>moving Budd Elisabeth to id_3
+2023-01-10 12:48:42,484 [SPAM]: [main.py]<\u238c>moving Campbell Troy to id_4
+2023-01-10 12:48:42,486 [SPAM]: [main.py]<\u238c>moving Cheveldeoff Sarah to id_5
+2023-01-10 12:48:42,487 [SPAM]: [main.py]<\u238c>moving Christianson April to id_6
+2023-01-10 12:48:42,488 [SPAM]: [main.py]<\u238c>moving Clements Paula to id_7
+2023-01-10 12:48:42,490 [SPAM]: [main.py]<\u238c>moving Daradich Talan to id_8
+2023-01-10 12:48:42,491 [SPAM]: [main.py]<\u238c>moving Fatima Mariam to id_9
+2023-01-10 12:48:42,492 [SPAM]: [main.py]<\u238c>moving Flaman Teigen to id_10
+2023-01-10 12:48:42,494 [SPAM]: [main.py]<\u238c>moving Forgsberg Ashtynn to id_11
+2023-01-10 12:48:42,495 [SPAM]: [main.py]<\u238c>moving Hunt Ben\u2301 to id_12
+2023-01-10 12:48:42,496 [SPAM]: [main.py]<\u238c>moving Jones London to id_13
+2023-01-10 12:48:42,498 [SPAM]: [main.py]<\u238c>moving Kravets Marlo to id_14
+2023-01-10 12:48:42,499 [SPAM]: [main.py]<\u238c>moving Leamy Taylor to id_15
+2023-01-10 12:48:42,500 [SPAM]: [main.py]<\u238c>moving McEachern Chelsea to id_16
+2023-01-10 12:48:42,501 [SPAM]: [main.py]<\u238c>moving Monaghan Finnegan to id_17
+2023-01-10 12:48:42,502 [SPAM]: [main.py]<\u238c>moving Oviatt Jacob to id_18
+2023-01-10 12:48:42,504 [SPAM]: [main.py]<\u238c>moving Perry Xavier to id_19
+2023-01-10 12:48:42,505 [SPAM]: [main.py]<\u238c>moving Perschon Grayson to id_20
+2023-01-10 12:48:42,506 [SPAM]: [main.py]<\u238c>moving Porter Annette to id_21
+2023-01-10 12:48:42,507 [SPAM]: [main.py]<\u238c>moving Ross Ethan to id_22
+2023-01-10 12:48:42,508 [SPAM]: [main.py]<\u238c>moving Sharma Ksitij to id_23
+2023-01-10 12:48:42,510 [SPAM]: [main.py]<\u238c>moving Sloane Robin to id_24
+2023-01-10 12:48:42,511 [SPAM]: [main.py]<\u238c>moving Steele Lauren to id_25
+2023-01-10 12:48:42,513 [SPAM]: [main.py]<\u238c>moving Sutherland Ryan to id_26
+2023-01-10 12:48:42,514 [SPAM]: [main.py]<\u238c>moving Wiehler Conner to id_27
+2023-01-10 12:48:42,515 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 12:48:43,344 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 12:48:43,360 [SPAM]: [main.py]<\u238c>moving Crowshoe Shade to id_0
+2023-01-10 12:48:43,361 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 12:48:49,473 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 12:48:49,473 [SPAM]: [main.py]<\u238c>moving Hunt Ben\u2301 to id_0
+2023-01-10 12:48:49,480 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 12:48:50,489 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 12:48:50,489 [SPAM]: [main.py]<\u238c>moving Ambury Ryan to id_0
+2023-01-10 12:48:50,504 [SPAM]: [main.py]<\u238c>moving Anderson Eamon to id_1
+2023-01-10 12:48:50,505 [SPAM]: [main.py]<\u238c>moving Bryant Alain to id_2
+2023-01-10 12:48:50,506 [SPAM]: [main.py]<\u238c>moving Budd Elisabeth to id_3
+2023-01-10 12:48:50,507 [SPAM]: [main.py]<\u238c>moving Campbell Troy to id_4
+2023-01-10 12:48:50,509 [SPAM]: [main.py]<\u238c>moving Cheveldeoff Sarah to id_5
+2023-01-10 12:48:50,510 [SPAM]: [main.py]<\u238c>moving Christianson April to id_6
+2023-01-10 12:48:50,512 [SPAM]: [main.py]<\u238c>moving Clements Paula to id_7
+2023-01-10 12:48:50,513 [SPAM]: [main.py]<\u238c>moving Daradich Talan to id_8
+2023-01-10 12:48:50,514 [SPAM]: [main.py]<\u238c>moving Fatima Mariam to id_9
+2023-01-10 12:48:50,515 [SPAM]: [main.py]<\u238c>moving Flaman Teigen to id_10
+2023-01-10 12:48:50,516 [SPAM]: [main.py]<\u238c>moving Forgsberg Ashtynn to id_11
+2023-01-10 12:48:50,517 [SPAM]: [main.py]<\u238c>moving Hunt Ben\u2301 to id_12
+2023-01-10 12:48:50,519 [SPAM]: [main.py]<\u238c>moving Jones London to id_13
+2023-01-10 12:48:50,520 [SPAM]: [main.py]<\u238c>moving Kravets Marlo to id_14
+2023-01-10 12:48:50,521 [SPAM]: [main.py]<\u238c>moving Leamy Taylor to id_15
+2023-01-10 12:48:50,522 [SPAM]: [main.py]<\u238c>moving McEachern Chelsea to id_16
+2023-01-10 12:48:50,524 [SPAM]: [main.py]<\u238c>moving Monaghan Finnegan to id_17
+2023-01-10 12:48:50,525 [SPAM]: [main.py]<\u238c>moving Oviatt Jacob to id_18
+2023-01-10 12:48:50,527 [SPAM]: [main.py]<\u238c>moving Perry Xavier to id_19
+2023-01-10 12:48:50,528 [SPAM]: [main.py]<\u238c>moving Perschon Grayson to id_20
+2023-01-10 12:48:50,529 [SPAM]: [main.py]<\u238c>moving Porter Annette to id_21
+2023-01-10 12:48:50,530 [SPAM]: [main.py]<\u238c>moving Ross Ethan to id_22
+2023-01-10 12:48:50,531 [SPAM]: [main.py]<\u238c>moving Sharma Ksitij to id_23
+2023-01-10 12:48:50,533 [SPAM]: [main.py]<\u238c>moving Sloane Robin to id_24
+2023-01-10 12:48:50,534 [SPAM]: [main.py]<\u238c>moving Steele Lauren to id_25
+2023-01-10 12:48:50,535 [SPAM]: [main.py]<\u238c>moving Sutherland Ryan to id_26
+2023-01-10 12:48:50,536 [SPAM]: [main.py]<\u238c>moving Wiehler Conner to id_27
+2023-01-10 12:48:50,538 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 12:49:20,141 [INFO]: [main.py]shuting down...
+2023-01-10 12:49:20,177 [SPAM]: [main.py]cleaned up 0 objects
+2023-01-10 12:49:20,178 [SUCCESS]: [main.py]done
+2023-01-10 12:53:37,021 [DEBUG]: [main.py]starting system
+2023-01-10 12:53:37,021 [VERBOSE]: [main.py]using version v0.1.1
+2023-01-10 12:53:37,033 [SPAM]: [main.py]loading command-line arguments
+2023-01-10 12:53:37,039 [NOTICE]: [main.py]using class usrs
+2023-01-10 12:53:37,041 [DEBUG]: [main.py]loaded class
+2023-01-10 12:53:37,042 [SPAM]: [main.py]reading configs
+2023-01-10 12:53:37,043 [DEBUG]: [main.py] configs read
+2023-01-10 12:53:37,044 [VERBOSE]: [main.py]checking for updates
+2023-01-10 12:53:37,045 [VERBOSE]: [main.py] loading window
+2023-01-10 12:53:37,132 [SPAM]: [main.py] root init
+2023-01-10 12:53:37,148 [SPAM]: [main.py] root configs
+2023-01-10 12:53:37,149 [SPAM]: [main.py] title bar init
+2023-01-10 12:53:37,444 [SPAM]: [main.py] init window size
+2023-01-10 12:53:37,444 [SPAM]: [main.py] contents init
+2023-01-10 12:53:37,492 [SPAM]: [main.py] run main loop
+2023-01-10 12:53:37,493 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 12:53:37,494 [SPAM]: [main.py]<\u238c>moving Ambury Ryan to id_0
+2023-01-10 12:53:37,495 [SPAM]: [main.py]<\u238c>moving Anderson Eamon to id_1
+2023-01-10 12:53:37,496 [SPAM]: [main.py]<\u238c>moving Bryant Alain to id_2
+2023-01-10 12:53:37,496 [SPAM]: [main.py]<\u238c>moving Budd Elisabeth to id_3
+2023-01-10 12:53:37,497 [SPAM]: [main.py]<\u238c>moving Campbell Troy to id_4
+2023-01-10 12:53:37,498 [SPAM]: [main.py]<\u238c>moving Cheveldeoff Sarah to id_5
+2023-01-10 12:53:37,499 [SPAM]: [main.py]<\u238c>moving Christianson April to id_6
+2023-01-10 12:53:37,500 [SPAM]: [main.py]<\u238c>moving Clements Paula to id_7
+2023-01-10 12:53:37,500 [SPAM]: [main.py]<\u238c>moving Daradich Talan to id_8
+2023-01-10 12:53:37,501 [SPAM]: [main.py]<\u238c>moving Fatima Mariam to id_9
+2023-01-10 12:53:37,502 [SPAM]: [main.py]<\u238c>moving Flaman Teigen to id_10
+2023-01-10 12:53:37,503 [SPAM]: [main.py]<\u238c>moving Forgsberg Ashtynn to id_11
+2023-01-10 12:53:37,503 [SPAM]: [main.py]<\u238c>moving Hunt Ben\u2301 to id_12
+2023-01-10 12:53:37,504 [SPAM]: [main.py]<\u238c>moving Jones London to id_13
+2023-01-10 12:53:37,505 [SPAM]: [main.py]<\u238c>moving Kravets Marlo to id_14
+2023-01-10 12:53:37,505 [SPAM]: [main.py]<\u238c>moving Leamy Taylor to id_15
+2023-01-10 12:53:37,506 [SPAM]: [main.py]<\u238c>moving McEachern Chelsea to id_16
+2023-01-10 12:53:37,507 [SPAM]: [main.py]<\u238c>moving Monaghan Finnegan to id_17
+2023-01-10 12:53:37,507 [SPAM]: [main.py]<\u238c>moving Oviatt Jacob to id_18
+2023-01-10 12:53:37,508 [SPAM]: [main.py]<\u238c>moving Perry Xavier to id_19
+2023-01-10 12:53:37,509 [SPAM]: [main.py]<\u238c>moving Perschon Grayson to id_20
+2023-01-10 12:53:37,510 [SPAM]: [main.py]<\u238c>moving Porter Annette to id_21
+2023-01-10 12:53:37,510 [SPAM]: [main.py]<\u238c>moving Ross Ethan to id_22
+2023-01-10 12:53:37,511 [SPAM]: [main.py]<\u238c>moving Sharma Ksitij to id_23
+2023-01-10 12:53:37,512 [SPAM]: [main.py]<\u238c>moving Sloane Robin to id_24
+2023-01-10 12:53:37,512 [SPAM]: [main.py]<\u238c>moving Steele Lauren to id_25
+2023-01-10 12:53:37,513 [SPAM]: [main.py]<\u238c>moving Sutherland Ryan to id_26
+2023-01-10 12:53:37,514 [SPAM]: [main.py]<\u238c>moving Wiehler Conner to id_27
+2023-01-10 12:53:37,515 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 12:53:41,390 [INFO]: [main.py]shuting down...
+2023-01-10 12:53:41,424 [SPAM]: [main.py]cleaned up 0 objects
+2023-01-10 12:53:41,425 [SUCCESS]: [main.py]done
+2023-01-10 12:54:05,519 [DEBUG]: [main.py]starting system
+2023-01-10 12:54:05,520 [VERBOSE]: [main.py]using version v0.1.1
+2023-01-10 12:54:05,521 [SPAM]: [main.py]loading command-line arguments
+2023-01-10 12:54:05,528 [NOTICE]: [main.py]using class usrs
+2023-01-10 12:54:05,530 [DEBUG]: [main.py]loaded class
+2023-01-10 12:54:05,531 [SPAM]: [main.py]reading configs
+2023-01-10 12:54:05,532 [DEBUG]: [main.py] configs read
+2023-01-10 12:54:05,533 [VERBOSE]: [main.py]checking for updates
+2023-01-10 12:54:05,534 [VERBOSE]: [main.py] loading window
+2023-01-10 12:54:05,635 [SPAM]: [main.py] root init
+2023-01-10 12:54:05,636 [SPAM]: [main.py] root configs
+2023-01-10 12:54:05,637 [SPAM]: [main.py] title bar init
+2023-01-10 12:54:05,740 [SPAM]: [main.py] init window size
+2023-01-10 12:54:05,740 [SPAM]: [main.py] contents init
+2023-01-10 12:54:05,774 [SPAM]: [main.py] run main loop
+2023-01-10 12:54:05,776 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 12:54:05,777 [SPAM]: [main.py]<\u238c>moving Ambury Ryan to id_0
+2023-01-10 12:54:05,778 [SPAM]: [main.py]<\u238c>moving Anderson Eamon to id_1
+2023-01-10 12:54:05,779 [SPAM]: [main.py]<\u238c>moving Bryant Alain to id_2
+2023-01-10 12:54:05,779 [SPAM]: [main.py]<\u238c>moving Budd Elisabeth to id_3
+2023-01-10 12:54:05,780 [SPAM]: [main.py]<\u238c>moving Campbell Troy to id_4
+2023-01-10 12:54:05,781 [SPAM]: [main.py]<\u238c>moving Cheveldeoff Sarah to id_5
+2023-01-10 12:54:05,782 [SPAM]: [main.py]<\u238c>moving Christianson April to id_6
+2023-01-10 12:54:05,783 [SPAM]: [main.py]<\u238c>moving Clements Paula to id_7
+2023-01-10 12:54:05,783 [SPAM]: [main.py]<\u238c>moving Daradich Talan to id_8
+2023-01-10 12:54:05,784 [SPAM]: [main.py]<\u238c>moving Fatima Mariam to id_9
+2023-01-10 12:54:05,785 [SPAM]: [main.py]<\u238c>moving Flaman Teigen to id_10
+2023-01-10 12:54:05,785 [SPAM]: [main.py]<\u238c>moving Forgsberg Ashtynn to id_11
+2023-01-10 12:54:05,786 [SPAM]: [main.py]<\u238c>moving Hunt Ben\u2301 to id_12
+2023-01-10 12:54:05,787 [SPAM]: [main.py]<\u238c>moving Jones London to id_13
+2023-01-10 12:54:05,787 [SPAM]: [main.py]<\u238c>moving Kravets Marlo to id_14
+2023-01-10 12:54:05,788 [SPAM]: [main.py]<\u238c>moving Leamy Taylor to id_15
+2023-01-10 12:54:05,789 [SPAM]: [main.py]<\u238c>moving McEachern Chelsea to id_16
+2023-01-10 12:54:05,790 [SPAM]: [main.py]<\u238c>moving Monaghan Finnegan to id_17
+2023-01-10 12:54:05,791 [SPAM]: [main.py]<\u238c>moving Oviatt Jacob to id_18
+2023-01-10 12:54:05,792 [SPAM]: [main.py]<\u238c>moving Perry Xavier to id_19
+2023-01-10 12:54:05,793 [SPAM]: [main.py]<\u238c>moving Perschon Grayson to id_20
+2023-01-10 12:54:05,793 [SPAM]: [main.py]<\u238c>moving Porter Annette to id_21
+2023-01-10 12:54:05,794 [SPAM]: [main.py]<\u238c>moving Ross Ethan to id_22
+2023-01-10 12:54:05,795 [SPAM]: [main.py]<\u238c>moving Sharma Ksitij to id_23
+2023-01-10 12:54:05,796 [SPAM]: [main.py]<\u238c>moving Sloane Robin to id_24
+2023-01-10 12:54:05,796 [SPAM]: [main.py]<\u238c>moving Steele Lauren to id_25
+2023-01-10 12:54:05,797 [SPAM]: [main.py]<\u238c>moving Sutherland Ryan to id_26
+2023-01-10 12:54:05,798 [SPAM]: [main.py]<\u238c>moving Wiehler Conner to id_27
+2023-01-10 12:54:05,798 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 12:54:37,116 [DEBUG]: [main.py]starting system
+2023-01-10 12:54:37,118 [VERBOSE]: [main.py]using version v0.1.1
+2023-01-10 12:54:37,119 [SPAM]: [main.py]loading command-line arguments
+2023-01-10 12:54:37,126 [NOTICE]: [main.py]using class usrs
+2023-01-10 12:54:37,128 [DEBUG]: [main.py]loaded class
+2023-01-10 12:54:37,129 [SPAM]: [main.py]reading configs
+2023-01-10 12:54:37,130 [DEBUG]: [main.py] configs read
+2023-01-10 12:54:37,130 [VERBOSE]: [main.py]checking for updates
+2023-01-10 12:54:37,131 [VERBOSE]: [main.py] loading window
+2023-01-10 12:54:37,233 [SPAM]: [main.py] root init
+2023-01-10 12:54:37,234 [SPAM]: [main.py] root configs
+2023-01-10 12:54:37,234 [SPAM]: [main.py] title bar init
+2023-01-10 12:54:39,043 [SPAM]: [main.py] init window size
+2023-01-10 12:54:39,045 [SPAM]: [main.py] contents init
+2023-01-10 12:54:39,064 [SPAM]: [main.py] run main loop
+2023-01-10 12:54:39,067 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 12:54:39,069 [SPAM]: [main.py]<\u238c>moving Ambury Ryan to id_0
+2023-01-10 12:54:39,070 [SPAM]: [main.py]<\u238c>moving Anderson Eamon to id_1
+2023-01-10 12:54:39,072 [SPAM]: [main.py]<\u238c>moving Bryant Alain to id_2
+2023-01-10 12:54:39,074 [SPAM]: [main.py]<\u238c>moving Budd Elisabeth to id_3
+2023-01-10 12:54:39,075 [SPAM]: [main.py]<\u238c>moving Campbell Troy to id_4
+2023-01-10 12:54:39,076 [SPAM]: [main.py]<\u238c>moving Cheveldeoff Sarah to id_5
+2023-01-10 12:54:39,077 [SPAM]: [main.py]<\u238c>moving Christianson April to id_6
+2023-01-10 12:54:39,078 [SPAM]: [main.py]<\u238c>moving Clements Paula to id_7
+2023-01-10 12:54:39,080 [SPAM]: [main.py]<\u238c>moving Daradich Talan to id_8
+2023-01-10 12:54:39,080 [SPAM]: [main.py]<\u238c>moving Fatima Mariam to id_9
+2023-01-10 12:54:39,081 [SPAM]: [main.py]<\u238c>moving Flaman Teigen to id_10
+2023-01-10 12:54:39,082 [SPAM]: [main.py]<\u238c>moving Forgsberg Ashtynn to id_11
+2023-01-10 12:54:39,083 [SPAM]: [main.py]<\u238c>moving Hunt Ben\u2301 to id_12
+2023-01-10 12:54:39,084 [SPAM]: [main.py]<\u238c>moving Jones London to id_13
+2023-01-10 12:54:39,085 [SPAM]: [main.py]<\u238c>moving Kravets Marlo to id_14
+2023-01-10 12:54:39,086 [SPAM]: [main.py]<\u238c>moving Leamy Taylor to id_15
+2023-01-10 12:54:39,087 [SPAM]: [main.py]<\u238c>moving McEachern Chelsea to id_16
+2023-01-10 12:54:39,088 [SPAM]: [main.py]<\u238c>moving Monaghan Finnegan to id_17
+2023-01-10 12:54:39,089 [SPAM]: [main.py]<\u238c>moving Oviatt Jacob to id_18
+2023-01-10 12:54:39,090 [SPAM]: [main.py]<\u238c>moving Perry Xavier to id_19
+2023-01-10 12:54:39,090 [SPAM]: [main.py]<\u238c>moving Perschon Grayson to id_20
+2023-01-10 12:54:39,091 [SPAM]: [main.py]<\u238c>moving Porter Annette to id_21
+2023-01-10 12:54:39,092 [SPAM]: [main.py]<\u238c>moving Ross Ethan to id_22
+2023-01-10 12:54:39,093 [SPAM]: [main.py]<\u238c>moving Sharma Ksitij to id_23
+2023-01-10 12:54:39,094 [SPAM]: [main.py]<\u238c>moving Sloane Robin to id_24
+2023-01-10 12:54:39,095 [SPAM]: [main.py]<\u238c>moving Steele Lauren to id_25
+2023-01-10 12:54:39,097 [SPAM]: [main.py]<\u238c>moving Sutherland Ryan to id_26
+2023-01-10 12:54:39,098 [SPAM]: [main.py]<\u238c>moving Wiehler Conner to id_27
+2023-01-10 12:54:39,099 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 12:54:47,030 [INFO]: [main.py]shuting down...
+2023-01-10 12:54:47,068 [SPAM]: [main.py]cleaned up 0 objects
+2023-01-10 12:54:47,069 [SUCCESS]: [main.py]done
+2023-01-10 14:14:32,777 [DEBUG]: [main.py]starting system
+2023-01-10 14:14:32,777 [VERBOSE]: [main.py]using version v0.1.1
+2023-01-10 14:14:32,777 [SPAM]: [main.py]loading command-line arguments
+2023-01-10 14:14:32,797 [NOTICE]: [main.py]using class usrs
+2023-01-10 14:14:32,799 [DEBUG]: [main.py]loaded class
+2023-01-10 14:14:32,800 [SPAM]: [main.py]reading configs
+2023-01-10 14:14:32,801 [DEBUG]: [main.py] configs read
+2023-01-10 14:14:32,801 [VERBOSE]: [main.py]checking for updates
+2023-01-10 14:14:32,803 [VERBOSE]: [main.py] loading window
+2023-01-10 14:14:32,900 [SPAM]: [main.py] root init
+2023-01-10 14:14:32,900 [SPAM]: [main.py] root configs
+2023-01-10 14:14:32,907 [SPAM]: [main.py] title bar init
+2023-01-10 14:14:33,358 [SPAM]: [main.py] init window size
+2023-01-10 14:14:33,358 [SPAM]: [main.py] contents init
+2023-01-10 14:14:33,373 [SPAM]: [main.py] run main loop
+2023-01-10 14:14:33,375 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 14:14:33,376 [SPAM]: [main.py]<\u238c>moving Ambury Ryan to id_0
+2023-01-10 14:14:33,376 [SPAM]: [main.py]<\u238c>moving Anderson Eamon to id_1
+2023-01-10 14:14:33,377 [SPAM]: [main.py]<\u238c>moving Bryant Alain to id_2
+2023-01-10 14:14:33,378 [SPAM]: [main.py]<\u238c>moving Budd Elisabeth to id_3
+2023-01-10 14:14:33,379 [SPAM]: [main.py]<\u238c>moving Campbell Troy to id_4
+2023-01-10 14:14:33,379 [SPAM]: [main.py]<\u238c>moving Cheveldeoff Sarah to id_5
+2023-01-10 14:14:33,380 [SPAM]: [main.py]<\u238c>moving Christianson April to id_6
+2023-01-10 14:14:33,381 [SPAM]: [main.py]<\u238c>moving Clements Paula to id_7
+2023-01-10 14:14:33,381 [SPAM]: [main.py]<\u238c>moving Daradich Talan to id_8
+2023-01-10 14:14:33,382 [SPAM]: [main.py]<\u238c>moving Fatima Mariam to id_9
+2023-01-10 14:14:33,383 [SPAM]: [main.py]<\u238c>moving Flaman Teigen to id_10
+2023-01-10 14:14:33,384 [SPAM]: [main.py]<\u238c>moving Forgsberg Ashtynn to id_11
+2023-01-10 14:14:33,384 [SPAM]: [main.py]<\u238c>moving Hunt Ben\u2301 to id_12
+2023-01-10 14:14:33,385 [SPAM]: [main.py]<\u238c>moving Jones London to id_13
+2023-01-10 14:14:33,386 [SPAM]: [main.py]<\u238c>moving Kravets Marlo to id_14
+2023-01-10 14:14:33,387 [SPAM]: [main.py]<\u238c>moving Leamy Taylor to id_15
+2023-01-10 14:14:33,388 [SPAM]: [main.py]<\u238c>moving McEachern Chelsea to id_16
+2023-01-10 14:14:33,389 [SPAM]: [main.py]<\u238c>moving Monaghan Finnegan to id_17
+2023-01-10 14:14:33,389 [SPAM]: [main.py]<\u238c>moving Oviatt Jacob to id_18
+2023-01-10 14:14:33,390 [SPAM]: [main.py]<\u238c>moving Perry Xavier to id_19
+2023-01-10 14:14:33,391 [SPAM]: [main.py]<\u238c>moving Perschon Grayson to id_20
+2023-01-10 14:14:33,391 [SPAM]: [main.py]<\u238c>moving Porter Annette to id_21
+2023-01-10 14:14:33,392 [SPAM]: [main.py]<\u238c>moving Ross Ethan to id_22
+2023-01-10 14:14:33,393 [SPAM]: [main.py]<\u238c>moving Sharma Ksitij to id_23
+2023-01-10 14:14:33,394 [SPAM]: [main.py]<\u238c>moving Sloane Robin to id_24
+2023-01-10 14:14:33,394 [SPAM]: [main.py]<\u238c>moving Steele Lauren to id_25
+2023-01-10 14:14:33,395 [SPAM]: [main.py]<\u238c>moving Sutherland Ryan to id_26
+2023-01-10 14:14:33,396 [SPAM]: [main.py]<\u238c>moving Wiehler Conner to id_27
+2023-01-10 14:14:33,397 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 14:14:40,831 [INFO]: [main.py]shuting down...
+2023-01-10 14:14:40,850 [SPAM]: [main.py]cleaned up 0 objects
+2023-01-10 14:14:40,865 [SUCCESS]: [main.py]done
+2023-01-10 14:14:54,232 [DEBUG]: [main.py]starting system
+2023-01-10 14:14:54,234 [VERBOSE]: [main.py]using version v0.1.1
+2023-01-10 14:14:54,235 [SPAM]: [main.py]loading command-line arguments
+2023-01-10 14:14:54,241 [NOTICE]: [main.py]using class usrs
+2023-01-10 14:14:54,243 [DEBUG]: [main.py]loaded class
+2023-01-10 14:14:54,244 [SPAM]: [main.py]reading configs
+2023-01-10 14:14:54,244 [DEBUG]: [main.py] configs read
+2023-01-10 14:14:54,245 [VERBOSE]: [main.py]checking for updates
+2023-01-10 14:14:54,246 [VERBOSE]: [main.py] loading window
+2023-01-10 14:14:54,349 [SPAM]: [main.py] root init
+2023-01-10 14:14:54,350 [SPAM]: [main.py] root configs
+2023-01-10 14:14:54,350 [SPAM]: [main.py] title bar init
+2023-01-10 14:14:54,809 [SPAM]: [main.py] init window size
+2023-01-10 14:14:54,810 [SPAM]: [main.py] contents init
+2023-01-10 14:14:54,822 [SPAM]: [main.py] run main loop
+2023-01-10 14:14:54,823 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 14:14:54,824 [SPAM]: [main.py]<\u238c>moving Ambury Ryan to id_0
+2023-01-10 14:14:54,825 [SPAM]: [main.py]<\u238c>moving Anderson Eamon to id_1
+2023-01-10 14:14:54,826 [SPAM]: [main.py]<\u238c>moving Bryant Alain to id_2
+2023-01-10 14:14:54,826 [SPAM]: [main.py]<\u238c>moving Budd Elisabeth to id_3
+2023-01-10 14:14:54,827 [SPAM]: [main.py]<\u238c>moving Campbell Troy to id_4
+2023-01-10 14:14:54,828 [SPAM]: [main.py]<\u238c>moving Cheveldeoff Sarah to id_5
+2023-01-10 14:14:54,828 [SPAM]: [main.py]<\u238c>moving Christianson April to id_6
+2023-01-10 14:14:54,829 [SPAM]: [main.py]<\u238c>moving Clements Paula to id_7
+2023-01-10 14:14:54,831 [SPAM]: [main.py]<\u238c>moving Daradich Talan to id_8
+2023-01-10 14:14:54,832 [SPAM]: [main.py]<\u238c>moving Fatima Mariam to id_9
+2023-01-10 14:14:54,833 [SPAM]: [main.py]<\u238c>moving Flaman Teigen to id_10
+2023-01-10 14:14:54,834 [SPAM]: [main.py]<\u238c>moving Forgsberg Ashtynn to id_11
+2023-01-10 14:14:54,835 [SPAM]: [main.py]<\u238c>moving Hunt Ben\u2301 to id_12
+2023-01-10 14:14:54,835 [SPAM]: [main.py]<\u238c>moving Jones London to id_13
+2023-01-10 14:14:54,836 [SPAM]: [main.py]<\u238c>moving Kravets Marlo to id_14
+2023-01-10 14:14:54,837 [SPAM]: [main.py]<\u238c>moving Leamy Taylor to id_15
+2023-01-10 14:14:54,837 [SPAM]: [main.py]<\u238c>moving McEachern Chelsea to id_16
+2023-01-10 14:14:54,838 [SPAM]: [main.py]<\u238c>moving Monaghan Finnegan to id_17
+2023-01-10 14:14:54,839 [SPAM]: [main.py]<\u238c>moving Oviatt Jacob to id_18
+2023-01-10 14:14:54,839 [SPAM]: [main.py]<\u238c>moving Perry Xavier to id_19
+2023-01-10 14:14:54,840 [SPAM]: [main.py]<\u238c>moving Perschon Grayson to id_20
+2023-01-10 14:14:54,841 [SPAM]: [main.py]<\u238c>moving Porter Annette to id_21
+2023-01-10 14:14:54,842 [SPAM]: [main.py]<\u238c>moving Ross Ethan to id_22
+2023-01-10 14:14:54,842 [SPAM]: [main.py]<\u238c>moving Sharma Ksitij to id_23
+2023-01-10 14:14:54,843 [SPAM]: [main.py]<\u238c>moving Sloane Robin to id_24
+2023-01-10 14:14:54,844 [SPAM]: [main.py]<\u238c>moving Steele Lauren to id_25
+2023-01-10 14:14:54,844 [SPAM]: [main.py]<\u238c>moving Sutherland Ryan to id_26
+2023-01-10 14:14:54,845 [SPAM]: [main.py]<\u238c>moving Wiehler Conner to id_27
+2023-01-10 14:14:54,846 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 14:15:28,880 [INFO]: [main.py]shuting down...
+2023-01-10 14:15:28,910 [SPAM]: [main.py]cleaned up 0 objects
+2023-01-10 14:15:28,911 [SUCCESS]: [main.py]done
+2023-01-10 14:23:41,270 [DEBUG]: [main.py]starting system
+2023-01-10 14:23:41,270 [VERBOSE]: [main.py]using version v0.1.1
+2023-01-10 14:23:41,276 [SPAM]: [main.py]loading command-line arguments
+2023-01-10 14:23:41,279 [NOTICE]: [main.py]using class usrs
+2023-01-10 14:23:41,285 [DEBUG]: [main.py]loaded class
+2023-01-10 14:23:41,285 [SPAM]: [main.py]reading configs
+2023-01-10 14:23:41,286 [DEBUG]: [main.py] configs read
+2023-01-10 14:23:41,287 [VERBOSE]: [main.py]checking for updates
+2023-01-10 14:23:41,288 [VERBOSE]: [main.py] loading window
+2023-01-10 14:23:41,385 [SPAM]: [main.py] root init
+2023-01-10 14:23:41,385 [SPAM]: [main.py] root configs
+2023-01-10 14:23:41,396 [SPAM]: [main.py] title bar init
+2023-01-10 14:23:41,850 [SPAM]: [main.py] init window size
+2023-01-10 14:23:41,850 [SPAM]: [main.py] contents init
+2023-01-10 14:23:41,868 [SPAM]: [main.py] run main loop
+2023-01-10 14:23:41,870 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 14:23:41,871 [SPAM]: [main.py]<\u238c>moving Ambury Ryan to id_0
+2023-01-10 14:23:41,872 [SPAM]: [main.py]<\u238c>moving Anderson Eamon to id_1
+2023-01-10 14:23:41,873 [SPAM]: [main.py]<\u238c>moving Bryant Alain to id_2
+2023-01-10 14:23:41,874 [SPAM]: [main.py]<\u238c>moving Budd Elisabeth to id_3
+2023-01-10 14:23:41,874 [SPAM]: [main.py]<\u238c>moving Campbell Troy to id_4
+2023-01-10 14:23:41,875 [SPAM]: [main.py]<\u238c>moving Cheveldeoff Sarah to id_5
+2023-01-10 14:23:41,876 [SPAM]: [main.py]<\u238c>moving Christianson April to id_6
+2023-01-10 14:23:41,876 [SPAM]: [main.py]<\u238c>moving Clements Paula to id_7
+2023-01-10 14:23:41,877 [SPAM]: [main.py]<\u238c>moving Daradich Talan to id_8
+2023-01-10 14:23:41,878 [SPAM]: [main.py]<\u238c>moving Fatima Mariam to id_9
+2023-01-10 14:23:41,878 [SPAM]: [main.py]<\u238c>moving Flaman Teigen to id_10
+2023-01-10 14:23:41,879 [SPAM]: [main.py]<\u238c>moving Forgsberg Ashtynn to id_11
+2023-01-10 14:23:41,880 [SPAM]: [main.py]<\u238c>moving Hunt Ben\u2301 to id_12
+2023-01-10 14:23:41,881 [SPAM]: [main.py]<\u238c>moving Jones London to id_13
+2023-01-10 14:23:41,882 [SPAM]: [main.py]<\u238c>moving Kravets Marlo to id_14
+2023-01-10 14:23:41,882 [SPAM]: [main.py]<\u238c>moving Leamy Taylor to id_15
+2023-01-10 14:23:41,883 [SPAM]: [main.py]<\u238c>moving McEachern Chelsea to id_16
+2023-01-10 14:23:41,884 [SPAM]: [main.py]<\u238c>moving Monaghan Finnegan to id_17
+2023-01-10 14:23:41,885 [SPAM]: [main.py]<\u238c>moving Oviatt Jacob to id_18
+2023-01-10 14:23:41,885 [SPAM]: [main.py]<\u238c>moving Perry Xavier to id_19
+2023-01-10 14:23:41,886 [SPAM]: [main.py]<\u238c>moving Perschon Grayson to id_20
+2023-01-10 14:23:41,887 [SPAM]: [main.py]<\u238c>moving Porter Annette to id_21
+2023-01-10 14:23:41,888 [SPAM]: [main.py]<\u238c>moving Ross Ethan to id_22
+2023-01-10 14:23:41,888 [SPAM]: [main.py]<\u238c>moving Sharma Ksitij to id_23
+2023-01-10 14:23:41,889 [SPAM]: [main.py]<\u238c>moving Sloane Robin to id_24
+2023-01-10 14:23:41,890 [SPAM]: [main.py]<\u238c>moving Steele Lauren to id_25
+2023-01-10 14:23:41,891 [SPAM]: [main.py]<\u238c>moving Sutherland Ryan to id_26
+2023-01-10 14:23:41,891 [SPAM]: [main.py]<\u238c>moving Wiehler Conner to id_27
+2023-01-10 14:23:41,892 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 14:24:46,201 [CRITICAL]: 
+2023-01-10 14:24:46,202 [CRITICAL]: [main.py]Traceback (most recent call last):
+  File "c:\Users\Auto Atendance\Documents\GitHub\autoAtendance\main.py", line 464, in <module>
+    myapp.mainloop()
+  File "C:\Program Files\Python310\lib\tkinter\__init__.py", line 1458, in mainloop
+    self.tk.mainloop(n)
+KeyboardInterrupt
+
+2023-01-10 14:25:26,456 [DEBUG]: [main.py]starting system
+2023-01-10 14:25:26,456 [VERBOSE]: [main.py]using version v0.1.1
+2023-01-10 14:25:26,462 [SPAM]: [main.py]loading command-line arguments
+2023-01-10 14:25:26,465 [NOTICE]: [main.py]using class usrs
+2023-01-10 14:25:26,471 [DEBUG]: [main.py]loaded class
+2023-01-10 14:25:26,472 [SPAM]: [main.py]reading configs
+2023-01-10 14:25:26,473 [DEBUG]: [main.py] configs read
+2023-01-10 14:25:26,474 [VERBOSE]: [main.py]checking for updates
+2023-01-10 14:25:26,474 [VERBOSE]: [main.py] loading window
+2023-01-10 14:25:26,577 [SPAM]: [main.py] root init
+2023-01-10 14:25:26,578 [SPAM]: [main.py] root configs
+2023-01-10 14:25:26,578 [SPAM]: [main.py] title bar init
+2023-01-10 14:25:27,029 [SPAM]: [main.py] init window size
+2023-01-10 14:25:27,031 [SPAM]: [main.py] contents init
+2023-01-10 14:25:27,042 [SPAM]: [main.py] run main loop
+2023-01-10 14:25:27,044 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 14:25:27,044 [SPAM]: [main.py]<\u238c>moving Ambury Ryan to id_0
+2023-01-10 14:25:27,045 [SPAM]: [main.py]<\u238c>moving Anderson Eamon to id_1
+2023-01-10 14:25:27,046 [SPAM]: [main.py]<\u238c>moving Bryant Alain to id_2
+2023-01-10 14:25:27,047 [SPAM]: [main.py]<\u238c>moving Budd Elisabeth to id_3
+2023-01-10 14:25:27,048 [SPAM]: [main.py]<\u238c>moving Campbell Troy to id_4
+2023-01-10 14:25:27,049 [SPAM]: [main.py]<\u238c>moving Cheveldeoff Sarah to id_5
+2023-01-10 14:25:27,049 [SPAM]: [main.py]<\u238c>moving Christianson April to id_6
+2023-01-10 14:25:27,050 [SPAM]: [main.py]<\u238c>moving Clements Paula to id_7
+2023-01-10 14:25:27,051 [SPAM]: [main.py]<\u238c>moving Daradich Talan to id_8
+2023-01-10 14:25:27,052 [SPAM]: [main.py]<\u238c>moving Fatima Mariam to id_9
+2023-01-10 14:25:27,053 [SPAM]: [main.py]<\u238c>moving Flaman Teigen to id_10
+2023-01-10 14:25:27,053 [SPAM]: [main.py]<\u238c>moving Forgsberg Ashtynn to id_11
+2023-01-10 14:25:27,054 [SPAM]: [main.py]<\u238c>moving Hunt Ben\u2301 to id_12
+2023-01-10 14:25:27,055 [SPAM]: [main.py]<\u238c>moving Jones London to id_13
+2023-01-10 14:25:27,056 [SPAM]: [main.py]<\u238c>moving Kravets Marlo to id_14
+2023-01-10 14:25:27,056 [SPAM]: [main.py]<\u238c>moving Leamy Taylor to id_15
+2023-01-10 14:25:27,057 [SPAM]: [main.py]<\u238c>moving McEachern Chelsea to id_16
+2023-01-10 14:25:27,058 [SPAM]: [main.py]<\u238c>moving Monaghan Finnegan to id_17
+2023-01-10 14:25:27,058 [SPAM]: [main.py]<\u238c>moving Oviatt Jacob to id_18
+2023-01-10 14:25:27,059 [SPAM]: [main.py]<\u238c>moving Perry Xavier to id_19
+2023-01-10 14:25:27,060 [SPAM]: [main.py]<\u238c>moving Perschon Grayson to id_20
+2023-01-10 14:25:27,060 [SPAM]: [main.py]<\u238c>moving Porter Annette to id_21
+2023-01-10 14:25:27,061 [SPAM]: [main.py]<\u238c>moving Ross Ethan to id_22
+2023-01-10 14:25:27,062 [SPAM]: [main.py]<\u238c>moving Sharma Ksitij to id_23
+2023-01-10 14:25:27,063 [SPAM]: [main.py]<\u238c>moving Sloane Robin to id_24
+2023-01-10 14:25:27,063 [SPAM]: [main.py]<\u238c>moving Steele Lauren to id_25
+2023-01-10 14:25:27,064 [SPAM]: [main.py]<\u238c>moving Sutherland Ryan to id_26
+2023-01-10 14:25:27,065 [SPAM]: [main.py]<\u238c>moving Wiehler Conner to id_27
+2023-01-10 14:25:27,066 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 14:25:47,638 [CRITICAL]: 
+2023-01-10 14:25:47,640 [CRITICAL]: [main.py]Traceback (most recent call last):
+  File "c:\Users\Auto Atendance\Documents\GitHub\autoAtendance\main.py", line 464, in <module>
+    myapp.mainloop()
+  File "C:\Program Files\Python310\lib\tkinter\__init__.py", line 1458, in mainloop
+    self.tk.mainloop(n)
+KeyboardInterrupt
+
+2023-01-10 14:25:47,649 [INFO]: [main.py]shuting down...
+2023-01-10 14:26:23,038 [DEBUG]: [main.py]starting system
+2023-01-10 14:26:23,040 [VERBOSE]: [main.py]using version v0.1.1
+2023-01-10 14:26:23,041 [SPAM]: [main.py]loading command-line arguments
+2023-01-10 14:26:23,047 [NOTICE]: [main.py]using class usrs
+2023-01-10 14:26:23,049 [DEBUG]: [main.py]loaded class
+2023-01-10 14:26:23,050 [SPAM]: [main.py]reading configs
+2023-01-10 14:26:23,051 [DEBUG]: [main.py] configs read
+2023-01-10 14:26:23,051 [VERBOSE]: [main.py]checking for updates
+2023-01-10 14:26:23,052 [VERBOSE]: [main.py] loading window
+2023-01-10 14:26:23,153 [SPAM]: [main.py] root init
+2023-01-10 14:26:23,153 [SPAM]: [main.py] root configs
+2023-01-10 14:26:23,156 [SPAM]: [main.py] title bar init
+2023-01-10 14:26:23,609 [SPAM]: [main.py] init window size
+2023-01-10 14:26:23,610 [SPAM]: [main.py] contents init
+2023-01-10 14:26:23,622 [SPAM]: [main.py] run main loop
+2023-01-10 14:26:23,624 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 14:26:23,625 [SPAM]: [main.py]<\u238c>moving Ambury Ryan to id_0
+2023-01-10 14:26:23,625 [SPAM]: [main.py]<\u238c>moving Anderson Eamon to id_1
+2023-01-10 14:26:23,626 [SPAM]: [main.py]<\u238c>moving Bryant Alain to id_2
+2023-01-10 14:26:23,627 [SPAM]: [main.py]<\u238c>moving Budd Elisabeth to id_3
+2023-01-10 14:26:23,628 [SPAM]: [main.py]<\u238c>moving Campbell Troy to id_4
+2023-01-10 14:26:23,628 [SPAM]: [main.py]<\u238c>moving Cheveldeoff Sarah to id_5
+2023-01-10 14:26:23,629 [SPAM]: [main.py]<\u238c>moving Christianson April to id_6
+2023-01-10 14:26:23,630 [SPAM]: [main.py]<\u238c>moving Clements Paula to id_7
+2023-01-10 14:26:23,630 [SPAM]: [main.py]<\u238c>moving Daradich Talan to id_8
+2023-01-10 14:26:23,631 [SPAM]: [main.py]<\u238c>moving Fatima Mariam to id_9
+2023-01-10 14:26:23,632 [SPAM]: [main.py]<\u238c>moving Flaman Teigen to id_10
+2023-01-10 14:26:23,633 [SPAM]: [main.py]<\u238c>moving Forgsberg Ashtynn to id_11
+2023-01-10 14:26:23,633 [SPAM]: [main.py]<\u238c>moving Hunt Ben\u2301 to id_12
+2023-01-10 14:26:23,634 [SPAM]: [main.py]<\u238c>moving Jones London to id_13
+2023-01-10 14:26:23,635 [SPAM]: [main.py]<\u238c>moving Kravets Marlo to id_14
+2023-01-10 14:26:23,636 [SPAM]: [main.py]<\u238c>moving Leamy Taylor to id_15
+2023-01-10 14:26:23,637 [SPAM]: [main.py]<\u238c>moving McEachern Chelsea to id_16
+2023-01-10 14:26:23,637 [SPAM]: [main.py]<\u238c>moving Monaghan Finnegan to id_17
+2023-01-10 14:26:23,638 [SPAM]: [main.py]<\u238c>moving Oviatt Jacob to id_18
+2023-01-10 14:26:23,639 [SPAM]: [main.py]<\u238c>moving Perry Xavier to id_19
+2023-01-10 14:26:23,640 [SPAM]: [main.py]<\u238c>moving Perschon Grayson to id_20
+2023-01-10 14:26:23,641 [SPAM]: [main.py]<\u238c>moving Porter Annette to id_21
+2023-01-10 14:26:23,641 [SPAM]: [main.py]<\u238c>moving Ross Ethan to id_22
+2023-01-10 14:26:23,642 [SPAM]: [main.py]<\u238c>moving Sharma Ksitij to id_23
+2023-01-10 14:26:23,643 [SPAM]: [main.py]<\u238c>moving Sloane Robin to id_24
+2023-01-10 14:26:23,643 [SPAM]: [main.py]<\u238c>moving Steele Lauren to id_25
+2023-01-10 14:26:23,644 [SPAM]: [main.py]<\u238c>moving Sutherland Ryan to id_26
+2023-01-10 14:26:23,645 [SPAM]: [main.py]<\u238c>moving Wiehler Conner to id_27
+2023-01-10 14:26:23,646 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 14:27:08,567 [DEBUG]: [main.py]starting system
+2023-01-10 14:27:08,567 [VERBOSE]: [main.py]using version v0.1.1
+2023-01-10 14:27:08,576 [SPAM]: [main.py]loading command-line arguments
+2023-01-10 14:27:08,582 [NOTICE]: [main.py]using class usrs
+2023-01-10 14:27:08,585 [DEBUG]: [main.py]loaded class
+2023-01-10 14:27:08,585 [SPAM]: [main.py]reading configs
+2023-01-10 14:27:08,586 [DEBUG]: [main.py] configs read
+2023-01-10 14:27:08,587 [VERBOSE]: [main.py]checking for updates
+2023-01-10 14:27:08,588 [VERBOSE]: [main.py] loading window
+2023-01-10 14:27:08,677 [SPAM]: [main.py] root init
+2023-01-10 14:27:08,677 [SPAM]: [main.py] root configs
+2023-01-10 14:27:08,692 [SPAM]: [main.py] title bar init
+2023-01-10 14:27:09,141 [SPAM]: [main.py] init window size
+2023-01-10 14:27:09,142 [SPAM]: [main.py] contents init
+2023-01-10 14:27:09,153 [SPAM]: [main.py] run main loop
+2023-01-10 14:27:09,155 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 14:27:09,155 [SPAM]: [main.py]<\u238c>moving Ambury Ryan to id_0
+2023-01-10 14:27:09,156 [SPAM]: [main.py]<\u238c>moving Anderson Eamon to id_1
+2023-01-10 14:27:09,157 [SPAM]: [main.py]<\u238c>moving Bryant Alain to id_2
+2023-01-10 14:27:09,157 [SPAM]: [main.py]<\u238c>moving Budd Elisabeth to id_3
+2023-01-10 14:27:09,158 [SPAM]: [main.py]<\u238c>moving Campbell Troy to id_4
+2023-01-10 14:27:09,159 [SPAM]: [main.py]<\u238c>moving Cheveldeoff Sarah to id_5
+2023-01-10 14:27:09,160 [SPAM]: [main.py]<\u238c>moving Christianson April to id_6
+2023-01-10 14:27:09,161 [SPAM]: [main.py]<\u238c>moving Clements Paula to id_7
+2023-01-10 14:27:09,161 [SPAM]: [main.py]<\u238c>moving Daradich Talan to id_8
+2023-01-10 14:27:09,162 [SPAM]: [main.py]<\u238c>moving Fatima Mariam to id_9
+2023-01-10 14:27:09,163 [SPAM]: [main.py]<\u238c>moving Flaman Teigen to id_10
+2023-01-10 14:27:09,164 [SPAM]: [main.py]<\u238c>moving Forgsberg Ashtynn to id_11
+2023-01-10 14:27:09,164 [SPAM]: [main.py]<\u238c>moving Hunt Ben\u2301 to id_12
+2023-01-10 14:27:09,165 [SPAM]: [main.py]<\u238c>moving Jones London to id_13
+2023-01-10 14:27:09,166 [SPAM]: [main.py]<\u238c>moving Kravets Marlo to id_14
+2023-01-10 14:27:09,167 [SPAM]: [main.py]<\u238c>moving Leamy Taylor to id_15
+2023-01-10 14:27:09,167 [SPAM]: [main.py]<\u238c>moving McEachern Chelsea to id_16
+2023-01-10 14:27:09,168 [SPAM]: [main.py]<\u238c>moving Monaghan Finnegan to id_17
+2023-01-10 14:27:09,169 [SPAM]: [main.py]<\u238c>moving Oviatt Jacob to id_18
+2023-01-10 14:27:09,169 [SPAM]: [main.py]<\u238c>moving Perry Xavier to id_19
+2023-01-10 14:27:09,170 [SPAM]: [main.py]<\u238c>moving Perschon Grayson to id_20
+2023-01-10 14:27:09,171 [SPAM]: [main.py]<\u238c>moving Porter Annette to id_21
+2023-01-10 14:27:09,171 [SPAM]: [main.py]<\u238c>moving Ross Ethan to id_22
+2023-01-10 14:27:09,172 [SPAM]: [main.py]<\u238c>moving Sharma Ksitij to id_23
+2023-01-10 14:27:09,173 [SPAM]: [main.py]<\u238c>moving Sloane Robin to id_24
+2023-01-10 14:27:09,174 [SPAM]: [main.py]<\u238c>moving Steele Lauren to id_25
+2023-01-10 14:27:09,174 [SPAM]: [main.py]<\u238c>moving Sutherland Ryan to id_26
+2023-01-10 14:27:09,175 [SPAM]: [main.py]<\u238c>moving Wiehler Conner to id_27
+2023-01-10 14:27:09,176 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 14:28:39,190 [CRITICAL]: 
+2023-01-10 14:28:39,191 [CRITICAL]: [main.py]Traceback (most recent call last):
+  File "c:\Users\Auto Atendance\Documents\GitHub\autoAtendance\main.py", line 465, in <module>
+    myapp.mainloop()
+  File "C:\Program Files\Python310\lib\tkinter\__init__.py", line 1458, in mainloop
+    self.tk.mainloop(n)
+KeyboardInterrupt
+
+2023-01-10 14:28:39,250 [DEBUG]: Starting new HTTPS connection (1): crashreporter.badgeminer2.repl.co:443
+2023-01-10 14:28:49,341 [DEBUG]: https://crashreporter.badgeminer2.repl.co:443 "POST /aatend HTTP/1.1" 200 544
+2023-01-10 14:29:38,910 [DEBUG]: [main.py]starting system
+2023-01-10 14:29:38,910 [VERBOSE]: [main.py]using version v0.1.1
+2023-01-10 14:29:38,917 [SPAM]: [main.py]loading command-line arguments
+2023-01-10 14:29:38,924 [NOTICE]: [main.py]using class usrs
+2023-01-10 14:29:38,926 [DEBUG]: [main.py]loaded class
+2023-01-10 14:29:38,927 [SPAM]: [main.py]reading configs
+2023-01-10 14:29:38,928 [DEBUG]: [main.py] configs read
+2023-01-10 14:29:38,929 [VERBOSE]: [main.py]checking for updates
+2023-01-10 14:29:38,930 [VERBOSE]: [main.py] loading window
+2023-01-10 14:29:39,013 [SPAM]: [main.py] root init
+2023-01-10 14:29:39,014 [SPAM]: [main.py] root configs
+2023-01-10 14:29:39,015 [SPAM]: [main.py] title bar init
+2023-01-10 14:29:39,457 [SPAM]: [main.py] init window size
+2023-01-10 14:29:39,457 [SPAM]: [main.py] contents init
+2023-01-10 14:29:39,476 [SPAM]: [main.py] run main loop
+2023-01-10 14:29:39,478 [VERBOSE]: [main.py]<\u238c> Here -> NotHere
+2023-01-10 14:29:39,478 [SPAM]: [main.py]<\u238c>moving Ambury Ryan to id_0
+2023-01-10 14:29:39,479 [SPAM]: [main.py]<\u238c>moving Anderson Eamon to id_1
+2023-01-10 14:29:39,480 [SPAM]: [main.py]<\u238c>moving Bryant Alain to id_2
+2023-01-10 14:29:39,481 [SPAM]: [main.py]<\u238c>moving Budd Elisabeth to id_3
+2023-01-10 14:29:39,482 [SPAM]: [main.py]<\u238c>moving Campbell Troy to id_4
+2023-01-10 14:29:39,482 [SPAM]: [main.py]<\u238c>moving Cheveldeoff Sarah to id_5
+2023-01-10 14:29:39,483 [SPAM]: [main.py]<\u238c>moving Christianson April to id_6
+2023-01-10 14:29:39,484 [SPAM]: [main.py]<\u238c>moving Clements Paula to id_7
+2023-01-10 14:29:39,485 [SPAM]: [main.py]<\u238c>moving Daradich Talan to id_8
+2023-01-10 14:29:39,485 [SPAM]: [main.py]<\u238c>moving Fatima Mariam to id_9
+2023-01-10 14:29:39,486 [SPAM]: [main.py]<\u238c>moving Flaman Teigen to id_10
+2023-01-10 14:29:39,487 [SPAM]: [main.py]<\u238c>moving Forgsberg Ashtynn to id_11
+2023-01-10 14:29:39,487 [SPAM]: [main.py]<\u238c>moving Hunt Ben\u2301 to id_12
+2023-01-10 14:29:39,488 [SPAM]: [main.py]<\u238c>moving Jones London to id_13
+2023-01-10 14:29:39,489 [SPAM]: [main.py]<\u238c>moving Kravets Marlo to id_14
+2023-01-10 14:29:39,490 [SPAM]: [main.py]<\u238c>moving Leamy Taylor to id_15
+2023-01-10 14:29:39,490 [SPAM]: [main.py]<\u238c>moving McEachern Chelsea to id_16
+2023-01-10 14:29:39,491 [SPAM]: [main.py]<\u238c>moving Monaghan Finnegan to id_17
+2023-01-10 14:29:39,492 [SPAM]: [main.py]<\u238c>moving Oviatt Jacob to id_18
+2023-01-10 14:29:39,492 [SPAM]: [main.py]<\u238c>moving Perry Xavier to id_19
+2023-01-10 14:29:39,493 [SPAM]: [main.py]<\u238c>moving Perschon Grayson to id_20
+2023-01-10 14:29:39,494 [SPAM]: [main.py]<\u238c>moving Porter Annette to id_21
+2023-01-10 14:29:39,494 [SPAM]: [main.py]<\u238c>moving Ross Ethan to id_22
+2023-01-10 14:29:39,495 [SPAM]: [main.py]<\u238c>moving Sharma Ksitij to id_23
+2023-01-10 14:29:39,496 [SPAM]: [main.py]<\u238c>moving Sloane Robin to id_24
+2023-01-10 14:29:39,497 [SPAM]: [main.py]<\u238c>moving Steele Lauren to id_25
+2023-01-10 14:29:39,497 [SPAM]: [main.py]<\u238c>moving Sutherland Ryan to id_26
+2023-01-10 14:29:39,498 [SPAM]: [main.py]<\u238c>moving Wiehler Conner to id_27
+2023-01-10 14:29:39,499 [VERBOSE]: [main.py]<\u2398> swaped classes
+2023-01-10 14:54:22,610 [CRITICAL]: 
+2023-01-10 14:54:22,610 [CRITICAL]: [main.py]Traceback (most recent call last):
+  File "c:\Users\Auto Atendance\Documents\GitHub\autoAtendance\main.py", line 465, in <module>
+    myapp.mainloop()
+  File "C:\Program Files\Python310\lib\tkinter\__init__.py", line 1458, in mainloop
+    self.tk.mainloop(n)
+KeyboardInterrupt
+
+2023-01-10 14:54:22,644 [DEBUG]: Starting new HTTPS connection (1): crashreporter.badgeminer2.repl.co:443
+2023-01-10 14:54:23,299 [DEBUG]: https://crashreporter.badgeminer2.repl.co:443 "POST /aatend HTTP/1.1" 200 544
+2023-01-10 14:54:35,492 [INFO]: [main.py]shuting down...
+2023-01-10 14:54:35,521 [SPAM]: [main.py]cleaned up 0 objects
+2023-01-10 14:54:35,522 [SUCCESS]: [main.py]done
