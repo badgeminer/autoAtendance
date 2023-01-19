@@ -1,0 +1,17 @@
+{
+    "9-2":{
+        "enabled":true,
+        "tbl":"aatend92",
+        "key":"7ff57e46-1d01-43fd-afb1-81406b99e317"
+    },
+    "9-1":{
+        "enabled":true,
+        "tbl":"aatend91",
+        "key":"7ff57e46-1d01-43fd-afb1-81406b99e317"
+    },
+    "stay-in":{
+        "enabled":false,
+        "tbl":"",
+        "key":""
+    }
+}

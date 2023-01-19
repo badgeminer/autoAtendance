@@ -33,7 +33,10 @@ import time
 import gs
 import argparse
 import traceback
+import threading
 
+import atexit
+import sync as sy
 
 
 
@@ -400,8 +403,12 @@ class window(tk.Frame):
             studs[i] = False
 
     def sync(self):
-      if sync:
-        gs.build_sheet(studs)
+        clas = self.tabs.tab(self.tabs.select(), "text")
+        t = threading.Thread(None,sy.sync,args=(clas,studs))
+        t.run()
+        #sy.sync(clas,studs)
+        #if sync:
+        #  gs.build_sheet(studs)
     def tab(self,event):
         global studs,stud,studLs
         if safetoclose:
@@ -414,10 +421,9 @@ class window(tk.Frame):
                 tk.messagebox.showerror("invalid psw","the psw entered is invalid")
                 logging.warning("[main.py]invalid pasword")
                 return None
-        del studLs
-        del stud
-        del studs
+        
         clas = self.tabs.tab(self.tabs.select(), "text")
+        self.syncb["state"] = sy.sb(clas)
         try:
             stud = json.load(open("usrs.json",encoding="utf-8"))[clas]
             if "38302008" in stud.keys():
@@ -439,7 +445,14 @@ class window(tk.Frame):
         logging.log(15,"[main.py]<⎘> swaped classes")
       
 
-
+@atexit.register
+def onquit():
+    try:
+        logging.info("[main.py]shuting down...")
+        logging.log(5,"[main.py]cleaned up "+str(gc.collect())+" objects")
+        logging.log(35,"[main.py]done")
+    except:
+            pass
 
 logging.log(15,"[main.py] loading window")
 #run the app
@@ -473,10 +486,4 @@ except BaseException as e:
         import report
         report.report(tb)
     except:
-        pass
-try:
-    logging.info("[main.py]shuting down...")
-    logging.log(5,"[main.py]cleaned up "+str(gc.collect())+" objects")
-    logging.log(35,"[main.py]done")
-except:
         pass
