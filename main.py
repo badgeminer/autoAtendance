@@ -30,7 +30,7 @@ import verboselogs
 import time
 
 
-import gs
+#import gs
 import argparse
 import traceback
 import threading
@@ -63,8 +63,8 @@ logging.log(15,"[main.py]using version v"+ver)
 
 updr.chunks = int(config["DEFAULT"]['downloadChunkSize'])
 updr.branch = config["UPDATE"]['verBranch']
-if config["sheets"].getboolean('enabled'):
-  gs.init(config["sheets"]["id"])
+#if config["sheets"].getboolean('enabled'):
+#  gs.init(config["sheets"]["id"])
 
 #cmdline args
 logging.log(5,"[main.py]loading command-line arguments")
